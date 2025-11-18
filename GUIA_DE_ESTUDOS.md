@@ -1,370 +1,1282 @@
-# Guia de Estudo Exaustivo: Do Algoritmo ao Full-Stack (Java, Spring, Angular)
+# 🎓 Guia de Estudo: Do Algoritmo ao Full-Stack
 
-## Prefácio: Uma Abordagem Pedagógica
-
-Este documento funciona como um roteiro de integração, projetado para estruturar um plano de aprendizado coeso. O objetivo não é substituir os cursos e livros listados, mas sim conectá-los estrategicamente. A metodologia segue uma progressão pedagógica deliberada, transitando da teoria fundamental da Ciência da Computação para a implementação prática da Engenharia de Software.
-
-### Progressão Estruturada
-
-1. **Lógica Agnóstica (Furlan, Bhargava):** Estabelecer a fundação do pensamento computacional antes da sintaxe. O foco é aprender a _pensar_ como um engenheiro e a _analisar_ a eficiência.
-
-2. **Implementação Central (Cod3r Java):** Traduzir a lógica abstrata para uma ferramenta de construção robusta e moderna, dominando a linguagem Java e o paradigma de Orientação a Objetos.
-
-3. **Eficiência Teórica (Bhargava):** Aprofundar a análise de algoritmos e estruturas de dados para entender _por que_ certas soluções são mais eficientes que outras, aprendendo a _otimizar_.
-
-4. **Aplicação Profissional (DIO):** Aplicar o conhecimento em um ecossistema de nível industrial, aprendendo a _escalar_ e _manter_ aplicações complexas com Spring, Angular e práticas de código limpo (SOLID).
-
-> **Recomendação:** Use este guia como um currículo principal. Ao iniciar uma seção prática (por exemplo, "Collections" no curso Cod3r), consulte as seções teóricas correspondentes (por exemplo, "Tabelas Hash" em Bhargava) para obter uma compreensão tridimensional do assunto.
+## Java, Spring Boot & Angular
 
 ---
 
-## Parte 1: A Fundação - Lógica, Algoritmos e Computação
+## 📋 Índice
 
-**Livros:** Algoritmos e Lógica da Programação (Furlan et al.) + Entendendo Algoritmos (Bhargava)
-
-Esta seção estabelece o pensamento computacional, desacoplando a lógica de resolução de problemas da sintaxe de uma linguagem específica.
-
-### 1.1 O que é um Algoritmo? (A Mentalidade do Engenheiro)
-
-**Fonte Principal:** Furlan, Cap. 1
-
-Um algoritmo é formalmente definido como um "conjunto de regras" para a solução de um problema. A programação, portanto, não começa com a escrita de código, mas com a "análise e a síntese de um problema". O livro _Algoritmos E Lógica Da Programação_ introduz o processo de engenharia de software em sua forma mais pura: "Definição de requisitos → Desenvolvimento (Análise, Projeto, Implementação, Testes) → Entrega".
-
-O desenvolvimento de um programa segue etapas claras, começando com "Ideias" e "Projeto Lógico" _antes_ da "Implementação". Dominar esta mentalidade de "projeto lógico primeiro" é o que diferencia um programador amador de um engenheiro de software profissional.
-
-**Tópicos-chave:**
-
-- Definição formal de algoritmo
-- Processo de engenharia: Definição de requisitos → Análise → Projeto → Implementação → Testes
-- Importância da modelagem de problemas
-- "Projeto lógico primeiro" - diferencial do engenheiro profissional
-
-### 1.2 Análise de Performance: Pesquisa Binária e Notação Big O
-
-**Fonte Principal:** Bhargava, Cap. 1
-
-Imediatamente após entender _o que_ é um algoritmo, é vital aprender a _medir_ sua eficiência. O livro de Furlan introduz este conceito informalmente (por exemplo, no problema das Torres de Hanoi, comparando uma solução de 7 passos com uma de 11 passos). O livro _Entendendo Algoritmos_ formaliza essa medição.
-
-_Entendendo Algoritmos_ apresenta a **Pesquisa Binária** como o primeiro exemplo de um algoritmo eficiente. Mais importante, ele introduz a **Notação Big O**, a linguagem universal para discutir a performance de algoritmos.
-
-**Conceitos-chave da Notação Big O:**
-
-- **Taxas de Crescimento:** O tempo de execução dos algoritmos cresce a taxas diferentes
-- **Pior Hipótese:** A notação Big O estabelece o tempo de execução para a pior hipótese, garantindo uma métrica de performance confiável
-- **Tempos Comuns:** É essencial diferenciar os tempos de execução mais comuns, como $O(\log n)$ (logarítmico, ex: Pesquisa Binária), $O(n)$ (linear), $O(n \log n)$, $O(n^2)$ e $O(n!)$ (fatorial, ex: Caixeiro-Viajante)
-
-A combinação de Furlan e Bhargava é fundamental: Furlan mostra que múltiplas soluções podem existir para o mesmo problema, enquanto Bhargava fornece a ferramenta (Notação Big O) para provar objetivamente qual solução é superior, antes mesmo de sua implementação.
-
-### 1.3 Ferramentas de Modelagem e Estruturas Universais
-
-**Fonte Principal:** Furlan, Cap. 3 & 4
-
-Esta seção detalha as ferramentas agnósticas de linguagem para desenhar a lógica de um algoritmo — as "plantas" do software.
-
-**Ferramentas de Modelagem (Furlan):**
-
-- **Fluxogramas:** A representação gráfica formal, utilizando a norma ISO 5807/1985. É crucial entender a sintaxe e a semântica de cada símbolo (Terminador, Processo, Decisão, Entrada/Saída, etc.)
-- **Portugol:** A representação textual estruturada, que utiliza palavras-chave da língua portuguesa para descrever os comandos
-- **Diagramas de Nassi-Schneidermann:** Uma representação alternativa em "caixas" aninhadas
-
-**Estruturas de Programação Universais (Furlan, Cap. 4):**
-
-Todo algoritmo computável pode ser construído usando apenas três tipos de estruturas:
-
-1. **Estruturas Sequenciais:** A execução linear, passo a passo
-
-2. **Estruturas de Decisão:** O desvio de fluxo
-
-   - SE-ENTÃO (if)
-   - SE-ENTÃO-SENÃO (if-else)
-   - CASO (switch)
-
-3. **Estruturas de Repetição:** O loop
-   - ENQUANTO-FAÇA (while)
-   - REPITA-ATÉ (do-while)
-   - PARA-ATÉ-FAÇA (for)
-
-> **Importante:** As estruturas de controle que serão vistas no curso da Cod3r (Seção 04) não são "recursos do Java"; são implementações diretas dessas estruturas lógicas formais. Um estudante que domina a "Estrutura SE-ENTÃO-SENÃO" como um conceito lógico universal verá o if-else do Java como apenas uma _sintaxe_ para um conceito que ele já domina, acelerando o aprendizado.
-
-### 1.4 Arquitetura do Computador
-
-**Fonte Principal:** Furlan, Cap. 2
-
-Uma análise, mesmo que breve, da arquitetura do computador é essencial para entender _por que_ certas estruturas de dados são mais rápidas que outras.
-
-**Tópicos Chave (Furlan):**
-
-- **Arquitetura de Von Neumann:** A organização funcional básica de um computador em UCP (Unidade Central de Processamento), Memória Principal (RAM) e dispositivos de Entrada/Saída (I/O)
-- **Representação da Informação:** A base de toda computação digital, o bit (dígito binário) e o byte (conjunto de 8 bits)
-- **Memória:** Como dados (instruções, caracteres, imagens) são armazenados em endereços de memória usando representação binária
-- **Execução de Programas:** O ciclo de busca e execução da UCP, que lê instruções da memória e as executa
-
-> **Conexão:** Este capítulo é a base física para o Capítulo 2 de Bhargava. Conceitos como "Arrays e listas encadeadas" só fazem sentido quando se entende o que é um _endereço de memória_ e o _armazenamento contíguo_, conceitos que Furlan introduz explicitamente.
+- [Prefácio](#-prefácio-uma-abordagem-pedagógica)
+- [Parte 1: Fundação - Lógica e Algoritmos](#-parte-1-fundação---lógica-e-algoritmos)
+- [Parte 2: Linguagem Java - Fundamentos](#-parte-2-linguagem-java---fundamentos)
+- [Parte 3: Orientação a Objetos](#-parte-3-orientação-a-objetos-oop)
+- [Parte 4: Estruturas de Dados](#-parte-4-estruturas-de-dados-e-algoritmos)
+- [Parte 5: Tratamento de Erros e Projeto](#-parte-5-consolidação---erros-e-projeto-prático)
+- [Parte 6: Backend com Spring](#-parte-6-backend---spring-framework)
+- [Parte 7: Frontend com Angular](#-parte-7-frontend---angular)
+- [Parte 8: Boas Práticas](#-parte-8-boas-práticas-e-engenharia)
+- [Parte 9: Próximos Passos](#-parte-9-próximos-passos)
+- [Recursos e Referências](#-recursos-e-referências)
 
 ---
 
-## Parte 2: A Ferramenta - Fundamentos da Linguagem Java
+## 🎯 Prefácio: Uma Abordagem Pedagógica
 
-**Curso:** Cod3r - Java COMPLETO (Seções 03-04)
+### Sobre Este Guia
 
-Com a fundação teórica estabelecida, esta seção foca na tradução desses conceitos para a sintaxe específica da linguagem Java.
+Este documento é um **roteiro de integração** que conecta estrategicamente cursos e livros em uma progressão pedagógica deliberada, transitando da teoria fundamental da Ciência da Computação para a implementação prática da Engenharia de Software.
 
-### 2.1 Sintaxe Fundamental (Cod3r Seção 03)
+### 📊 Progressão de Aprendizado
 
-Esta seção aborda os blocos de construção mais básicos da linguagem, traduzindo os conceitos de "dados" e "operações" de Furlan para o Java.
+```
+Lógica Agnóstica → Implementação Java → Eficiência Teórica → Aplicação Profissional
+   (Fundação)          (Sintaxe)           (Otimização)         (Produção)
+```
 
-**Tópicos Chave (Cod3r):**
+| Fase                    | Foco                                             | Fontes Principais    |
+| ----------------------- | ------------------------------------------------ | -------------------- |
+| **1️⃣ Lógica Agnóstica** | Pensamento computacional e análise de eficiência | Furlan, Bhargava     |
+| **2️⃣ Implementação**    | Java e Orientação a Objetos                      | Cod3r                |
+| **3️⃣ Eficiência**       | Por que certas soluções são melhores             | Bhargava             |
+| **4️⃣ Profissional**     | Escalar e manter aplicações complexas            | DIO, Spring, Angular |
 
-- A plataforma Java: JVM (Java Virtual Machine), JDK e JRE
-- Tipos Primitivos (`int`, `double`, `boolean`, `char`)
-- Variáveis e Constantes (uso da palavra-chave `final`)
-- Operadores (Aritméticos, Relacionais, Lógicos, Atribuição, Ternário)
-- Classes Wrapper (para tipos primitivos)
-- Manipulação de String
-- Conversão de tipos (casting)
-
-**Conexão Teórica (Furlan):**
-
-O aprendizado é acelerado ao mapear diretamente a sintaxe Java para as convenções lógicas já aprendidas:
-
-- Os tipos primitivos do Java são a implementação das "Convenções para tipos de dados" (Números, Caracteres, Lógicos)
-- Os operadores \*, /, +, - do Java implementam as "Operações aritméticas"
-- Os operadores ==, !=, >, <, >=, <= implementam as "Operações relacionais"
-- Os operadores &&, ||, ! implementam as "Operações lógicas" (AND, OR, NOT)
-- A operação de atribuição = em Java é a implementação sintática do conceito de atribuição ← formalizado por Furlan
-
-### 2.2 Estruturas de Controle (Cod3r Seção 04)
-
-Esta seção é a implementação Java direta das estruturas lógicas universais vistas na Parte 1.3.
-
-**Tópicos Chave (Cod3r):**
-
-- **Estruturas de Decisão:**
-
-  - `if` (SE-ENTÃO)
-  - `if-else` (SE-ENTÃO-SENÃO)
-  - `if-else if-...-else`
-  - `switch` (CASO)
-
-- **Estruturas de Repetição:**
-  - `while` (Implementação direta de ENQUANTO-FAÇA)
-  - `do-while` (Implementação direta de REPITA-ATÉ, com a lógica da condição invertida)
-  - `for` (Implementação direta de PARA-ATÉ-FAÇA)
-  - Controles de laço: `break` e `continue`
+> 💡 **Dica de Estudo:** Ao começar uma seção prática (ex: Collections), consulte primeiro a teoria correspondente (ex: Tabelas Hash) para compreensão completa.
 
 ---
 
-## Parte 3: O Paradigma - Orientação a Objetos (OOP)
+## 📚 Parte 1: Fundação - Lógica e Algoritmos
 
-**Curso:** Cod3r - Java COMPLETO (Seções 05, 07)
+**📖 Fontes:** Furlan - Algoritmos e Lógica | Bhargava - Entendendo Algoritmos
 
-Esta seção marca a transição do pensamento _estruturado_ (Partes 1 e 2) para o pensamento _orientado a objetos_, que é o paradigma central do Java.
+> 🎯 **Objetivo:** Estabelecer o pensamento computacional, independente de linguagem
 
-### 3.1 Classes e Métodos: Os Blocos de Construção (Cod3r Seção 05)
+### 1.1 🧠 O que é um Algoritmo?
 
-Esta seção introduz os conceitos centrais que definem o paradigma de Orientação a Objetos.
+**📘 Fonte:** Furlan, Cap. 1
 
-**Tópicos Chave (Cod3r):**
+#### Conceito Fundamental
 
-- **Classe:** O "molde" ou "planta" para criar objetos
-- **Objeto (Instância):** A entidade concreta criada a partir da classe
-- **Atributos:** As variáveis dentro da classe, que definem o "estado" do objeto
-- **Métodos:** As funções dentro da classe, que definem o "comportamento" do objeto. Um "Método" em Java é a implementação OOP de uma "Sub-rotina" (Função ou Procedimento) conforme definido por Furlan
-- **Construtores:** Métodos especiais invocados durante a criação de um objeto
-- **Palavra-chave `this`:** A referência ao objeto atual
+Um algoritmo é um **"conjunto de regras"** para solução de problemas. A programação começa com **análise e síntese**, não com código.
 
-### 3.2 Os Quatro Pilares da OOP (Cod3r Seção 07)
+#### Processo de Engenharia
 
-Este é o núcleo do design de software orientado a objetos, permitindo a criação de código complexo, reutilizável e de fácil manutenção.
+```
+Ideias → Projeto Lógico → Implementação → Testes → Entrega
+```
 
-**Tópicos Chave (Cod3r):**
+#### ✅ Tópicos-chave
 
-1. **Encapsulamento:** Proteger o estado interno (atributos) do objeto. Isso é alcançado usando modificadores de acesso (ex: `private`) e expondo o acesso controlado através de métodos públicos (Getters e Setters)
-
-2. **Herança:** Permitir que uma classe (Subclasse) herde atributos e métodos de outra (Superclasse), promovendo a reutilização de código. Palavras-chave: `extends`, `super`
-
-3. **Polimorfismo:** (Do grego, "muitas formas"). A capacidade de um objeto ser tratado como uma instância de sua própria classe ou de qualquer superclasse ou interface que implemente. Isso é comumente visto na _Sobrescrita de Métodos_ (`@Override`)
-
-4. **Abstração:** Esconder a complexidade da implementação e expor apenas a funcionalidade essencial. Isso é alcançado em Java através de `abstract class` e, principalmente, `interface`
-
-> **Nota:** Os pilares da OOP (Herança, Abstração, Polimorfismo) são as _ferramentas_ que a linguagem Java oferece. Os princípios SOLID, que serão vistos na Parte 8, são as _regras de design_ que ensinam como usar essas ferramentas de forma correta e sustentável.
+- ✓ Definição formal de algoritmo
+- ✓ Processo: Requisitos → Análise → Projeto → Implementação → Testes
+- ✓ Modelagem de problemas
+- ✓ **"Projeto lógico primeiro"** - diferencial do profissional
 
 ---
 
-## Parte 4: A Biblioteca - Estruturas de Dados e Algoritmos em Java
+### 1.2 📊 Análise de Performance e Notação Big O
 
-**Curso:** Cod3r (Seção 06) + **Livros:** Furlan (Cap 5) + Bhargava (Cap 2-5)
+**📘 Fonte:** Bhargava, Cap. 1
 
-Esta é a seção de síntese mais densa do guia. Aqui, a teoria (Furlan, Bhargava) e a prática (Cod3r) convergem para explicar as ferramentas fundamentais para manipulação de dados.
+#### Por que medir eficiência?
 
-### 4.1 Estruturas Estáticas: Arrays (Vetores e Matrizes)
+Múltiplas soluções podem resolver o mesmo problema. Big O permite provar **objetivamente** qual é superior.
 
-**Teoria (Furlan, Cap 5):** O conceito fundamental de agrupar dados do mesmo tipo sob um único nome.
+#### Pesquisa Binária
 
-- **Vetores:** "Variáveis Indexadas Unidimensionais"
-- **Matrizes:** "Variáveis Indexadas Bidimensionais"
-- **Conceito Físico:** A "Representação de vetores na memória" é a chave. Arrays são blocos de memória contíguos
+Primeiro exemplo de algoritmo eficiente: $O(\log n)$ vs $O(n)$
 
-**Prática (Cod3r, Seção 06):**
+#### ⚡ Complexidades Comuns
 
-- A sintaxe de declaração, inicialização e iteração sobre Arrays em Java
-- Uso de Matrizes (Arrays de Arrays) para representar dados tabulares
+| Notação       | Nome        | Exemplo                   | Performance          |
+| ------------- | ----------- | ------------------------- | -------------------- |
+| $O(1)$        | Constante   | Acesso a array por índice | ⚡⚡⚡⚡⚡ Excelente |
+| $O(\log n)$   | Logarítmica | Pesquisa binária          | ⚡⚡⚡⚡ Ótimo       |
+| $O(n)$        | Linear      | Pesquisa simples          | ⚡⚡⚡ Bom           |
+| $O(n \log n)$ | Log-linear  | Quicksort (médio)         | ⚡⚡ Aceitável       |
+| $O(n^2)$      | Quadrática  | Ordenação por seleção     | ⚡ Lento             |
+| $O(n!)$       | Fatorial    | Caixeiro viajante         | ❌ Intratável        |
 
-### 4.2 Teoria de Estruturas Dinâmicas (Bhargava, Cap 2)
+#### 📌 Pontos-chave
 
-**Leitura Obrigatória:** Bhargava, Cap. 2
-
-Este capítulo explica o _trade-off_ central entre as duas estruturas de dados lineares mais básicas:
-
-- **Arrays:** Armazenados contiguamente na memória (como visto em Furlan)
-
-  - **Pró:** Leitura rápida por índice ($O(1)$)
-  - **Contra:** Inserção e Deleção lentas ($O(n)$), pois exigem deslocamento de elementos
-
-- **Listas Encadeadas:** Armazenadas em locais aleatórios da memória, com cada elemento apontando para o próximo
-  - **Pró:** Inserção e Deleção rápidas ($O(1)$), se o nó for conhecido
-  - **Contra:** Leitura lenta ($O(n)$), pois exige percorrer a lista desde o início
-
-### 4.3 Teoria de Algoritmos de Ordenação e Recursão (Bhargava, Cap 3, 4)
-
-Antes de usar as _Collections_ do Java, é crucial entender como elas funcionam internamente.
-
-**Tópicos Chave (Bhargava):**
-
-- **Recursão (Cap 3):** A fundação para algoritmos eficientes
-
-  - "Caso-base e caso recursivo"
-  - "A pilha de chamada": Uma conexão direta com o conceito de memória e execução de funções visto em Furlan (Parte 1.4)
-
-- **Algoritmos de Ordenação:**
-  - **Ordenação por Seleção (Cap 2):** Um algoritmo simples de entender, mas ineficiente: $O(n^2)$
-  - **Quicksort (Cap 4):** Um algoritmo recursivo (baseado em "Dividir para Conquistar") muito mais eficiente. É vital entender a diferença entre seu "Caso médio" ($O(n \log n)$) e seu "Pior caso" ($O(n^2)$)
-
-### 4.4 O Poder da Java Collections Framework (Cod3r Seção 06)
-
-Esta é a implementação prática em Java das estruturas de dados teóricas. O curso da Cod3r (Seção 06) apresentará as APIs; os livros de Bhargava e Furlan explicam _como_ elas funcionam e _quando_ usar cada uma.
-
-**Tópicos Chave (Cod3r):**
-
-- **List:** A interface para coleções ordenadas
-
-  - **ArrayList:** Implementação baseada em Array (conectar com Bhargava Cap 2). Usar quando a leitura por índice for frequente
-  - **LinkedList:** Implementação baseada em Lista Encadeada (conectar com Bhargava Cap 2). Usar quando inserções e deleções no meio da lista forem frequentes
-
-- **Set:** A interface para coleções que não permitem duplicatas
-
-  - **HashSet:** Implementação baseada em Tabela Hash (conectar com Bhargava Cap 5)
-
-- **Queue:** A interface para estruturas de fila (FIFO - First-In, First-Out)
-
-- **Map:** A interface para estruturas de chave-valor
-  - **HashMap:** Implementação baseada em Tabela Hash (conectar com Bhargava Cap 5)
-
-### 4.5 Teoria Avançada: Tabelas Hash (Bhargava, Cap 5)
-
-**Leitura Obrigatória:** Bhargava, Cap. 5
-
-Este capítulo é a explicação teórica de _por que_ `HashSet` e `HashMap` (vistos no Cod3r Seção 06) são tão performáticos.
-
-**Tópicos Chave (Bhargava):**
-
-- **Funções Hash:** Algoritmos que mapeiam uma entrada (ex: uma String) para um índice de array
-- **Colisões:** O que acontece quando duas entradas diferentes geram o mesmo índice
-- **Desempenho:** Graças a uma boa função hash e ao gerenciamento de "fator de carga", as Tabelas Hash oferecem desempenho médio de $O(1)$ (tempo constante) para busca, inserção e deleção
-
-O `HashMap` do Java é a implementação mais comum de uma "Tabela Hash". Ao usar `map.get(key)`, o Java não percorre a coleção; ele passa a `key` por uma "função hash", obtém um índice de array e acessa o valor diretamente. Isso é o que o torna tão rápido.
-
-### 4.6 Tabela de Síntese: Estruturas de Dados
-
-A tabela a seguir unifica a teoria, a implementação e a análise de performance das principais estruturas de dados.
-
-| Estrutura Teórica | Implementação Java   | Teoria (Furlan) | Análise (Bhargava) | Busca (Big O)  | Inserção (Big O)   | Deleção (Big O) |
-| ----------------- | -------------------- | --------------- | ------------------ | -------------- | ------------------ | --------------- |
-| Array (Vetor)     | `String[]`, `int[]`  | Cap 5           | Cap 2              | $O(n)$         | N/A (fixo)         | N/A (fixo)      |
-| Array Dinâmico    | `ArrayList`          | N/A             | Cap 2              | $O(n)$         | $O(n)$ [pior caso] | $O(n)$          |
-| Lista Encadeada   | `LinkedList`         | N/A             | Cap 2              | $O(n)$         | $O(1)$             | $O(1)$          |
-| Tabela Hash       | `HashMap`, `HashSet` | N/A             | Cap 5              | $O(1)$ [média] | $O(1)$ [média]     | $O(1)$ [média]  |
+- **Taxas de Crescimento:** Diferentes algoritmos escalam diferentemente
+- **Pior Hipótese:** Big O garante performance mínima
+- **Análise Objetiva:** Comparação antes da implementação
 
 ---
 
-## Parte 5: A Consolidação - Tratamento de Erros e Projeto Prático
+### 1.3 🛠️ Ferramentas de Modelagem
 
-**Curso:** Cod3r (Seções 10-11)
+**📘 Fonte:** Furlan, Cap. 3 & 4
 
-Com o domínio do "Core Java" e das estruturas de dados, esta seção foca em robustez e aplicação prática.
+#### Ferramentas Visuais
 
-### 5.1 Tratamento de Erros em Java (Cod3r Seção 10)
+| Ferramenta              | Descrição                             | Uso                          |
+| ----------------------- | ------------------------------------- | ---------------------------- |
+| **Fluxogramas**         | Representação gráfica (ISO 5807/1985) | Visualizar fluxo de execução |
+| **Portugol**            | Pseudocódigo em português             | Escrever lógica sem sintaxe  |
+| **Nassi-Schneidermann** | Diagramas em caixas                   | Estruturação hierárquica     |
 
-Um código profissional deve ser robusto e antecipar falhas. O tratamento de exceções é a forma estruturada do Java para lidar com erros em tempo de execução.
+#### 🔷 As 3 Estruturas Universais
 
-**Tópicos Chave:**
+Todo algoritmo pode ser construído com apenas 3 estruturas:
 
-- O conceito de `Exception`
-- Blocos `try-catch-finally` para capturar e tratar erros
-- A diferença entre Exceções Checadas (Checked), que o compilador obriga a tratar, e Não Checadas (Unchecked/Runtime)
-- Lançar exceções manualmente (`throw`) e declarar exceções (`throws`)
-- Criação de Exceções Personalizadas
+**1. 📋 Sequenciais**
 
-### 5.2 Projeto Aplicado: Campo Minado (Cod3r Seção 11)
+```
+Execução linear, passo a passo
+```
 
-Este projeto é o ponto de síntese do "Core Java". Ele é projetado para forçar a integração de todos os conceitos aprendidos até agora:
+**2. 🔀 Decisão**
 
-- **Tabuleiro:** O tabuleiro do jogo é uma implementação direta de uma Matriz (Array Bidimensional), conectando-se à teoria de Furlan (Cap 5) e à prática da Seção 06 do Cod3r
-- **Lógica de Abertura:** A funcionalidade de "abrir célula" que, se estiver vazia, "abre as células vizinhas" é um exemplo clássico de Recursão (Bhargava Cap 3)
-- **Design:** A lógica do jogo, o tabuleiro e as células são modelados usando Classes e Métodos (OOP), aplicando os conceitos das Seções 05 e 07 do Cod3r
-- **Erros:** Clicar em uma mina ou em uma célula inválida deve ser tratado, idealmente, disparando uma Exceção (Cod3r Seção 10)
-- **Fluxo:** A lógica de verificação (se ganhou, se perdeu) é controlada por Estruturas de Controle (Cod3r Seção 04)
+- SE-ENTÃO (`if`)
+- SE-ENTÃO-SENÃO (`if-else`)
+- CASO (`switch`)
+
+**3. 🔄 Repetição**
+
+- ENQUANTO-FAÇA (`while`)
+- REPITA-ATÉ (`do-while`)
+- PARA-ATÉ-FAÇA (`for`)
+
+> ⚠️ **Importante:** As estruturas de controle do Java são **implementações** dessas estruturas lógicas formais. Domine a lógica primeiro, a sintaxe vem depois!
 
 ---
 
-## Parte 6: A Especialização Backend - Java com Spring Framework
+### 1.4 💻 Arquitetura do Computador
 
-**Bootcamp:** DIO + Deal (Spring) + **Livro:** Bhargava (Cap 6-9)
+**📘 Fonte:** Furlan, Cap. 2
 
-Esta seção marca a transição de "programador Java" para "engenheiro de backend", utilizando o ecossistema profissional dominante.
+#### Por que estudar hardware?
 
-### 6.1 Produtividade com Spring Boot (DIO)
+Entender a arquitetura explica **por que** certas estruturas de dados são mais rápidas.
 
-**Fonte:** Produtividade de Desenvolvimento com Spring Framework
+#### 🏗️ Arquitetura de Von Neumann
 
-O Spring Boot remove a complexidade de configuração do Spring Framework. Os conceitos centrais são:
+```
+┌─────────────────────────────────────┐
+│   UCP (Processamento)               │
+│   - Busca instruções                │
+│   - Executa operações               │
+└───────────┬─────────────────────────┘
+            │
+┌───────────▼─────────────────────────┐
+│   Memória RAM                       │
+│   - Endereços sequenciais           │
+│   - Armazenamento temporário        │
+└───────────┬─────────────────────────┘
+            │
+┌───────────▼─────────────────────────┐
+│   I/O (Entrada/Saída)               │
+│   - Dispositivos externos           │
+└─────────────────────────────────────┘
+```
 
-- **Inversão de Controle (IoC):** O contêiner do Spring, e não o desenvolvedor, é responsável por "ligar" (instanciar e configurar) os componentes da aplicação
-- **Injeção de Dependências (DI):** O mecanismo pelo qual o IoC funciona. O Spring "injeta" as dependências (outros objetos) de que uma classe precisa
-- **Gerenciamento de Dependências:** Uso de Maven ou Gradle para gerenciar as bibliotecas do projeto
+#### 🔑 Conceitos Fundamentais
 
-### 6.2 Construindo APIs REST (DIO)
+- **Bit:** Dígito binário (0 ou 1)
+- **Byte:** Conjunto de 8 bits
+- **Endereços de Memória:** Localização de dados na RAM
+- **Ciclo de Execução:** Buscar → Decodificar → Executar
 
-**Fonte:** Produtividade de Desenvolvimento com Spring Framework
+> 🔗 **Conexão:** Este conhecimento é base para entender Arrays (armazenamento contíguo) vs Listas Encadeadas (dispersas na memória) no Cap. 2 de Bhargava.
 
-APIs REST são a espinha dorsal dos sistemas modernos.
+---
 
-- **Spring Web:** Uso de anotações (`@RestController`, `@GetMapping`, `@PostMapping`) para construir endpoints de API
-- **Swagger:** Ferramenta para documentar automaticamente a API REST, facilitando o consumo pelo frontend
+---
 
-### 6.3 Integração com Bancos de Dados (DIO)
+## ☕ Parte 2: Linguagem Java - Fundamentos
 
-**Fonte:** Integração de Sistemas com Banco de Dados
+**🎓 Curso:** Cod3r - Java COMPLETO (Seções 03-04)
 
-Aplicações backend persistem dados em bancos de dados.
+> 🎯 **Objetivo:** Traduzir conceitos lógicos para sintaxe Java
 
-- **Teoria:** Fundamentos de Banco de Dados Relacionais (SQL) e Modelagem de Dados
-- **Persistência de Dados (Prática):**
-  - **JDBC:** A abordagem de baixo nível para executar SQL em Java
-  - **JPA (Java Persistence API) e Hibernate:** A abordagem de Mapeamento Objeto-Relacional (ORM), que permite tratar tabelas de banco de dados como objetos Java
+### 2.1 🔧 Sintaxe Fundamental
 
-### 6.4 Tópicos Avançados de Backend (DIO)
+**📂 Cod3r Seção 03**
 
-**Fonte:** Produtividade de Desenvolvimento com Spring Framework
+#### Ecossistema Java
 
-- **Spring Security:** Adicionando autenticação e autorização à API REST
-- **Deploy:** Publicando a API na nuvem (usando a plataforma Railway como exemplo)
+```
+JDK (Java Development Kit)
+ ├── JRE (Java Runtime Environment)
+ │    └── JVM (Java Virtual Machine)
+ └── Ferramentas de Desenvolvimento
+```
 
-### 6.5 Conexão Teórica: Solução de Problemas de Larga Escala (Bhargava)
+#### 📦 Tipos de Dados
 
-Os capítulos avançados de _Entendendo Algoritmos_ não são meramente acadêmicos; eles são ferramentas de design de backend para resolver problemas de larga escala.
+| Categoria     | Tipos Primitivos               | Wrapper Classes                    |
+| ------------- | ------------------------------ | ---------------------------------- |
+| **Inteiros**  | `byte`, `short`, `int`, `long` | `Byte`, `Short`, `Integer`, `Long` |
+| **Decimais**  | `float`, `double`              | `Float`, `Double`                  |
+| **Caractere** | `char`                         | `Character`                        |
+| **Lógico**    | `boolean`                      | `Boolean`                          |
 
-- **Grafos (Cap 6):** Um sistema de backend é uma rede. Grafos são usados para modelar dependências de microserviços, redes sociais ou sistemas de roteamento. A "Pesquisa em Largura" (BFS) é usada para encontrar o caminho mínimo em redes não ponderadas
+#### 🔨 Operadores
+
+**Aritméticos:** `+` `-` `*` `/` `%`  
+**Relacionais:** `==` `!=` `>` `<` `>=` `<=`  
+**Lógicos:** `&&` `||` `!`  
+**Atribuição:** `=` `+=` `-=` `*=` `/=`  
+**Ternário:** `condição ? true : false`
+
+#### 🔗 Mapeamento Lógico
+
+| Conceito (Furlan)                    | Implementação (Java)    |
+| ------------------------------------ | ----------------------- | --- | ------ |
+| Tipos de dados (Números, Caracteres) | `int`, `double`, `char` |
+| Operações aritméticas                | `+`, `-`, `*`, `/`      |
+| Operações relacionais                | `==`, `!=`, `>`, `<`    |
+| Operações lógicas (AND, OR, NOT)     | `&&`, `                 |     | `, `!` |
+| Atribuição ←                         | `=`                     |
+
+---
+
+### 2.2 🔀 Estruturas de Controle
+
+**📂 Cod3r Seção 04**
+
+#### Estruturas de Decisão
+
+```java
+// SE-ENTÃO
+if (condição) {
+    // código
+}
+
+// SE-ENTÃO-SENÃO
+if (condição) {
+    // código
+} else {
+    // código alternativo
+}
+
+// CASO
+switch (variavel) {
+    case valor1:
+        // código
+        break;
+    case valor2:
+        // código
+        break;
+    default:
+        // código padrão
+}
+```
+
+#### Estruturas de Repetição
+
+```java
+// ENQUANTO-FAÇA
+while (condição) {
+    // código
+}
+
+// REPITA-ATÉ
+do {
+    // código
+} while (condição);
+
+// PARA-ATÉ-FAÇA
+for (int i = 0; i < limite; i++) {
+    // código
+}
+```
+
+#### ⚙️ Controles de Laço
+
+| Comando    | Função                     |
+| ---------- | -------------------------- |
+| `break`    | Sai do laço imediatamente  |
+| `continue` | Pula para próxima iteração |
+
+> 💡 **Conexão:** Estas estruturas em Java são **implementações diretas** das estruturas universais vistas em Furlan (Parte 1.3)!
+
+---
+
+## 🎨 Parte 3: Orientação a Objetos (OOP)
+
+**🎓 Curso:** Cod3r - Java COMPLETO (Seções 05, 07)
+
+> 🎯 **Objetivo:** Transição do pensamento estruturado para orientado a objetos
+
+### 3.1 🏗️ Classes e Métodos - Blocos de Construção
+
+**📂 Cod3r Seção 05**
+
+#### Conceitos Fundamentais
+
+```java
+// Classe: O molde/template
+public class Pessoa {
+    // Atributos: Estado do objeto
+    private String nome;
+    private int idade;
+
+    // Construtor: Inicialização
+    public Pessoa(String nome, int idade) {
+        this.nome = nome;    // 'this' = referência ao objeto
+        this.idade = idade;
+    }
+
+    // Métodos: Comportamento
+    public void apresentar() {
+        System.out.println("Olá, sou " + nome);
+    }
+}
+
+// Objeto: Instância concreta
+Pessoa pessoa1 = new Pessoa("João", 25);
+```
+
+#### 📋 Elementos da OOP
+
+| Elemento       | Definição                         | Exemplo                  |
+| -------------- | --------------------------------- | ------------------------ |
+| **Classe**     | Molde/template para objetos       | `class Carro`            |
+| **Objeto**     | Instância concreta da classe      | `new Carro()`            |
+| **Atributos**  | Variáveis que definem estado      | `private String cor;`    |
+| **Métodos**    | Funções que definem comportamento | `public void acelerar()` |
+| **Construtor** | Método especial de inicialização  | `public Carro()`         |
+| **this**       | Referência ao objeto atual        | `this.nome`              |
+
+---
+
+### 3.2 🏛️ Os 4 Pilares da OOP
+
+**📂 Cod3r Seção 07**
+
+#### 1️⃣ Encapsulamento 🔒
+
+**Proteger o estado interno do objeto**
+
+```java
+public class ContaBancaria {
+    private double saldo;  // Privado - protegido
+
+    // Acesso controlado via métodos públicos
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void depositar(double valor) {
+        if (valor > 0) {
+            saldo += valor;
+        }
+    }
+}
+```
+
+**Modificadores de Acesso:**
+
+- `private` - Apenas dentro da classe
+- `protected` - Classe e subclasses
+- `public` - Qualquer lugar
+
+---
+
+#### 2️⃣ Herança 🧬
+
+**Reutilizar código através de hierarquia**
+
+```java
+// Superclasse
+public class Animal {
+    protected String nome;
+
+    public void comer() {
+        System.out.println("Comendo...");
+    }
+}
+
+// Subclasse herda de Animal
+public class Cachorro extends Animal {
+    public void latir() {
+        System.out.println("Au au!");
+    }
+}
+
+Cachorro dog = new Cachorro();
+dog.comer();  // Herdado de Animal
+dog.latir();  // Próprio de Cachorro
+```
+
+**Palavras-chave:**
+
+- `extends` - Declara herança
+- `super` - Acessa superclasse
+
+---
+
+#### 3️⃣ Polimorfismo 🎭
+
+**"Muitas formas" - Objetos tratados de múltiplas maneiras**
+
+```java
+public class Animal {
+    public void fazerSom() {
+        System.out.println("Som genérico");
+    }
+}
+
+public class Gato extends Animal {
+    @Override  // Sobrescreve método da superclasse
+    public void fazerSom() {
+        System.out.println("Miau!");
+    }
+}
+
+Animal animal = new Gato();  // Polimorfismo
+animal.fazerSom();  // Imprime: Miau!
+```
+
+---
+
+#### 4️⃣ Abstração 🎯
+
+**Expor apenas o essencial, esconder complexidade**
+
+```java
+// Classe abstrata - não pode ser instanciada
+public abstract class Forma {
+    public abstract double calcularArea();  // Método abstrato
+}
+
+// Interface - contrato puro
+public interface Desenhavel {
+    void desenhar();
+}
+
+// Implementação concreta
+public class Circulo extends Forma implements Desenhavel {
+    private double raio;
+
+    @Override
+    public double calcularArea() {
+        return Math.PI * raio * raio;
+    }
+
+    @Override
+    public void desenhar() {
+        System.out.println("Desenhando círculo");
+    }
+}
+```
+
+#### 📊 Pilares vs SOLID
+
+| Conceito      | O que é                             | Quando usar                           |
+| ------------- | ----------------------------------- | ------------------------------------- |
+| **4 Pilares** | Ferramentas que a linguagem oferece | Construir programas OOP               |
+| **SOLID**     | Regras de como usar os pilares      | Garantir qualidade e manutenibilidade |
+
+> ⚠️ **Nota:** Os pilares são as ferramentas. SOLID (Parte 8) são as **regras** de como usá-las corretamente.
+
+---
+
+## 📊 Parte 4: Estruturas de Dados e Algoritmos
+
+**📚 Fontes:** Cod3r (Seção 06) | Furlan (Cap 5) | Bhargava (Cap 2-5)
+
+> 🎯 **Objetivo:** Convergência de teoria e prática para manipulação eficiente de dados
+
+### 4.1 📦 Arrays - Estruturas Estáticas
+
+**📘 Teoria (Furlan, Cap 5)**
+
+Conceito fundamental: agrupar dados do mesmo tipo sob um único nome
+
+```
+Memória Contígua:
+[0][1][2][3][4]  ← Índices
+[A][B][C][D][E]  ← Valores
+```
+
+| Tipo       | Descrição            | Exemplo                          |
+| ---------- | -------------------- | -------------------------------- |
+| **Vetor**  | Array unidimensional | `int[] numeros = {1, 2, 3}`      |
+| **Matriz** | Array bidimensional  | `int[][] tabela = new int[3][3]` |
+
+**💻 Prática (Cod3r, Seção 06)**
+
+```java
+// Declaração e inicialização
+int[] numeros = new int[5];
+String[] nomes = {"Ana", "Bruno", "Carlos"};
+
+// Iteração
+for (int i = 0; i < numeros.length; i++) {
+    System.out.println(numeros[i]);
+}
+
+// For-each
+for (String nome : nomes) {
+    System.out.println(nome);
+}
+```
+
+---
+
+### 4.2 🔗 Estruturas Dinâmicas - Trade-offs
+
+**📘 Bhargava, Cap. 2**
+
+#### Arrays vs Listas Encadeadas
+
+```
+Arrays:           [A][B][C][D]  (Contíguo)
+                   ↓  ↓  ↓  ↓
+Listas Encadeadas: [A]→[C]→[B]→[D]  (Disperso)
+```
+
+| Estrutura           | Armazenamento | Leitura   | Inserção/Deleção | Quando usar                   |
+| ------------------- | ------------- | --------- | ---------------- | ----------------------------- |
+| **Array**           | Contíguo      | $O(1)$ ⚡ | $O(n)$ ⏳        | Acesso frequente por índice   |
+| **Lista Encadeada** | Disperso      | $O(n)$ ⏳ | $O(1)$ ⚡        | Inserções/deleções frequentes |
+
+---
+
+### 4.3 🔄 Recursão e Ordenação
+
+**📘 Bhargava, Cap. 3-4**
+
+#### Recursão - Fundação dos Algoritmos
+
+```java
+// Estrutura básica
+public int recursiva(int n) {
+    if (n <= 1) return 1;  // ← Caso base
+    return n * recursiva(n - 1);  // ← Caso recursivo
+}
+```
+
+**Pilha de Chamadas:**
+
+```
+recursiva(3)
+  ├─ recursiva(2)
+  │   └─ recursiva(1)  ← Retorna
+  └─ Retorna
+```
+
+#### Algoritmos de Ordenação
+
+| Algoritmo     | Complexidade          | Características                          |
+| ------------- | --------------------- | ---------------------------------------- |
+| **Seleção**   | $O(n^2)$              | Simples, mas ineficiente                 |
+| **Quicksort** | $O(n \log n)$ [médio] | Eficiente, usa "Dividir para Conquistar" |
+
+---
+
+### 4.4 📚 Java Collections Framework
+
+**💻 Cod3r, Seção 06**
+
+#### Hierarquia de Interfaces
+
+```
+Collection
+├── List (ordenada, permite duplicatas)
+│   ├── ArrayList    ← Array dinâmico
+│   └── LinkedList   ← Lista encadeada
+├── Set (não permite duplicatas)
+│   └── HashSet      ← Tabela hash
+├── Queue (FIFO)
+│   └── LinkedList
+└── Map (chave-valor)
+    └── HashMap      ← Tabela hash
+```
+
+#### 📋 Guia de Uso
+
+| Interface | Implementação | Quando Usar                  | Exemplo           |
+| --------- | ------------- | ---------------------------- | ----------------- |
+| **List**  | `ArrayList`   | Acesso por índice frequente  | Lista de produtos |
+| **List**  | `LinkedList`  | Inserções/remoções no meio   | Fila de processos |
+| **Set**   | `HashSet`     | Sem duplicatas, busca rápida | Emails únicos     |
+| **Map**   | `HashMap`     | Chave-valor, busca por chave | Cache de dados    |
+
+```java
+// Exemplos práticos
+List<String> lista = new ArrayList<>();
+lista.add("Item 1");
+
+Set<Integer> conjunto = new HashSet<>();
+conjunto.add(1);
+conjunto.add(1);  // Ignorado (duplicata)
+
+Map<String, Integer> mapa = new HashMap<>();
+mapa.put("chave", 100);
+```
+
+---
+
+### 4.5 # Tabelas Hash - Poder do O(1)
+
+**📘 Bhargava, Cap. 5**
+
+#### Como Funcionam
+
+```
+Chave → Função Hash → Índice → Valor
+"João" →    hash()    →   3   → {dados}
+```
+
+#### Conceitos-chave
+
+| Conceito           | Descrição                                |
+| ------------------ | ---------------------------------------- |
+| **Função Hash**    | Mapeia chave para índice de array        |
+| **Colisão**        | Duas chaves geram mesmo índice           |
+| **Fator de Carga** | Controla redimensionamento               |
+| **Performance**    | $O(1)$ médio para busca/inserção/deleção |
+
+> 💡 **Por que HashMap é rápido?** `map.get("chave")` não percorre toda a coleção - usa hash para acesso direto!
+
+---
+
+### 4.6 📊 Tabela Resumo: Estruturas de Dados
+
+| Estrutura       | Java                | Fonte Teoria                  | Busca  | Inserção | Deleção | Uso Ideal            |
+| --------------- | ------------------- | ----------------------------- | ------ | -------- | ------- | -------------------- |
+| Array (fixo)    | `int[]`             | Furlan Cap 5 / Bhargava Cap 2 | $O(n)$ | N/A      | N/A     | Tamanho conhecido    |
+| Array dinâmico  | `ArrayList`         | Bhargava Cap 2                | $O(n)$ | $O(n)$   | $O(n)$  | Acesso por índice    |
+| Lista encadeada | `LinkedList`        | Bhargava Cap 2                | $O(n)$ | $O(1)$   | $O(1)$  | Inserções frequentes |
+| Tabela hash     | `HashMap`/`HashSet` | Bhargava Cap 5                | $O(1)$ | $O(1)$   | $O(1)$  | Busca rápida         |
+
+---
+
+## ✅ Parte 5: Consolidação - Erros e Projeto Prático
+
+**🎓 Curso:** Cod3r (Seções 10-11)
+
+> 🎯 **Objetivo:** Robustez e integração de conhecimentos
+
+### 5.1 ⚠️ Tratamento de Exceções
+
+**📂 Cod3r Seção 10**
+
+#### Hierarquia de Exceções
+
+```
+Throwable
+├── Error (erros graves do sistema)
+└── Exception
+    ├── RuntimeException (não checadas)
+    │   ├── NullPointerException
+    │   └── ArrayIndexOutOfBoundsException
+    └── IOException (checadas)
+        └── FileNotFoundException
+```
+
+#### Estrutura try-catch-finally
+
+```java
+try {
+    // Código que pode gerar exceção
+    int resultado = 10 / 0;
+} catch (ArithmeticException e) {
+    // Tratamento específico
+    System.out.println("Divisão por zero!");
+} catch (Exception e) {
+    // Tratamento genérico
+    System.out.println("Erro: " + e.getMessage());
+} finally {
+    // Sempre executado
+    System.out.println("Limpeza de recursos");
+}
+```
+
+#### Tipos de Exceções
+
+| Tipo             | Verificação  | Obrigatório Tratar? | Exemplo                |
+| ---------------- | ------------ | ------------------- | ---------------------- |
+| **Checadas**     | Compile-time | ✅ Sim              | `IOException`          |
+| **Não Checadas** | Runtime      | ❌ Não              | `NullPointerException` |
+
+#### Lançar Exceções
+
+```java
+// throw - lança exceção
+public void validarIdade(int idade) {
+    if (idade < 18) {
+        throw new IllegalArgumentException("Menor de idade");
+    }
+}
+
+// throws - declara que método pode lançar
+public void lerArquivo() throws IOException {
+    // código
+}
+```
+
+---
+
+### 5.2 🎮 Projeto: Campo Minado
+
+**📂 Cod3r Seção 11**
+
+#### Integração de Conceitos
+
+```
+┌─────────────────────────────────────────┐
+│  PROJETO CAMPO MINADO                   │
+│  Integra TODOS os conceitos aprendidos  │
+└─────────────────────────────────────────┘
+```
+
+| Conceito                   | Aplicação no Projeto                   | Fonte                         |
+| -------------------------- | -------------------------------------- | ----------------------------- |
+| **Matriz (Array 2D)**      | Tabuleiro do jogo                      | Furlan Cap 5 / Cod3r Seção 06 |
+| **Recursão**               | Abrir células vizinhas automaticamente | Bhargava Cap 3                |
+| **OOP**                    | Classes `Campo`, `Tabuleiro`, `Celula` | Cod3r Seções 05, 07           |
+| **Exceções**               | Tratamento de jogadas inválidas        | Cod3r Seção 10                |
+| **Estruturas de Controle** | Lógica de vitória/derrota              | Cod3r Seção 04                |
+| **Testes**                 | JUnit para validação                   | Cod3r Seção 11                |
+
+#### Exemplo de Estrutura
+
+```java
+public class Tabuleiro {
+    private Campo[][] campos;  // Matriz 2D
+
+    public void abrirCampo(int linha, int coluna) {
+        if (!validarCoordenadas(linha, coluna)) {
+            throw new ExplosaoException();  // Exceção
+        }
+
+        Campo campo = campos[linha][coluna];
+        campo.abrir();
+
+        if (campo.vizinhancaSegura()) {
+            // Recursão para abrir vizinhos
+            abrirVizinhos(linha, coluna);
+        }
+    }
+}
+```
+
+---
+
+## 🚀 Parte 6: Backend - Spring Framework
+
+**🎓 Bootcamp:** DIO + Deal | **📘 Livro:** Bhargava (Cap 6-9)
+
+> 🎯 **Objetivo:** Transição de programador para engenheiro de backend profissional
+
+### 6.1 ⚡ Spring Boot - Produtividade
+
+**📂 DIO: Produtividade com Spring Framework**
+
+#### Conceitos Centrais
+
+```
+Spring Boot
+├── IoC (Inversão de Controle)
+│   └── Container gerencia componentes
+├── DI (Injeção de Dependências)
+│   └── Spring injeta dependências
+└── Gerenciamento de Dependências
+    └── Maven / Gradle
+```
+
+#### Injeção de Dependências na Prática
+
+```java
+@Service
+public class UsuarioService {
+    private final UsuarioRepository repository;
+
+    // Spring injeta automaticamente
+    @Autowired
+    public UsuarioService(UsuarioRepository repository) {
+        this.repository = repository;
+    }
+}
+```
+
+| Conceito        | Descrição                              | Benefício         |
+| --------------- | -------------------------------------- | ----------------- |
+| **IoC**         | Container controla ciclo de vida       | Menos acoplamento |
+| **DI**          | Dependências injetadas automaticamente | Testabilidade     |
+| **Auto-config** | Configuração automática                | Produtividade     |
+
+---
+
+### 6.2 🌐 APIs REST
+
+**📂 DIO: Produtividade com Spring Framework**
+
+#### Arquitetura REST
+
+```java
+@RestController
+@RequestMapping("/api/usuarios")
+public class UsuarioController {
+
+    @GetMapping
+    public List<Usuario> listar() {
+        return service.findAll();
+    }
+
+    @PostMapping
+    public Usuario criar(@RequestBody Usuario usuario) {
+        return service.save(usuario);
+    }
+
+    @GetMapping("/{id}")
+    public Usuario buscar(@PathVariable Long id) {
+        return service.findById(id);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deletar(@PathVariable Long id) {
+        service.delete(id);
+    }
+}
+```
+
+#### 📋 Anotações Principais
+
+| Anotação         | Método HTTP | Uso                |
+| ---------------- | ----------- | ------------------ |
+| `@GetMapping`    | GET         | Buscar dados       |
+| `@PostMapping`   | POST        | Criar recurso      |
+| `@PutMapping`    | PUT         | Atualizar completo |
+| `@PatchMapping`  | PATCH       | Atualizar parcial  |
+| `@DeleteMapping` | DELETE      | Remover recurso    |
+
+**Documentação:** Swagger/OpenAPI para doc automática
+
+---
+
+### 6.3 💾 Persistência de Dados
+
+**📂 DIO: Integração com Banco de Dados**
+
+#### Camadas de Persistência
+
+```
+Application
+     ↓
+Controller (REST)
+     ↓
+Service (Lógica de Negócio)
+     ↓
+Repository (Acesso a Dados)
+     ↓
+Database
+```
+
+#### JPA/Hibernate - ORM
+
+```java
+@Entity
+@Table(name = "usuarios")
+public class Usuario {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(nullable = false)
+    private String nome;
+
+    @Column(unique = true)
+    private String email;
+}
+
+// Repository - abstração do banco
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+    Optional<Usuario> findByEmail(String email);
+}
+```
+
+| Tecnologia    | Nível | Descrição                      |
+| ------------- | ----- | ------------------------------ |
+| **JDBC**      | Baixo | SQL direto em Java             |
+| **JPA**       | Alto  | Especificação ORM              |
+| **Hibernate** | Alto  | Implementação JPA mais popular |
+
+---
+
+### 6.4 🔐 Tópicos Avançados
+
+#### Spring Security
+
+```java
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) {
+        http
+            .authorizeHttpRequests(auth -> auth
+                .requestMatchers("/public/**").permitAll()
+                .anyRequest().authenticated()
+            )
+            .oauth2Login();
+        return http.build();
+    }
+}
+```
+
+#### Deploy (Railway / Cloud)
+
+```
+Desenvolvimento → Build → Testes → Deploy → Monitoramento
+```
+
+---
+
+### 6.5 🧮 Algoritmos para Escala
+
+**📘 Bhargava, Cap 6-9**
+
+#### Aplicações em Backend
+
+| Algoritmo          | Cap | Problema Real          | Solução                                |
+| ------------------ | --- | ---------------------- | -------------------------------------- |
+| **Grafos (BFS)**   | 6   | Rede de microserviços  | Encontrar caminho mínimo               |
+| **Dijkstra**       | 7   | Roteamento de rede     | Caminho com menor latência             |
+| **Gulosos**        | 8   | Agendamento de tarefas | Otimização de recursos                 |
+| **Prog. Dinâmica** | 9   | Alocação de recursos   | Problema da mochila (CPU/RAM)          |
+| **NP-Completo**    | 8   | Caixeiro-viajante      | Usar aproximação, não solução perfeita |
+
+> 💡 **Insight:** Estes algoritmos não são acadêmicos - são ferramentas práticas para design de sistemas em larga escala!
+
+---
+
+## 🎨 Parte 7: Frontend - Angular
+
+**🎓 Bootcamp:** DIO + Deal (Angular)
+
+> 🎯 **Objetivo:** Construir interfaces de usuário modernas e reativas
+
+### 7.1 🌐 Ecossistema Angular
+
+#### Fundamentos
+
+| Conceito        | Descrição                               |
+| --------------- | --------------------------------------- |
+| **TypeScript**  | JavaScript com tipos estáticos          |
+| **Components**  | Blocos reutilizáveis de UI              |
+| **SPA**         | Single Page Application                 |
+| **Reatividade** | Interface responde a mudanças de estado |
+
+#### Estrutura de um Component
+
+```typescript
+@Component({
+  selector: "app-usuario",
+  templateUrl: "./usuario.component.html",
+  styleUrls: ["./usuario.component.css"],
+})
+export class UsuarioComponent implements OnInit {
+  usuarios: Usuario[] = [];
+
+  constructor(private service: UsuarioService) {}
+
+  ngOnInit(): void {
+    this.carregarUsuarios();
+  }
+
+  carregarUsuarios(): void {
+    this.service.listar().subscribe((data) => (this.usuarios = data));
+  }
+}
+```
+
+---
+
+### 7.2 🏗️ Arquitetura Angular 17+
+
+#### Ciclo de Vida dos Components
+
+```
+Constructor → ngOnInit → ngOnChanges → ngOnDestroy
+```
+
+#### Estrutura Modular
+
+```
+App
+├── Módulos
+│   ├── Componentes (UI)
+│   ├── Services (Lógica/HTTP)
+│   ├── Models (Tipos)
+│   └── Routing (Navegação)
+└── Shared
+    ├── Pipes (Transformação)
+    └── Guards (Segurança)
+```
+
+---
+
+### 7.3 🛠️ Funcionalidades Essenciais
+
+#### Services - Comunicação HTTP
+
+```typescript
+@Injectable({ providedIn: "root" })
+export class UsuarioService {
+  private apiUrl = "http://localhost:8080/api/usuarios";
+
+  constructor(private http: HttpClient) {}
+
+  listar(): Observable<Usuario[]> {
+    return this.http.get<Usuario[]>(this.apiUrl);
+  }
+
+  criar(usuario: Usuario): Observable<Usuario> {
+    return this.http.post<Usuario>(this.apiUrl, usuario);
+  }
+}
+```
+
+#### Routing - Navegação SPA
+
+```typescript
+const routes: Routes = [
+  { path: "", component: HomeComponent },
+  { path: "usuarios", component: UsuariosComponent },
+  { path: "usuario/:id", component: UsuarioDetalheComponent },
+  { path: "**", component: NotFoundComponent },
+];
+```
+
+#### Guards - Proteção de Rotas
+
+```typescript
+@Injectable()
+export class AuthGuard implements CanActivate {
+  canActivate(): boolean {
+    return this.authService.isLoggedIn();
+  }
+}
+```
+
+#### Pipes - Transformação de Dados
+
+```html
+<!-- Formatação no template -->
+{{ preco | currency:'BRL' }} {{ data | date:'dd/MM/yyyy' }} {{ texto | uppercase
+}}
+```
+
+---
+
+## 💎 Parte 8: Boas Práticas e Engenharia
+
+**🎓 Bootcamp:** DIO (Boas Práticas)
+
+> 🎯 **Objetivo:** Código de qualidade profissional e sustentável
+
+### 8.1 ✨ Clean Code
+
+**Princípios de Robert C. Martin (Uncle Bob)**
+
+#### 📝 Regras de Nomenclatura
+
+| Item         | Ruim     | Bom                        |
+| ------------ | -------- | -------------------------- |
+| **Variável** | `d`      | `diasDesdeModificacao`     |
+| **Função**   | `calc()` | `calcularSalarioLiquido()` |
+| **Classe**   | `DM`     | `DocumentoManager`         |
+
+#### 🎯 Funções Limpas
+
+```java
+// ❌ Função faz múltiplas coisas
+public void processarUsuario(Usuario u) {
+    validarEmail(u);
+    salvarNoBanco(u);
+    enviarEmail(u);
+    gerarLog(u);
+}
+
+// ✅ Cada função faz uma coisa
+public void cadastrarUsuario(Usuario usuario) {
+    validarDados(usuario);
+    persistir(usuario);
+    notificar(usuario);
+}
+```
+
+#### Princípios Fundamentais
+
+| Princípio                 | Descrição                                            |
+| ------------------------- | ---------------------------------------------------- |
+| **DRY**                   | Don't Repeat Yourself - evite duplicação             |
+| **KISS**                  | Keep It Simple, Stupid - mantenha simples            |
+| **YAGNI**                 | You Aren't Gonna Need It - não antecipe necessidades |
+| **Single Responsibility** | Uma responsabilidade por função/classe               |
+
+---
+
+### 8.2 🏛️ Princípios SOLID
+
+#### Fundação do Design OO
+
+```
+S - Single Responsibility (Uma responsabilidade)
+O - Open/Closed (Aberto/Fechado)
+L - Liskov Substitution (Substituição de Liskov)
+I - Interface Segregation (Segregação de interfaces)
+D - Dependency Inversion (Inversão de dependência)
+```
+
+#### (S) Single Responsibility
+
+```java
+// ❌ Classe com múltiplas responsabilidades
+class Usuario {
+    void salvar() { /*...*/ }
+    void enviarEmail() { /*...*/ }
+    void gerarRelatorio() { /*...*/ }
+}
+
+// ✅ Cada classe uma responsabilidade
+class Usuario { /* apenas dados */ }
+class UsuarioRepository { void salvar() {} }
+class EmailService { void enviar() {} }
+class RelatorioService { void gerar() {} }
+```
+
+#### (O) Open/Closed
+
+```java
+// Aberto para extensão, fechado para modificação
+interface FormaGeometrica {
+    double calcularArea();
+}
+
+class Circulo implements FormaGeometrica {
+    public double calcularArea() { /*...*/ }
+}
+// Adicionar nova forma não modifica código existente
+```
+
+#### (L) Liskov Substitution
+
+```java
+// Subclasses devem ser substituíveis pelas superclasses
+class Ave {
+    void comer() {}
+}
+
+class Pardal extends Ave {
+    void voar() {}
+}
+
+class Pinguim extends Ave {
+    // ❌ Não voa, viola LSP se Ave tiver método voar()
+}
+```
+
+#### (I) Interface Segregation
+
+```java
+// ❌ Interface muito grande
+interface Trabalhador {
+    void trabalhar();
+    void comer();
+    void dormir();
+}
+
+// ✅ Interfaces específicas
+interface Trabalhavel {
+    void trabalhar();
+}
+
+interface Alimentavel {
+    void comer();
+}
+```
+
+#### (D) Dependency Inversion
+
+```java
+// ❌ Depende de implementação concreta
+class Servico {
+    private MySQLRepository repo = new MySQLRepository();
+}
+
+// ✅ Depende de abstração
+class Servico {
+    private Repository repo;  // Interface
+
+    public Servico(Repository repo) {
+        this.repo = repo;  // Injetado
+    }
+}
+```
+
+> 🔗 **Conexão com Spring:** O princípio (D) é a base do DI do Spring! O Spring força boas práticas de design.
+
+---
+
+### 8.3 🧪 Testes Unitários
+
+**JUnit - Framework de Testes**
+
+```java
+@Test
+public void deveria CalcularMediaCorretamente() {
+    // Arrange (preparar)
+    Calculadora calc = new Calculadora();
+
+    // Act (agir)
+    double resultado = calc.media(10, 20);
+
+    // Assert (verificar)
+    assertEquals(15.0, resultado, 0.01);
+}
+
+@Test
+public void deveriaLancarExcecaoParaDivisaoPorZero() {
+    Calculadora calc = new Calculadora();
+
+    assertThrows(ArithmeticException.class, () -> {
+        calc.dividir(10, 0);
+    });
+}
+```
+
+#### Boas Práticas
+
+- ✅ Testes independentes
+- ✅ Um assert por teste (ideal)
+- ✅ Nomenclatura descritiva
+- ✅ Cobertura > 80%
+
+---
+
+## 🚀 Parte 9: Próximos Passos
+
+**📘 Bhargava, Cap 10-11**
+
+### Fronteiras do Conhecimento
+
+| Tópico           | Descrição                 | Aplicação                |
+| ---------------- | ------------------------- | ------------------------ |
+| **K-NN**         | K-vizinhos mais próximos  | Machine Learning         |
+| **Árvores**      | Estruturas hierárquicas   | Bancos de dados, parsers |
+| **MapReduce**    | Processamento distribuído | Big Data                 |
+| **Criptografia** | Algoritmos SHA            | Segurança                |
+
+### 📈 Caminho Sugerido
+
+```
+Fundamentos Sólidos (Este guia)
+         ↓
+Projetos Práticos
+         ↓
+Contribuições Open Source
+         ↓
+Especialização (Cloud, DevOps, ML...)
+```
+
+---
 
 - **Algoritmo de Dijkstra (Cap 7):** Usado para encontrar o caminho mais curto em redes com custos (ponderadas), como encontrar a rota de rede com menor latência ou o balanceamento de carga mais barato
 
@@ -468,55 +1380,238 @@ Este guia cobriu a jornada desde a lógica pura até a construção de uma aplic
 - **MapReduce e Algoritmos Paralelos:** A base conceitual do Big Data
 - **Algoritmos SHA e Criptografia:** Fundamentos de segurança da informação
 
+## 📚 Recursos e Referências
+
+### 📖 Livros Fundamentais
+
+#### 1. Algoritmos e Lógica da Programação
+
+**Autor:** Marco A. Furlan de Souza et al.
+
+```
+✓ Raciocínio lógico e algoritmos
+✓ Fluxogramas e pseudocódigos
+✓ Fundação do pensamento computacional
+✓ Estruturas universais de programação
+```
+
+🔗 [Comprar na Amazon](https://a.co/d/2Hhwczl)
+
 ---
 
-## Recursos e Referências
+#### 2. Entendendo Algoritmos – Um Guia Ilustrado
 
-### 📚 Livros
+**Autor:** Aditya Y. Bhargava
 
-1. **Algoritmos e Lógica da Programação** (Marco A. Furlan de Souza et al.)
+```
+✓ Algoritmos fundamentais com diagramas visuais
+✓ Notação Big O explicada de forma simples
+✓ Estruturas de dados avançadas
+✓ Grafos, programação dinâmica, algoritmos gulosos
+```
 
-   - Raciocínio lógico e algoritmos
-   - Fluxogramas e pseudocódigos
-   - Fundação do pensamento computacional
+🔗 [Comprar na Amazon](https://a.co/d/2bkiKPh)
 
-2. **Entendendo Algoritmos – Um Guia Ilustrado** (Aditya Y. Bhargava)
-   - Algoritmos fundamentais com diagramas
-   - Notação Big O
-   - Estruturas de dados avançadas
-   - Grafos, programação dinâmica, algoritmos gulosos
+---
 
 ### 🎓 Cursos Online
 
-1. **Java COMPLETO: Do Zero ao Profissional + Projetos** (Cod3r / Udemy)
+#### 1. Java COMPLETO: Do Zero ao Profissional + Projetos
 
-   - Instrutor: Leonardo Leitão
-   - Fundamentos, OOP, Collections, Spring
-   - Projetos práticos com JUnit
+**Plataforma:** Cod3r / Udemy  
+**Instrutor:** Leonardo Leitão
 
-2. **Bootcamp Deal + DIO – Spring Boot e Angular**
-   - Spring Framework e Spring Boot
-   - APIs REST, JPA/Hibernate
-   - Angular 17+, TypeScript
-   - SOLID e Clean Code
+| Módulo      | Conteúdo                                       |
+| ----------- | ---------------------------------------------- |
+| Fundamentos | JVM, tipos, operadores, estruturas de controle |
+| OOP         | Classes, herança, polimorfismo, abstração      |
+| Collections | ArrayList, HashMap, Set, Queue                 |
+| Projetos    | Campo Minado, calculadora, aplicações práticas |
+| Testes      | JUnit para garantia de qualidade               |
 
-### 🔗 Links Úteis
-
-- [Cod3r - Udemy](https://www.udemy.com/course/fundamentos-de-programacao-com-java)
-- [DIO - Bootcamp Deal](https://www.dio.me/)
-- [Entendendo Algoritmos (Amazon)](https://a.co/d/2bkiKPh)
-- [Algoritmos e Lógica da Programação (Amazon)](https://a.co/d/2Hhwczl)
+🔗 [Acessar Curso](https://www.udemy.com/course/fundamentos-de-programacao-com-java)
 
 ---
 
-## Metodologia de Estudo Recomendada
+#### 2. Bootcamp Deal + DIO – Spring Boot e Angular
 
-1. **Estudo Intercalado:** Ao iniciar uma seção prática (ex: Collections no Cod3r), consulte as seções teóricas correspondentes (ex: Tabelas Hash no Bhargava)
+**Plataforma:** DIO (Digital Innovation One)  
+**Parceria:** Deal Technologies
 
-2. **Progressão Linear:** Siga a ordem das partes (1→9) para construir conhecimento incremental
+| Stack              | Tecnologias                                         |
+| ------------------ | --------------------------------------------------- |
+| **Backend**        | Spring Boot, Spring Web, Spring Data JPA, Hibernate |
+| **Frontend**       | Angular 17+, TypeScript, RxJS                       |
+| **Banco de Dados** | SQL, modelagem, integração com JPA                  |
+| **Qualidade**      | SOLID, Clean Code, testes                           |
+| **DevOps**         | Deploy em nuvem (Railway)                           |
 
-3. **Prática Deliberada:** Implemente cada conceito em código antes de avançar
+🔗 [Acessar Bootcamp](https://www.dio.me/)
 
-4. **Conexões Constantes:** Sempre conecte a teoria (Furlan/Bhargava) com a prática (Cod3r/DIO)
+---
 
-5. **Projetos Integradores:** Use os projetos práticos (Campo Minado, APIs REST) para consolidar múltiplos conceitos simultaneamente
+### 🛠️ Metodologia de Estudo
+
+#### 1️⃣ Estudo Intercalado
+
+```
+Teoria ← → Prática
+   ↓         ↓
+Furlan   Cod3r
+   ↓         ↓
+Bhargava   DIO
+```
+
+**Exemplo:** Ao estudar Collections (Cod3r), consulte Tabelas Hash (Bhargava Cap 5)
+
+---
+
+#### 2️⃣ Progressão Linear
+
+```
+Parte 1: Fundação
+    ↓
+Parte 2: Java Básico
+    ↓
+Parte 3: OOP
+    ↓
+Parte 4: Estruturas de Dados
+    ↓
+Parte 5: Projeto Integrador
+    ↓
+Parte 6: Backend (Spring)
+    ↓
+Parte 7: Frontend (Angular)
+    ↓
+Parte 8: Boas Práticas
+    ↓
+Parte 9: Especialização
+```
+
+---
+
+#### 3️⃣ Prática Deliberada
+
+| Fase            | Ação                        |
+| --------------- | --------------------------- |
+| **Aprender**    | Ler teoria + assistir aula  |
+| **Implementar** | Codificar conceito estudado |
+| **Testar**      | Escrever testes unitários   |
+| **Integrar**    | Usar em projeto real        |
+| **Revisar**     | Refatorar aplicando SOLID   |
+
+---
+
+#### 4️⃣ Conexões Constantes
+
+**Sempre pergunte:**
+
+- 📘 **Teoria:** Por que isso funciona assim? (Furlan/Bhargava)
+- 💻 **Prática:** Como implemento isso em Java? (Cod3r)
+- 🏗️ **Aplicação:** Onde uso isso profissionalmente? (DIO)
+- 🎯 **Qualidade:** Estou seguindo boas práticas? (SOLID/Clean Code)
+
+---
+
+#### 5️⃣ Projetos Integradores
+
+**Sugestão de Progressão:**
+
+1. **Campo Minado** (Cod3r)
+
+   - Consolida: Arrays, OOP, Recursão, Exceções
+
+2. **API REST de Gerenciamento**
+
+   - Consolida: Spring Boot, JPA, REST, validações
+
+3. **Aplicação Full-Stack**
+   - Consolida: Backend (Spring) + Frontend (Angular)
+
+---
+
+### 📊 Checklist de Progresso
+
+Marque conforme avança:
+
+- [ ] **Parte 1:** Fundação - Lógica e Algoritmos
+
+  - [ ] 1.1 Algoritmos e Mentalidade
+  - [ ] 1.2 Big O
+  - [ ] 1.3 Estruturas Universais
+  - [ ] 1.4 Arquitetura
+
+- [ ] **Parte 2:** Java - Fundamentos
+
+  - [ ] 2.1 Sintaxe
+  - [ ] 2.2 Estruturas de Controle
+
+- [ ] **Parte 3:** Orientação a Objetos
+
+  - [ ] 3.1 Classes e Métodos
+  - [ ] 3.2 4 Pilares
+
+- [ ] **Parte 4:** Estruturas de Dados
+
+  - [ ] 4.1 Arrays
+  - [ ] 4.2 Listas Encadeadas
+  - [ ] 4.3 Recursão/Ordenação
+  - [ ] 4.4 Collections
+  - [ ] 4.5 Tabelas Hash
+
+- [ ] **Parte 5:** Projeto Campo Minado
+
+  - [ ] 5.1 Exceções
+  - [ ] 5.2 Projeto Completo
+
+- [ ] **Parte 6:** Spring Framework
+
+  - [ ] 6.1 Spring Boot
+  - [ ] 6.2 APIs REST
+  - [ ] 6.3 JPA/Hibernate
+  - [ ] 6.4 Spring Security
+  - [ ] 6.5 Algoritmos Avançados
+
+- [ ] **Parte 7:** Angular
+
+  - [ ] 7.1 TypeScript/Ecossistema
+  - [ ] 7.2 Arquitetura
+  - [ ] 7.3 Services/Routing/Guards
+
+- [ ] **Parte 8:** Boas Práticas
+
+  - [ ] 8.1 Clean Code
+  - [ ] 8.2 SOLID
+  - [ ] 8.3 Testes
+
+- [ ] **Parte 9:** Próximos Passos
+  - [ ] Algoritmos Avançados
+  - [ ] Especialização
+
+---
+
+### 🎯 Dicas Finais
+
+> 💡 **"Projeto lógico primeiro"** - Planeje antes de codificar  
+> 💡 **Big O importa** - Sempre pense em eficiência  
+> 💡 **SOLID não é opcional** - É a diferença entre código funcional e profissional  
+> 💡 **Teste sempre** - Código sem teste não está pronto  
+> 💡 **Aprenda continuamente** - A tecnologia evolui, você também deve
+
+---
+
+## 🏆 Conclusão
+
+Este guia fornece um caminho estruturado do **zero ao full-stack**, integrando teoria sólida com prática profissional. Ao completá-lo, você terá:
+
+✅ Fundação teórica em algoritmos e estruturas de dados  
+✅ Domínio de Java e Orientação a Objetos  
+✅ Experiência com Spring Framework (backend)  
+✅ Conhecimento de Angular (frontend)  
+✅ Habilidades de código limpo e boas práticas
+
+**O próximo passo é seu!** Continue aprendendo, construindo e evoluindo. 🚀
+
+---
+
+_Guia atualizado em Novembro de 2025_
