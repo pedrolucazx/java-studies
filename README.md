@@ -13,6 +13,14 @@ Repositório de estudos sobre a linguagem Java, contendo exercícios, desafios e
   - [Write Once, Run Anywhere](#write-once-run-anywhere)
   - [O Lançamento do JDK 1.0](#o-lançamento-do-jdk-10)
   - [A Era Oracle](#a-era-oracle)
+- [Gerenciadores de Build](#gerenciadores-de-build)
+  - [O que são Gerenciadores de Build?](#o-que-são-gerenciadores-de-build)
+  - [Maven](#maven)
+  - [Gradle](#gradle)
+  - [Maven vs Gradle: Principais Diferenças](#maven-vs-gradle-principais-diferenças)
+- [IDEs para Java](#ides-para-java)
+  - [IntelliJ IDEA](#intellij-idea)
+  - [Visual Studio Code](#visual-studio-code)
 
 ## 📖 História do Java
 
@@ -83,7 +91,173 @@ Hoje, Java permanece como uma das linguagens mais populares do mundo, presente e
 
 ---
 
-## 📁 Estrutura do Projeto
+## 🏗️ Gerenciadores de Build
+
+### O que são Gerenciadores de Build?
+
+**Gerenciadores de build** (ou build tools) são ferramentas que automatizam o processo de construção de aplicações. Em projetos Java, eles são essenciais para:
+
+- **Gerenciar dependências**: Baixar e atualizar bibliotecas externas automaticamente
+- **Compilar código**: Transformar arquivos `.java` em bytecode `.class`
+- **Executar testes**: Rodar testes unitários e de integração
+- **Empacotar aplicações**: Gerar arquivos JAR, WAR ou outros formatos
+- **Automatizar tarefas**: Executar scripts personalizados no ciclo de build
+
+Sem um gerenciador de build, você precisaria baixar manualmente cada biblioteca (JAR), configurar o classpath, compilar cada arquivo e gerenciar versões - um processo trabalhoso e propenso a erros.
+
+### Maven
+
+**Apache Maven** é o gerenciador de build mais tradicional e amplamente utilizado no ecossistema Java, criado em 2004.
+
+#### Características principais:
+
+- **Baseado em XML**: Usa o arquivo `pom.xml` (Project Object Model) para configuração
+- **Convenção sobre configuração**: Segue uma estrutura de diretórios padrão bem definida
+- **Repositório central**: Maven Central hospeda milhares de bibliotecas Java
+- **Ciclo de vida definido**: Fases predefinidas (compile, test, package, install, deploy)
+- **Plugins**: Extensível através de plugins para diferentes tarefas
+
+**Vantagens do Maven:**
+
+- Amplamente adotado e com vasta documentação
+- Grande quantidade de plugins disponíveis
+- Estrutura consistente entre projetos
+- Integração com a maioria das IDEs e ferramentas CI/CD
+
+### Gradle
+
+**Gradle** é um gerenciador de build mais moderno, lançado em 2007, que tem ganhado muita popularidade, especialmente em projetos Android.
+
+#### Características principais:
+
+- **Baseado em Groovy/Kotlin DSL**: Usa `build.gradle` ou `build.gradle.kts` para configuração
+- **Mais flexível**: Permite programação imperativa, não apenas declarativa
+- **Builds incrementais**: Recompila apenas o que mudou, tornando builds mais rápidos
+- **Build cache**: Reutiliza resultados de builds anteriores
+- **Compatibilidade com Maven**: Pode usar repositórios Maven
+- **Daemon**: Processo em background que acelera builds subsequentes
+
+**Vantagens do Gradle:**
+
+- Builds mais rápidos (até 100x em alguns casos)
+- Sintaxe mais concisa e legível
+- Maior flexibilidade para personalizações
+- Oficial para desenvolvimento Android
+- Suporte a builds multi-projeto mais eficiente
+
+### Maven vs Gradle: Principais Diferenças
+
+| Aspecto                     | Maven             | Gradle                             |
+| --------------------------- | ----------------- | ---------------------------------- |
+| **Configuração**            | XML (`pom.xml`)   | Groovy/Kotlin DSL (`build.gradle`) |
+| **Performance**             | Mais lento        | Mais rápido (builds incrementais)  |
+| **Curva de aprendizado**    | Mais simples      | Mais complexo inicialmente         |
+| **Flexibilidade**           | Menos flexível    | Altamente flexível                 |
+| **Adoção**                  | Mais estabelecido | Crescente (Android)                |
+| **Tamanho da configuração** | Mais verboso      | Mais conciso                       |
+
+**Quando usar Maven:**
+
+- Projetos corporativos tradicionais
+- Equipes que preferem convenções rígidas
+- Quando a simplicidade é mais importante que performance
+
+**Quando usar Gradle:**
+
+- Projetos Android
+- Builds complexos que precisam de customização
+- Quando performance de build é crítica
+- Projetos multi-módulo grandes
+
+---
+
+## 💻 IDEs para Java
+
+**IDE** (Integrated Development Environment - Ambiente de Desenvolvimento Integrado) é um software que fornece ferramentas completas para desenvolvimento, incluindo editor de código, debugger, compilador e outras funcionalidades que aumentam a produtividade.
+
+### IntelliJ IDEA
+
+**IntelliJ IDEA**, desenvolvido pela JetBrains, é considerado por muitos como a melhor IDE para desenvolvimento Java.
+
+#### Características principais:
+
+- **Autocompletar inteligente**: Sugestões contextuais extremamente precisas
+- **Refatoração poderosa**: Renomear, extrair métodos, mover classes com segurança
+- **Análise de código em tempo real**: Detecta bugs, code smells e sugere melhorias
+- **Debugger avançado**: Breakpoints condicionais, evaluate expressions, hot swap
+- **Integração nativa**: Maven, Gradle, Git, Docker, Kubernetes
+- **Suporte completo ao Spring**: Spring Boot, Spring Data, Spring Security
+- **Database tools**: Cliente SQL integrado
+- **Plugins**: Ecossistema rico de extensões
+
+#### Versões:
+
+- **Community Edition (CE)**: Gratuita e open-source, ideal para desenvolvimento Java puro
+- **Ultimate Edition**: Paga, com suporte adicional para web (Spring, Jakarta EE), JavaScript, bancos de dados, frameworks e ferramentas empresariais
+
+#### Vantagens:
+
+- Interface intuitiva e bem projetada
+- Ferramentas de refatoração superiores
+- Excelente para projetos Spring Boot
+- Navegação de código extremamente eficiente
+- Detecção inteligente de erros antes da compilação
+
+#### Desvantagens:
+
+- Consome bastante memória RAM (recomendado 8GB+)
+- Ultimate Edition é paga (porém com licença gratuita para estudantes)
+- Pode ser lento em máquinas mais antigas
+
+**Ideal para**: Desenvolvedores profissionais Java, projetos empresariais, desenvolvimento Spring Boot, quem busca máxima produtividade.
+
+### Visual Studio Code
+
+**Visual Studio Code (VS Code)**, desenvolvido pela Microsoft, é um editor de código leve que pode se tornar uma IDE completa através de extensões.
+
+#### Características principais:
+
+- **Leve e rápido**: Consome menos recursos que IDEs tradicionais
+- **Extensões Java**: Java Extension Pack da Microsoft
+- **Multi-linguagem**: Excelente para projetos full-stack (Java + JavaScript/TypeScript)
+- **Terminal integrado**: Suporte nativo para múltiplos terminais
+- **Git integrado**: Controle de versão visual intuitivo
+- **Customizável**: Temas, atalhos e configurações altamente personalizáveis
+- **Gratuito e open-source**: Totalmente livre para uso comercial
+
+#### Extensões essenciais para Java:
+
+- **Extension Pack for Java**: Pacote oficial com:
+  - Language Support for Java (Red Hat)
+  - Debugger for Java
+  - Test Runner for Java
+  - Maven for Java
+  - Project Manager for Java
+  - IntelliCode
+- **Spring Boot Extension Pack**: Suporte para Spring Boot
+- **Gradle for Java**: Integração com Gradle
+
+#### Vantagens:
+
+- Muito leve e rápido
+- Gratuito e totalmente open-source
+- Excelente para projetos polyglot (Java + outras linguagens)
+- Grande comunidade e ecossistema de extensões
+- Funciona bem em máquinas com recursos limitados
+- Melhor para desenvolvimento full-stack
+
+#### Desvantagens:
+
+- Requer configuração manual de extensões
+- Ferramentas de refatoração menos poderosas que IntelliJ
+- Autocompletar menos inteligente para Java
+- Algumas features avançadas podem requerer configuração adicional
+
+**Ideal para**: Desenvolvedores full-stack, projetos menores, quem trabalha com múltiplas linguagens, máquinas com recursos limitados, iniciantes que querem uma ferramenta gratuita.
+
+---
+
+## 📂 Estrutura do Projeto
 
 ```
 java-studies/
