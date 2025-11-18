@@ -1,10 +1,28 @@
 # Java Studies ☕
 
-Repositório de estudos sobre a linguagem Java, contendo exercícios, desafios e anotações sobre fundamentos, POO e frameworks.
+<div align="center">
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
+![IntelliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+</div>
+
+## 🎯 Sobre o Projeto
+
+Este repositório documenta minha jornada de aprendizado em **Java**, desde os fundamentos da linguagem até conceitos avançados de Programação Orientada a Objetos (POO) e frameworks modernos. Aqui você encontrará exercícios práticos, desafios resolvidos, anotações de estudo e referências a cursos e livros que estou utilizando.
+
+**Objetivo:** Consolidar conhecimentos em Java através da prática constante, documentação organizada e estudo de boas práticas de desenvolvimento.
 
 ## 📚 Sumário
 
-- [História do Java](#história-do-java)
+- [🎯 Sobre o Projeto](#-sobre-o-projeto)
+- [🚀 Como Começar](#-como-começar)
+- [📈 Progresso de Estudos](#-progresso-de-estudos)
+- [📖 História do Java](#-história-do-java)
   - [O Início: Green Team e o Projeto Green](#o-início-green-team-e-o-projeto-green)
   - [Oak e a Visão de Dispositivos Conectados](#oak-e-a-visão-de-dispositivos-conectados)
   - [Da TV Interativa à Web: WebRunner](#da-tv-interativa-à-web-webrunner)
@@ -13,14 +31,143 @@ Repositório de estudos sobre a linguagem Java, contendo exercícios, desafios e
   - [Write Once, Run Anywhere](#write-once-run-anywhere)
   - [O Lançamento do JDK 1.0](#o-lançamento-do-jdk-10)
   - [A Era Oracle](#a-era-oracle)
-- [Gerenciadores de Build](#gerenciadores-de-build)
+- [🔧 Gerenciadores de Build](#-gerenciadores-de-build)
   - [O que são Gerenciadores de Build?](#o-que-são-gerenciadores-de-build)
   - [Maven](#maven)
   - [Gradle](#gradle)
   - [Maven vs Gradle: Principais Diferenças](#maven-vs-gradle-principais-diferenças)
-- [IDEs para Java](#ides-para-java)
+- [💻 IDEs para Java](#-ides-para-java)
   - [IntelliJ IDEA](#intellij-idea)
   - [Visual Studio Code](#visual-studio-code)
+  - [Qual IDE Escolher?](#qual-ide-escolher)
+- [📂 Estrutura do Projeto](#-estrutura-do-projeto)
+- [🔗 Recursos Úteis](#-recursos-úteis)
+- [📚 Recursos de Estudo](#-recursos-de-estudo)
+- [📝 Licença](#-licença)
+
+---
+
+## 🚀 Como Começar
+
+### Pré-requisitos
+
+Certifique-se de ter instalado em sua máquina:
+
+- **Java JDK** (versão 11 ou superior) - [Download](https://www.oracle.com/java/technologies/downloads/)
+- **IDE** de sua preferência (IntelliJ IDEA ou VS Code)
+- **Git** - [Download](https://git-scm.com/)
+
+### Clonando o Repositório
+
+```bash
+# Clone este repositório
+git clone https://github.com/pedrolucazx/java-studies.git
+
+# Entre no diretório
+cd java-studies
+```
+
+### Executando os Exercícios
+
+#### Opção 1: Usando a IDE
+
+1. Abra o projeto na sua IDE (IntelliJ IDEA ou VS Code)
+2. Navegue até o arquivo desejado em `challenges/src/`
+3. Execute o arquivo (botão ▶️ ou `Shift + F10` no IntelliJ)
+
+#### Opção 2: Via Terminal
+
+```bash
+# Entre no diretório challenges
+cd challenges
+
+# Compile um arquivo específico
+javac src/Ex01_AreaCircle.java
+
+# Execute o programa
+java -cp src Ex01_AreaCircle
+```
+
+### Estrutura de Pastas
+
+Os exercícios estão organizados por tópico dentro de `challenges/src/`:
+
+- Exercícios iniciados com `Ex` são exercícios básicos
+- Futuramente: desafios mais complexos e projetos práticos
+
+---
+
+## 📈 Progresso de Estudos
+
+Acompanhe meu progresso ao longo dos diferentes tópicos de estudo em Java:
+
+### Fundamentos da Linguagem
+
+- [✅] Configuração do ambiente de desenvolvimento
+- [✅] Primeiro programa (Hello World)
+- [ ] Variáveis e tipos primitivos
+- [ ] Operadores aritméticos, lógicos e relacionais
+- [ ] Wrappers e conversão de tipos
+- [ ] Entrada e saída de dados (Scanner)
+
+### Estruturas de Controle
+
+- [ ] Estruturas condicionais (if/else, switch)
+- [ ] Estruturas de repetição (for, while, do-while)
+- [ ] Break e continue
+- [ ] Estruturas aninhadas
+
+### Classes e Métodos
+
+- [ ] Conceitos de classe e objeto
+- [ ] Atributos e métodos
+- [ ] Construtores e sobrecarga
+- [ ] Modificadores de acesso (public, private, protected)
+- [ ] Membros estáticos vs instância
+- [ ] Palavra-chave `this`
+
+### Arrays e Collections
+
+- [ ] Arrays unidimensionais e multidimensionais
+- [ ] For-each
+- [ ] ArrayList e LinkedList
+- [ ] HashSet e TreeSet
+- [ ] HashMap e TreeMap
+- [ ] Métodos equals() e hashCode()
+
+### Programação Orientada a Objetos
+
+- [ ] Encapsulamento
+- [ ] Herança e polimorfismo
+- [ ] Classes abstratas
+- [ ] Interfaces
+- [ ] Composição vs Herança
+- [ ] Princípios SOLID
+
+### Tópicos Avançados
+
+- [ ] Tratamento de exceções (try/catch/finally)
+- [ ] Generics
+- [ ] Streams e Lambda expressions
+- [ ] Optional
+- [ ] Manipulação de arquivos
+- [ ] Multithreading e concorrência
+
+### Frameworks e Ferramentas
+
+- [ ] JUnit - Testes unitários
+- [ ] Maven - Gerenciamento de dependências
+- [ ] Gradle - Build automation
+- [ ] Spring Framework
+- [ ] Spring Boot
+- [ ] JPA/Hibernate
+
+**Legenda:**
+
+- [✅] Concluído
+- [ ] Em andamento ou não iniciado
+
+---
 
 ## 📖 História do Java
 
@@ -255,20 +402,108 @@ Sem um gerenciador de build, você precisaria baixar manualmente cada biblioteca
 
 **Ideal para**: Desenvolvedores full-stack, projetos menores, quem trabalha com múltiplas linguagens, máquinas com recursos limitados, iniciantes que querem uma ferramenta gratuita.
 
+### Qual IDE Escolher?
+
+**Escolha IntelliJ IDEA se:**
+
+- ✅ Você trabalha principalmente com Java/Kotlin
+- ✅ Desenvolve aplicações Spring Boot
+- ✅ Precisa de ferramentas avançadas de refatoração
+- ✅ Tem uma máquina com boa capacidade (8GB+ RAM)
+- ✅ Busca máxima produtividade em Java
+
+**Escolha VS Code se:**
+
+- ✅ Trabalha com múltiplas linguagens (Java + frontend)
+- ✅ Prefere um ambiente leve e customizável
+- ✅ Tem recursos de hardware limitados
+- ✅ Está começando e quer algo gratuito e simples
+- ✅ Gosta de ter total controle sobre as ferramentas
+
+**💡 Dica:** Muitos desenvolvedores usam ambas as ferramentas! IntelliJ para projetos Java/Spring grandes e VS Code para scripts rápidos, edição de arquivos de configuração ou desenvolvimento full-stack.
+
 ---
 
 ## 📂 Estrutura do Projeto
 
 ```
 java-studies/
-├── challenges/          # Desafios e exercícios práticos
-└── docs/               # Documentação adicional
+│
+├── challenges/                   # 🎯 Exercícios e desafios práticos
+│   ├── challenges.iml            # Configuração do módulo IntelliJ
+│   └── src/                      # Código-fonte dos exercícios
+│       ├── Ex01_AreaCircle.java              # Cálculo de área de círculo
+│       ├── Ex02_CelsiusToFahrenheit.java     # Conversão de temperatura
+│       └── ...                               # Mais exercícios em breve
+│
+├── GUIA_DE_ESTUDOS.md            # 📖 Guia completo de cursos e livros
+├── README.md                     # 📄 Este arquivo
+└── LICENSE                       # ⚖️ Licença MIT
 ```
 
-## 📚 Recursos
+### Sobre os Exercícios
 
-Para um guia detalhado sobre os cursos e livros de estudo, consulte o [Guia de Estudos](GUIA_DE_ESTUDOS.md).
+Cada arquivo de exercício contém:
+
+- **Descrição do problema** nos comentários
+- **Implementação da solução**
+- **Conceitos aplicados** (variáveis, operadores, estruturas de controle, etc.)
+
+---
+
+## 🔗 Recursos Úteis
+
+### 📘 Documentação Oficial
+
+- [Oracle Java Documentation](https://docs.oracle.com/en/java/) - Documentação oficial do Java
+- [Java API Specification](https://docs.oracle.com/en/java/javase/17/docs/api/) - Referência completa da API Java
+- [OpenJDK](https://openjdk.org/) - Implementação open-source do Java
+
+### 🛠️ Ferramentas e Gerenciadores
+
+- [Maven Central](https://mvnrepository.com/) - Repositório de bibliotecas Maven
+- [Gradle Guides](https://gradle.org/guides/) - Guias oficiais do Gradle
+- [IntelliJ IDEA Docs](https://www.jetbrains.com/idea/resources/) - Documentação do IntelliJ
+- [VS Code Java Extension](https://code.visualstudio.com/docs/java/java-tutorial) - Tutorial Java para VS Code
+
+### 📚 Aprendizado
+
+- [Java Tutorial - Oracle](https://docs.oracle.com/javase/tutorial/) - Tutorial oficial da Oracle
+- [Baeldung](https://www.baeldung.com/) - Tutoriais e artigos sobre Java e Spring
+- [JavaPoint](https://www.javatpoint.com/java-tutorial) - Tutorial completo de Java
+- [Effective Java (Livro)](https://www.oreilly.com/library/view/effective-java/9780134686097/) - Boas práticas em Java
+
+### 🎓 Comunidades
+
+- [Stack Overflow - Java](https://stackoverflow.com/questions/tagged/java) - Perguntas e respostas
+- [Reddit - r/learnjava](https://www.reddit.com/r/learnjava/) - Comunidade para aprender Java
+- [Java Discord Servers](https://disboard.org/servers/tag/java) - Servidores Discord sobre Java
+
+---
+
+## 📚 Recursos de Estudo
+
+Para um guia detalhado sobre os **cursos online** e **livros** que estou utilizando nesta jornada, consulte o [📖 Guia de Estudos](GUIA_DE_ESTUDOS.md).
+
+O guia inclui:
+
+- Curso completo Cod3r/Udemy - Java do Zero ao Profissional
+- Bootcamp Deal + DIO - Spring Boot e Angular
+- Livros recomendados sobre algoritmos e lógica de programação
+- Objetivos e tópicos de cada seção de estudo
+
+---
 
 ## 📝 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+<div align="center">
+
+Feito com ☕ e 💙 por [Pedro Lucaz](https://github.com/pedrolucazx)
+
+**[⬆ Voltar ao topo](#java-studies-)**
+
+</div>
