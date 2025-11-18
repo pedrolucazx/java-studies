@@ -1,75 +1,100 @@
-# Guia de Estudo em Java
-Este guia reúne recursos de cursos online e livros para orientar os seus estudos em Java. Inclui descrições dos tópicos abordados em cada curso/seção, links úteis e objetivos de estudo. As referências indicam material de apoio pesquisado sobre cada assunto.
+# Java Studies ☕
 
-## Cursos Online
+Repositório de estudos sobre a linguagem Java, contendo exercícios, desafios e anotações sobre fundamentos, POO e frameworks.
 
-### Java COMPLETO: Do Zero ao Profissional + Projetos (Cod3r / Udemy)
-Curso do instrutor Leonardo Leitão (Cod3r) que cobre do básico ao avançado em Java, com ênfase em fundamentos, estruturas de controle, POO, bibliotecas modernas e projetos práticos.
+## 📚 Sumário
 
-Assuntos chave:
-- Fundamentos da linguagem: configuração do ambiente, primeiro programa, variáveis, tipos primitivos, operadores.
-- Estruturas de controle: if, laços (for/while/do-while), switch, break/continue.
-- Classes e métodos: diferença entre classe e objeto, membros estáticos vs instância, construtores, encapsulamento, uso de `this`.
-- Arrays e coleções: vetores unidimensionais/bidimensionais, `List`, `Set`, `Map`, `equals` e `hashCode`.
-- Orientação a objetos: composição, herança, polimorfismo, interfaces, classes abstratas.
-- Tratamento de erros: `try/catch/finally`, exceções checadas e não checadas, criação de exceções próprias.
-- Projetos práticos: exemplo Campo Minado com testes JUnit.
+- [História do Java](#história-do-java)
+  - [O Início: Green Team e o Projeto Green](#o-início-green-team-e-o-projeto-green)
+  - [Oak e a Visão de Dispositivos Conectados](#oak-e-a-visão-de-dispositivos-conectados)
+  - [Da TV Interativa à Web: WebRunner](#da-tv-interativa-à-web-webrunner)
+  - [Como Java Recebeu Seu Nome](#como-java-recebeu-seu-nome)
+  - [HotJava: O Primeiro Navegador Java](#hotjava-o-primeiro-navegador-java)
+  - [Write Once, Run Anywhere](#write-once-run-anywhere)
+  - [O Lançamento do JDK 1.0](#o-lançamento-do-jdk-10)
+  - [A Era Oracle](#a-era-oracle)
 
-Seções e objetivos (resumo):
-- **Seção 03 – Fundamentos**  
-  Estudar criação de projetos Java, `Hello World`, variáveis, tipos primitivos, wrappers e operadores.  
-  Objetivos: entender sintaxe básica, usar `System.out.println`, comentários e resolver exercícios simples.
+## 📖 História do Java
 
-- **Seção 04 – Estruturas de Controle**  
-  Condicionais (`if`, `switch`) e laços (`while`, `for`, `do-while`).  
-  Objetivos: construir programas que respondem a condições e praticar loops, `break` e `continue`.
+### O Início: Green Team e o Projeto Green
 
-- **Seção 05 – Classes e Métodos**  
-  Conceitos básicos de POO: atributos, métodos, construtores, sobrecarga, `static`, `this`.  
-  Objetivos: projetar e instanciar classes simples, comparar comportamento `static` vs instância.
+Em 1991, a **Sun Microsystems** criou um grupo de pesquisa especial chamado **Green Team**, liderado por **James Gosling**, **Mike Sheridan** e **Patrick Naughton**. O objetivo inicial não era criar uma nova linguagem de programação, mas sim desenvolver tecnologias para a próxima geração de dispositivos eletrônicos.
 
-- **Seção 06 – Arrays e Collections**  
-  Arrays unidimensionais/bidimensionais, `for-each`, `equals`/`hashCode`, e Collections (`List`, `Set`, `Queue`, `Map`).  
-  Objetivos: manipular arrays, usar `ArrayList`, `HashSet`, `HashMap` e entender diferenças conceituais.
+O projeto, conhecido como **"Projeto Green"**, tinha uma visão ambiciosa para a época: criar software que pudesse ser executado em diferentes tipos de dispositivos eletrônicos, antecipando a era da Internet das Coisas (IoT).
 
-- **Seção 07 – Orientação a Objetos**  
-  Composição, agregação, relacionamentos, pilares da POO (encapsulamento, herança, polimorfismo, abstração).  
-  Objetivos: implementar hierarquias, sobrescrever métodos, usar interfaces/abstrações e aplicar princípios SOLID básicos.
+### Oak e a Visão de Dispositivos Conectados
 
-- **Seção 10 – Tratamento de Erros**  
-  Uso de `try-catch-finally`, diferenças entre exceções checadas e não checadas, lançar exceções personalizadas.  
-  Objetivos: escrever handlers adequados e entender fluxo de exceção.
+A primeira linguagem desenvolvida pelo Green Team foi chamada **Oak** (carvalho em inglês), nome inspirado por uma árvore que James Gosling podia ver da janela de seu escritório. A linguagem foi projetada especificamente para **programar dispositivos eletrônicos de consumo**, como televisores interativos, controles remotos e outros aparelhos domésticos.
 
-- **Seção 11 – Projeto Campo Minado**  
-  Projeto prático em Java com JUnit5: classes `Campo` e `Tabuleiro`, vizinhança de células, método `abrir()` e exibição via `toString()`.  
-  Objetivos: consolidar POO e collections, gerar minas aleatoriamente e aplicar testes unitários.
+A visão era revolucionária: **residências conectadas por dispositivos inteligentes** que pudessem se comunicar entre si. Embora essa ideia tenha se tornado realidade décadas depois com a IoT, na época dos anos 90 o mercado ainda não estava pronto para essa tecnologia.
+
+### Da TV Interativa à Web: WebRunner
+
+O projeto inicial de TV interativa não obteve o sucesso comercial esperado. No entanto, em 1994, com o crescimento explosivo da **World Wide Web**, a equipe percebeu que a linguagem Oak poderia ter uma aplicação perfeita na internet.
+
+Eles desenvolveram um navegador experimental chamado **WebRunner** (originalmente chamado de **"GreenTalk"**), que era capaz de executar programas interativos (applets) dentro de páginas web. Esse foi o momento crucial que transformou o projeto.
+
+### Como Java Recebeu Seu Nome
+
+O nome "Oak" já estava registrado como marca por outra empresa, então a equipe precisou encontrar um novo nome. Após várias sessões de brainstorming, o nome **"Java"** foi escolhido.
+
+A origem do nome tem diferentes versões, mas a mais aceita é que **Java** é uma referência ao **café Java**, uma variedade de café da ilha de Java, na Indonésia. A equipe de desenvolvimento consumia muito café durante as longas sessões de programação, e o nome capturava perfeitamente a energia e o dinamismo que queriam para a linguagem. O logotipo da xícara de café fumegante se tornou icônico e permanece até hoje.
+
+### HotJava: O Primeiro Navegador Java
+
+Em 1995, a Sun Microsystems apresentou oficialmente o **HotJava**, um navegador web completamente escrito em Java. O HotJava demonstrou o poder da linguagem ao executar **applets Java** - pequenos programas que rodavam diretamente no navegador, trazendo interatividade e animações às páginas web.
+
+Essa capacidade era revolucionária na época, quando a maioria das páginas web era estática. O HotJava provou que Java poderia transformar a experiência na internet.
+
+### Write Once, Run Anywhere
+
+O grande diferencial de Java ficou consolidado em seu famoso lema: **"Write Once, Run Anywhere"** (Escreva uma vez, rode em qualquer lugar).
+
+Esse princípio se baseava na **Java Virtual Machine (JVM)** - uma camada de abstração que permitia que o mesmo código Java fosse executado em diferentes sistemas operacionais (Windows, macOS, Linux, Solaris) e diferentes tipos de dispositivos, sem necessidade de recompilação.
+
+Esta **portabilidade** era algo inédito e se tornou um dos maiores atrativos da linguagem, especialmente para empresas que precisavam desenvolver software para múltiplas plataformas.
+
+### O Lançamento do JDK 1.0
+
+Em **23 de janeiro de 1996**, a Sun Microsystems lançou oficialmente o **JDK 1.0** (Java Development Kit), a primeira versão do kit de desenvolvimento Java disponível publicamente.
+
+O JDK incluía:
+
+- Compilador Java
+- Java Virtual Machine (JVM)
+- Bibliotecas padrão (API Java)
+- Ferramentas de desenvolvimento
+
+Com o JDK 1.0, desenvolvedores de todo o mundo puderam começar a criar aplicações Java. A linguagem rapidamente ganhou popularidade, especialmente em aplicações empresariais e desenvolvimento web.
+
+### A Era Oracle
+
+Em **2010**, a **Oracle Corporation** adquiriu a Sun Microsystems por aproximadamente **$7.4 bilhões**, assumindo o controle sobre Java e suas tecnologias relacionadas.
+
+Sob a Oracle, Java continuou evoluindo com:
+
+- Lançamentos regulares de novas versões
+- Melhorias de performance na JVM
+- Novas funcionalidades (lambdas, streams, módulos)
+- Java SE, Java EE e Java ME
+- Maior adoção em cloud computing e microserviços
+
+Hoje, Java permanece como uma das linguagens mais populares do mundo, presente em bilhões de dispositivos - de smartphones Android a sistemas corporativos de larga escala - realizando a visão original do Green Team de uma linguagem verdadeiramente universal.
+
 ---
 
-### Bootcamp Deal + DIO – Spring Boot e Angular
-Bootcamp DIO em parceria com Deal Technologies focado em desenvolvimento Full Stack com Spring Boot e Angular.
+## 📁 Estrutura do Projeto
 
-Módulos e objetivos:
-- Produtividade com Spring Framework: ferramentas e práticas para acelerar projetos.
-- Integração com banco de dados: JDBC / JPA / Hibernate para persistência.
-- Boas práticas: SOLID, Clean Code e padrões de projeto.
-- Introdução a Angular: componentes, templates e módulos.
-- Construindo aplicações Angular: serviços, diretivas, roteamento e testes.
+```
+java-studies/
+├── challenges/          # Desafios e exercícios práticos
+└── docs/               # Documentação adicional
+```
 
-Objetivo geral: obter experiência prática com Spring Boot (APIs REST) e Angular (front-end moderno), trabalhar com bancos de dados e escrever código limpo.
+## 📚 Recursos
 
-## Livros Recomendados
+Para um guia detalhado sobre os cursos e livros de estudo, consulte o [Guia de Estudos](GUIA_DE_ESTUDOS.md).
 
-- **Algoritmos e Lógica da Programação** (Marco A. Furlan de Souza et al.)  
-  Livro didático sobre raciocínio lógico e algoritmos, com fluxogramas e pseudocódigos.  
-  Objetivos: praticar construção de algoritmos básicos, estruturas sequenciais e de decisão, desenvolver pensamento algorítmico.
+## 📝 Licença
 
-- **Entendendo Algoritmos – Um Guia Ilustrado** (Aditya Y. Bhargava)  
-  Guia ilustrado para algoritmos fundamentais com diagramas e exemplos.  
-  Objetivos: obter intuição visual sobre algoritmos clássicos (busca, ordenação, grafos) e avaliar complexidade.
-
-## Fontes
-Conteúdo e tópicos baseados nos sumários oficiais e materiais didáticos:
-- [Cod3r](https://www.udemy.com/course/fundamentos-de-programacao-com-java)
-- [DIO](https://www.deal.com.br/bootcamp)
-- [Entendendo Algoritmos](https://a.co/d/2bkiKPh)
-- [Algoritmos E Lógica Da Programação](https://a.co/d/2Hhwczl)
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
