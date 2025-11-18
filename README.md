@@ -7,7 +7,6 @@
 ![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
 ![IntelliJ](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=for-the-badge&logo=intellij-idea&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 </div>
 
@@ -103,8 +102,8 @@ Acompanhe meu progresso ao longo dos diferentes tópicos de estudo em Java:
 
 ### Fundamentos da Linguagem
 
-- [✅] Configuração do ambiente de desenvolvimento
-- [✅] Primeiro programa (Hello World)
+- [x] Configuração do ambiente de desenvolvimento
+- [x] Primeiro programa (Hello World)
 - [ ] Variáveis e tipos primitivos
 - [ ] Operadores aritméticos, lógicos e relacionais
 - [ ] Wrappers e conversão de tipos
