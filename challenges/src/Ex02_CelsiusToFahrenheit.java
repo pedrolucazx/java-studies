@@ -33,21 +33,22 @@
  * sem implementação para que o aluno o implemente como exercício.
  */
 public class Ex02_CelsiusToFahrenheit {
+    // Constantes para deixar a fórmula explícita e evitar "números mágicos"
+    private static final double RATIO = 9.0 / 5.0;
+    private static final double OFFSET = 32.0;
 
     /**
      * Converte Celsius para Fahrenheit.
      *
      * @param celsius temperatura em graus Celsius
      * @return temperatura equivalente em graus Fahrenheit
-     * @throws UnsupportedOperationException quando não implementado (esqueleto)
      */
     public static double celsiusToFahrenheit(double celsius) {
-        // TODO: implemente a conversão usando a fórmula F = C * 9/5 + 32
-        throw new UnsupportedOperationException("Implementar celsiusToFahrenheit(double celsius)");
+        double fahrenheit = celsius * RATIO + OFFSET;
+        return fahrenheit;
     }
 
     public static void main(String[] args) {
-        System.out.println("Ex02_CelsiusToFahrenheit: implemente celsiusToFahrenheit(double celsius) conforme o Javadoc.");
-        System.out.println("Entrada esperada: um double representando graus Celsius. Exemplo: 0.0");
+        System.out.println(celsiusToFahrenheit(0.0));
     }
 }
