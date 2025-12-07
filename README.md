@@ -28,6 +28,7 @@ Este repositório documenta a minha jornada de aprendizado em **Java**, desde os
   - [Notação Ponto](#notação-ponto)
   - [Imports](#imports)
   - [Tipo String](#tipo-string)
+  - [Console](#console)
 - [📂 Estrutura do Projeto](#-estrutura-do-projeto)
 - [📚 Recursos de Estudo](#-recursos-de-estudo)
 - [📝 Licença](#-licença)
@@ -304,7 +305,9 @@ String resultado = "  java  ".trim().toUpperCase(); // "JAVA"
 // Sem import - nome completo (fully qualified name)
 java.util.Scanner scanner = new java.util.Scanner(System.in);
 java.util.ArrayList<String> lista = new java.util.ArrayList<>();
+```
 
+```java
 // Com import - mais limpo e legível
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -327,8 +330,6 @@ import java.util.*;  // Importa TODAS as classes do pacote java.util
 | `java.util` | Utilitários               | `Scanner`, `ArrayList`, `HashMap` |
 | `java.io`   | Entrada/Saída             | `File`, `BufferedReader`          |
 | `java.time` | Data e hora (Java 8+)     | `LocalDate`, `LocalDateTime`      |
-
----
 
 ### Tipo String
 
@@ -381,6 +382,80 @@ int idade = 28;
 String info = String.format("Nome: %s, Idade: %d", nome, idade);
 // "Nome: Pedro, Idade: 28"
 ```
+
+### Console
+
+- Impressão no console:
+
+  - `System.out.print(...)` — imprime sem pular linha.
+  - `System.out.println(...)` — imprime e adiciona uma nova linha ao final.
+  - `System.out.printf(...)` — impressão formatada com especificadores (ex.: `%s`, `%d`, `%f`). Use `%n` para nova linha portátil.
+
+  Exemplos:
+
+  ```java
+  System.out.print("Sem nova linha");
+  System.out.println("Com nova linha");
+  System.out.printf("Nome: %s, Idade: %d%n", nome, idade);
+  ```
+
+- Formatação de strings:
+
+  - `String.format(...)` retorna uma `String` formatada.
+
+  ```java
+  String info = String.format("Nome: %s, Idade: %d", nome, idade);
+  ```
+
+- Captura de entrada do usuário (teclado):
+
+  - A classe `Scanner` permite ler diferentes tipos de dados a partir de `System.in`.
+  - Importar `java.util.Scanner`, criar um objeto `Scanner`, ler valores e fechá-lo quando não for mais necessário.
+
+  Exemplo problemático:
+
+  ```
+  Scanner teclado = new Scanner(System.in);
+   
+      System.out.println("Qual a sua idade?");
+      int idade = teclado.nextInt();
+      System.out.println("Qual o seu nome?");
+      String nome = teclado.nextLine();
+      System.out.println("Qual o seu sobrenome?");
+      String sobrenome = teclado.nextLine();
+   
+      teclado.close();
+  ```
+
+  Exemplo de saída observada quando o problema ocorre:
+
+  ```
+  Qual a sua idade? 25
+  Qual o seu nome? Qual o seu sobrenome? Silva
+  ```
+
+  Por que isso acontece:
+
+  - `nextInt()` e `nextDouble()` leem apenas o token numérico (ex.: `25`) e deixam o caractere de nova linha (`\n`) no buffer quando o usuário pressiona Enter.
+  - Se você chamar `nextLine()` logo depois, ele vai consumir esse `\n` remanescente e retornar uma string vazia, fazendo com que a próxima pergunta seja pulada.
+
+  Solução (consumir o newline antes de usar `nextLine()`):
+
+  ```
+  Scanner teclado = new Scanner(System.in);
+   
+      System.out.println("Qual a sua idade?");
+      int idade = teclado.nextInt();
+      teclado.nextLine(); //lê o "\\n" que o teclado.nextInt() deixa para trás.
+      System.out.println("Qual o seu nome?");
+      String nome = teclado.nextLine();
+      System.out.println("Qual o seu sobrenome?");
+      String sobrenome = teclado.nextLine();
+   
+      teclado.close();
+  ```
+
+  - Alternativa: ler tudo com `nextLine()` e converter para número com `Integer.parseInt()` / `Double.parseDouble()` quando necessário.
 
 ---
 
