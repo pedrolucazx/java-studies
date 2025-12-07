@@ -27,6 +27,7 @@ Este repositório documenta a minha jornada de aprendizado em **Java**, desde os
   - [Tipos Primitivos](#tipos-primitivos)
   - [Notação Ponto](#notação-ponto)
   - [Imports](#imports)
+  - [Tipo String](#tipo-string)
 - [📂 Estrutura do Projeto](#-estrutura-do-projeto)
 - [📚 Recursos de Estudo](#-recursos-de-estudo)
 - [📝 Licença](#-licença)
@@ -326,6 +327,60 @@ import java.util.*;  // Importa TODAS as classes do pacote java.util
 | `java.util` | Utilitários               | `Scanner`, `ArrayList`, `HashMap` |
 | `java.io`   | Entrada/Saída             | `File`, `BufferedReader`          |
 | `java.time` | Data e hora (Java 8+)     | `LocalDate`, `LocalDateTime`      |
+
+---
+
+### Tipo String
+
+- Definição: uma `String` representa um conjunto de caracteres com métodos utilitários para manipulação e consulta. Não crie classes com nome `String` (conflito com `java.lang.String`).
+
+- Exemplos básicos:
+
+```java
+String s = "Java";
+char primeiro = s.charAt(0); // 'J'
+```
+
+- Concatenação:
+
+```java
+String a = "Olá";
+String b = " Mundo";
+String c = a + b;            // "Olá Mundo"
+String d = a.concat(b);      // "Olá Mundo"
+```
+
+- Imutabilidade:
+
+Instâncias de `String` são imutáveis — operações retornam novas `String` sem alterar a original.
+
+```java
+String x = "hello";
+String y = x.toUpperCase(); // y = "HELLO", x continua "hello"
+```
+
+- Métodos úteis (exemplos):
+
+```java
+s.startsWith("Ja");          // true
+s.endsWith("va");           // true
+s.length();                   // 4
+s.equals("Java");           // true (case-sensitive)
+s.equalsIgnoreCase("java"); // true
+s.contains("av");           // true
+s.indexOf('v');               // 2
+s.substring(1, 3);            // "av"
+s.trim();                     // remove espaços nas extremidades
+```
+
+- Formatação:
+
+```java
+String nome = "Pedro";
+int idade = 28;
+String info = String.format("Nome: %s, Idade: %d", nome, idade);
+// "Nome: Pedro, Idade: 28"
+```
 
 ---
 
