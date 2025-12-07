@@ -25,12 +25,6 @@
  * Output esperado (conceitual):
  *  celsiusToFahrenheit(0.0) -> 32.0
  *
- * Dicas / Objetivo pedagógico:
- * - Explique em comentários como usar variáveis temporárias para a conversão caso ache necessário.
- * - Não altere o nome do método principal de conversão: `celsiusToFahrenheit`.
- *
- * Nota: este arquivo fornece o enunciado e um esqueleto de implementação. O método `celsiusToFahrenheit` está propositadamente
- * sem implementação para que o aluno o implemente como exercício.
  */
 public class Ex02_CelsiusToFahrenheit {
     // Constantes para deixar a fórmula explícita e evitar "números mágicos"

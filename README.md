@@ -10,7 +10,7 @@
 
 ## 🎯 Sobre o Projeto
 
-Este repositório documenta minha jornada de aprendizado em **Java**, desde os fundamentos da linguagem até conceitos avançados de Programação Orientada a Objetos (POO) e frameworks modernos. Aqui você encontrará exercícios práticos, desafios resolvidos, anotações de estudo e referências a cursos e livros que estou utilizando.
+Este repositório documenta a minha jornada de aprendizado em **Java**, desde os fundamentos da linguagem até conceitos avançados de Programação Orientada a Objetos (POO) e frameworks modernos. Aqui você encontrará exercícios práticos, desafios resolvidos, anotações de estudo e referências a cursos e livros que estou utilizando.
 
 **Objetivo:** Consolidar conhecimentos em Java através da prática constante, documentação organizada e estudo de boas práticas de desenvolvimento.
 
@@ -28,7 +28,6 @@ Este repositório documenta minha jornada de aprendizado em **Java**, desde os f
   - [Notação Ponto](#notação-ponto)
   - [Imports](#imports)
 - [📂 Estrutura do Projeto](#-estrutura-do-projeto)
-- [🔗 Recursos Úteis](#-recursos-úteis)
 - [📚 Recursos de Estudo](#-recursos-de-estudo)
 - [📝 Licença](#-licença)
 
@@ -38,10 +37,10 @@ Este repositório documenta minha jornada de aprendizado em **Java**, desde os f
 
 ### Pré-requisitos
 
-Certifique-se de ter instalado em sua máquina:
+Certifique-se de ter instalado na sua máquina:
 
 - **Java JDK** (versão 11 ou superior) - [Download](https://www.oracle.com/java/technologies/downloads/)
-- **IDE** de sua preferência (IntelliJ IDEA ou VS Code)
+- **IDE** da sua preferência (IntelliJ IDEA ou VS Code)
 - **Git** - [Download](https://git-scm.com/)
 
 ### Clonando o Repositório
@@ -92,17 +91,17 @@ Acompanhe meu progresso ao longo das **9 partes** do plano de estudos estruturad
 
 **Livros:** Furlan + Bhargava
 
-- [x] 1.1 O que é um Algoritmo? (Mentalidade do Engenheiro)
-- [x] 1.2 Pesquisa Binária e Notação Big O
-- [x] 1.3 Ferramentas de Modelagem (Fluxogramas, Portugol)
-- [x] 1.4 Arquitetura do Computador (Von Neumann)
+- [ ] 1.1 O que é um Algoritmo? (Mentalidade do Engenheiro)
+- [ ] 1.2 Pesquisa Binária e Notação Big O
+- [ ] 1.3 Ferramentas de Modelagem (Fluxogramas, Portugol)
+- [ ] 1.4 Arquitetura do Computador (Von Neumann)
 
 ### Parte 2: A Ferramenta - Fundamentos Java
 
 **Curso:** Cod3r (Seções 03-04)
 
 - [x] 2.1 Sintaxe Fundamental (Tipos, Variáveis, Operadores)
-- [x] 2.2 Estruturas de Controle (if, for, while, switch)
+- [ ] 2.2 Estruturas de Controle (if, for, while, switch)
 
 ### Parte 3: O Paradigma - Orientação a Objetos
 
