@@ -88,7 +88,7 @@ public class Ex03_SalaryAverage {
         double average = calculateAverage(firstSalary, secondSalary, thirdSalary);
 
         // TODO: Exibir o resultado formatado com 2 casas decimais
-        System.out.printf("Média salarial: %.2f%n", average);
+        System.out.printf("Média salarial: R$%.2f%n", average);
 
         // TODO: Fechar o Scanner
         scanner.close();
