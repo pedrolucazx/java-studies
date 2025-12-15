@@ -41,7 +41,7 @@ import java.util.Scanner;
  */
 public class Ex03_SalaryAverage {
     private static final int SALARY_COUNT = 3;
-    private static final String DECIMAL_PATTERN = ",";
+    private static final char DECIMAL_PATTERN = ',';
 
     /**
      * Converte uma String de salário para double.
