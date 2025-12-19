@@ -752,7 +752,79 @@ BigDecimal valor2 = new BigDecimal("0.2");
 BigDecimal soma = valor1.add(valor2);  // 0.3 (precisão garantida)
 ```
 
----
+### Operadores
+
+Operadores são símbolos especiais usados para realizar operações sobre variáveis e valores. Eles podem ser classificados em três tipos:
+
+**Operadores Unários:**
+Operam sobre apenas um operando. Exemplos: `++`, `--`, `!`, `-` (negação).
+
+```java
+int a = 5;
+a++;    // operador unário de incremento
+boolean ativo = false;
+!ativo; // operador unário de negação lógica
+```
+
+**Operadores Binários:**
+Operam sobre dois operandos. Exemplos: `+`, `-`, `*`, `/`, `%`, `&&`, `||`, `^`.
+
+```java
+int soma = 2 + 3;      // operador binário de adição
+boolean resultado = true && false; // operador binário lógico AND
+```
+
+**Operador Ternário:**
+Opera sobre três operandos. É o operador condicional `? :`.
+
+```java
+int idade = 18;
+String status = (idade >= 18) ? "maior de idade" : "menor de idade";
+```
+
+#### Operadores Lógicos: AND, OR, XOR
+
+Os operadores lógicos são usados para combinar expressões booleanas:
+
+- **AND (`&&`)**: Verdadeiro se ambos os operandos forem verdadeiros.
+- **OR (`||`)**: Verdadeiro se pelo menos um dos operandos for verdadeiro.
+- **XOR (`^`)**: Verdadeiro se apenas um dos operandos for verdadeiro (exclusivo).
+
+<div style="display: flex; gap: 32px; flex-wrap: wrap;">
+  <table>
+    <thead>
+      <tr><th>A</th><th>B</th><th>A && B</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>false</td><td>false</td><td>false</td></tr>
+      <tr><td>false</td><td>true</td><td>false</td></tr>
+      <tr><td>true</td><td>false</td><td>false</td></tr>
+      <tr><td>true</td><td>true</td><td>true</td></tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr><th>A</th><th>B</th><th>A || B</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>false</td><td>false</td><td>false</td></tr>
+      <tr><td>false</td><td>true</td><td>true</td></tr>
+      <tr><td>true</td><td>false</td><td>true</td></tr>
+      <tr><td>true</td><td>true</td><td>true</td></tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr><th>A</th><th>B</th><th>A ^ B</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>false</td><td>false</td><td>false</td></tr>
+      <tr><td>false</td><td>true</td><td>true</td></tr>
+      <tr><td>true</td><td>false</td><td>true</td></tr>
+      <tr><td>true</td><td>true</td><td>false</td></tr>
+    </tbody>
+  </table>
+</div>
 
 ## 📂 Estrutura do Projeto
 
