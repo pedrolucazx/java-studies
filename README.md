@@ -24,6 +24,7 @@ Este repositório documenta a minha jornada de aprendizado em **Java**, desde os
   - [Objetos x Tipos Primitivos](#objetos-x-tipos-primitivos)
   - [Wrapper Classes](#wrapper-classes)
   - [Conversão de Tipos](#conversão-de-tipos)
+  - [Operadores](#operadores)
 - [📂 Estrutura do Projeto](#-estrutura-do-projeto)
 - [📚 Recursos de Estudo](#-recursos-de-estudo)
 - [📝 Licença](#-licença)
