@@ -23,28 +23,38 @@
 package fundamentals;
 
 public class Ex05_LogicOperation {
-    public static void main(String[] args) {
-        boolean firstJob = false;
-        boolean secondJob = true;
 
-        boolean bothJobs = firstJob && secondJob;   // AND
-        boolean exactlyOne = firstJob ^ secondJob; // XOR
-        boolean anyJob = firstJob || secondJob;    // OR
-        boolean noJob = !anyJob;                   // NOT
+  public static void main(String[] args) {
+    boolean firstJob = false;
+    boolean secondJob = true;
 
-        int tvSize = bothJobs ? 50 : (exactlyOne ? 32 : 0);
-        boolean iceCream = anyJob;
+    boolean bothJobs = firstJob && secondJob; // AND
+    boolean exactlyOne = firstJob ^ secondJob; // XOR
+    boolean anyJob = firstJob || secondJob; // OR
+    boolean noJob = !anyJob; // NOT
 
-        String bothJobsMsg = bothJobs ? "Ambos os trabalhos deram certo" : "";
-        String noJobMsg = noJob ? "Nenhum trabalho deu certo" : "";
-        String onlyFirstJobMsg = (!bothJobs && !noJob && firstJob) ? "O trabalho 1 deu certo" : "";
-        String onlySecondJobMsg = (!bothJobs && !noJob && secondJob) ? "O trabalho 2 deu certo" : "";
+    int tvSize = bothJobs ? 50 : (exactlyOne ? 32 : 0);
+    boolean iceCream = anyJob;
 
-        String jobsPhrase = noJobMsg + bothJobsMsg + onlyFirstJobMsg + onlySecondJobMsg;
-        
-        String icePhrase = iceCream ? "a família tomou sorvete" : "a família não tomou sorvete";
-        String tvPhrase = noJob ? "e não comprou TV" : "e comprou a TV de " + tvSize + " polegadas";
+    String bothJobsMsg = bothJobs ? "Ambos os trabalhos deram certo" : "";
+    String noJobMsg = noJob ? "Nenhum trabalho deu certo" : "";
+    String onlyFirstJobMsg = (!bothJobs && !noJob && firstJob)
+      ? "O trabalho 1 deu certo"
+      : "";
+    String onlySecondJobMsg = (!bothJobs && !noJob && secondJob)
+      ? "O trabalho 2 deu certo"
+      : "";
 
-        System.out.println(jobsPhrase + ", " + icePhrase + " " + tvPhrase + ".");
-    }
+    String jobsPhrase =
+      noJobMsg + bothJobsMsg + onlyFirstJobMsg + onlySecondJobMsg;
+
+    String icePhrase = iceCream
+      ? "a família tomou sorvete"
+      : "a família não tomou sorvete";
+    String tvPhrase = noJob
+      ? "e não comprou TV"
+      : "e comprou a TV de " + tvSize + " polegadas";
+
+    System.out.println(jobsPhrase + ", " + icePhrase + " " + tvPhrase + ".");
+  }
 }
