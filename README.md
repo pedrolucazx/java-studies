@@ -909,6 +909,72 @@ String status = (idade >= 18) ? "Maior de idade" : "Menor de idade";
 // status será "Maior de idade"
 ```
 
+### JDK x JRE
+
+**JRE (Java Runtime Environment):**
+
+- É o ambiente necessário para rodar programas Java já prontos.
+- Inclui a JVM (Java Virtual Machine), que interpreta o bytecode e executa o programa, além de bibliotecas e outras ferramentas básicas.
+- Usuários comuns (quem só quer rodar um software feito em Java) precisam apenas do JRE instalado.
+- Não permite compilar ou criar novos programas, apenas executar.
+
+**JDK (Java Development Kit):**
+
+- É o kit completo para quem desenvolve em Java.
+- Inclui tudo que o JRE oferece **mais** ferramentas de desenvolvimento:
+  - `javac`: compilador Java (transforma código fonte em bytecode)
+  - `javadoc`: gera documentação automática a partir do código
+  - `jshell`: terminal interativo para testar comandos Java
+  - Outras ferramentas úteis para desenvolvedores
+- Permite criar, compilar, documentar e depurar aplicações Java.
+- **Recomendado para todo desenvolvedor Java.**
+
+**Analogia:**
+
+- Ao compilar um arquivo `.java`, o JDK gera um `.class` (bytecode).
+- O bytecode é como um "idioma universal" que a JVM entende, permitindo rodar o mesmo programa em Windows, Linux, Mac, Android, etc., sem recompilar.
+- A JVM funciona como um intérprete em um congresso internacional: traduz o bytecode para o sistema operacional local.
+
+### java e javac
+
+**`javac` (Java Compiler):**
+
+- Responsável por compilar o código fonte Java (`.java`) e gerar o bytecode (`.class`).
+- O bytecode é um formato intermediário, não é executável diretamente pelo sistema operacional, mas sim pela JVM.
+- Exemplo prático:
+
+```java
+// Arquivo: HelloWorld.java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Olá, mundo!");
+    }
+}
+```
+
+No terminal:
+
+```shell
+javac HelloWorld.java   // Gera HelloWorld.class
+```
+
+- O arquivo `.class` pode ser transportado para qualquer sistema com JVM e será executado da mesma forma.
+
+**`java` (Java Application Launcher):**
+
+- Responsável por executar o bytecode gerado pelo compilador.
+
+```shell
+java HelloWorld
+```
+
+- A JVM interpreta o bytecode e executa o programa.
+- É possível passar argumentos para o programa pelo terminal:
+
+```shell
+java HelloWorld argumento1 argumento2
+```
+
 ## 📂 Estrutura do Projeto
 
 ```
