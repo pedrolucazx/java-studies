@@ -48,29 +48,30 @@ java-studies/
 | ---------------------- | --------------- | ---------------------------------------------- |
 | Fundamentos Java       | ✅ Concluído    | [Ver docs/fundamentos.md](docs/fundamentos.md) |
 | Estruturas de Controle | 🔄 Em andamento | [Ver docs/fundamentos.md](docs/fundamentos.md) |
-| Orientação a Objetos   | ⬜ Pendente     | [Ver docs/poo.md](docs/poo.md)                 |
-| Collections            | ⬜ Pendente     | [Ver docs/collections.md](docs/collections.md) |
-| Spring Boot            | ⬜ Pendente     | [Ver docs/spring.md](docs/spring.md)           |
 
 ## 📚 Resumos de Livros
 
 Além do curso, estou fazendo resumos de livros importantes:
 
-| Livro | Autor | Foco | Status | Links |
-|-------|-------|------|--------|-------|
-| Lógica de Programação | Furlan et al. | Algoritmos e lógica | ⬜ Não iniciado | [Resumo](docs/resumos/furlan-logica.md) · [Exercícios](challenges/src/algorithms/furlan/) |
-| Entendendo Algoritmos | Bhargava | Estruturas de dados | ⬜ Não iniciado | [Resumo](docs/resumos/bhargava-algoritmos.md) · [Exercícios](challenges/src/algorithms/bhargava/) |
+| Livro                 | Autor         | Foco                | Status          | Links                                                                                             |
+| --------------------- | ------------- | ------------------- | --------------- | ------------------------------------------------------------------------------------------------- |
+| Lógica de Programação | Furlan et al. | Algoritmos e lógica | ⬜ Não iniciado | [Resumo](docs/resumos/furlan-logica.md) · [Exercícios](challenges/src/algorithms/furlan/)         |
+| Entendendo Algoritmos | Bhargava      | Estruturas de dados | ⬜ Não iniciado | [Resumo](docs/resumos/bhargava-algoritmos.md) · [Exercícios](challenges/src/algorithms/bhargava/) |
 
 [📚 Ver todos os resumos →](docs/resumos/)
 
 ## 🎯 Exercícios Resolvidos
 
 ### Exercícios em Java (Curso Cod3r)
+
 Exercícios práticos resolvidos em **Java** do curso Udemy:
+
 - [Fundamentos - Curso Cod3r (12 exercícios)](challenges/src/fundamentals/) ✅
 
 ### Exercícios de Lógica (Livros)
+
 Exercícios resolvidos em **pseudocódigo** e **diagramas Mermaid**:
+
 - [Lógica - Livro Furlan (0/50 exercícios)](challenges/src/algorithms/furlan/) ⬜
 - [Algoritmos - Livro Bhargava (0 exercícios)](challenges/src/algorithms/bhargava/) ⬜
 

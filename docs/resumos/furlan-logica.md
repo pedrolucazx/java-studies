@@ -1,8 +1,9 @@
-# Lógica de Programação - Furlan et al.
+# Algoritmos E Lógica Da Programação - Furlan.
 
 &gt; Resumo e anotações do livro "Algoritmos e Lógica da Programação"
 
-**Autores:** André Villar Forbellone & Henri Frederico Eberspächer  
+**Autores:** Marco A. Furlan de Souza (Autor), Marcelo Marques Gomes (Autor), Marcio Vieira Soares (Autor), Ricardo Concilio (Autor)
+
 **Editora:** Pearson  
 **Status:** ⬜ Não iniciado  
 **Parte do:** [Roadmap - Parte 1](../../ROADMAP.md#parte-1-fundação---lógica-algoritmos-e-computação-)
@@ -24,7 +25,7 @@
 
 ### 📝 Resumo
 
-*[A ser preenchido durante a leitura]*
+_[A ser preenchido durante a leitura]_
 
 ### 💡 Pontos Importantes
 
@@ -33,7 +34,7 @@
 
 ### 🎯 Conceitos-Chave
 
-*[A ser preenchido]*
+_[A ser preenchido]_
 
 ### 📚 Exercícios Relacionados
 
@@ -41,37 +42,37 @@
 
 ### 🤔 Minhas Anotações
 
-*[Observações pessoais, dúvidas, insights...]*
+_[Observações pessoais, dúvidas, insights...]_
 
 ---
 
 ## Capítulo 2: Conceitos de Computação e Computadores
 
-*[Em breve]*
+_[Em breve]_
 
 ---
 
 ## Capítulo 3: Algoritmos e Suas Representações
 
-*[Em breve]*
+_[Em breve]_
 
 ---
 
 ## Capítulo 4: Estruturas de Programação
 
-*[Em breve]*
+_[Em breve]_
 
 ---
 
 ## Capítulo 5: Variáveis Indexadas
 
-*[Em breve]*
+_[Em breve]_
 
 ---
 
 ## Capítulo 6: Técnicas para a Solução de Problemas
 
-*[Em breve]*
+_[Em breve]_
 
 ---
 
@@ -90,7 +91,7 @@
 
 ## 🎯 Conclusão Geral
 
-*[A ser preenchido ao terminar o livro]*
+_[A ser preenchido ao terminar o livro]_
 
 ---
 

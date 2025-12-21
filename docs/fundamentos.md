@@ -851,6 +851,7 @@ String status = (idade >= 18) ? "Maior de idade" : "Menor de idade";
 ## 🎯 Exercícios Práticos
 
 Exercícios que aplicam estes conceitos:
+
 - [Ex01 - Área do Círculo](../challenges/fundamentos/Ex01_AreaCircle.java)
 - [Ex02 - Conversão Temperatura](../challenges/fundamentos/Ex02_CelsiusToFahrenheit.java)
 
@@ -858,9 +859,7 @@ Exercícios que aplicam estes conceitos:
 
 ## 📚 Referências
 
-- [Documentação Oracle - Java Tutorial](https://docs.oracle.com/javase/tutorial/)
-- Curso Cod3r - Seções 03-04
-- Livro Forbellone - Capítulos 1-4
+- Curso Cod3r - Seções 03-0
 
 ---
 
