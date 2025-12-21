@@ -380,10 +380,18 @@ String senhaDigitada = "1234 ";
 String senhaCorreta = "1234";
 
 // Comparação incorreta:
-System.out.println(senhaDigitada == senhaCorreta ? "Acesso liberado" : "Acesso negado");
+System.out.println(
+  senhaDigitada == senhaCorreta
+    ? "Acesso liberado"
+    : "Acesso negado"
+);
 
 // Comparação correta:
-System.out.println(senhaDigitada.equals(senhaCorreta) ? "Acesso liberado" : "Acesso negado");
+System.out.println(
+  senhaDigitada.equals(senhaCorreta)
+    ? "Acesso liberado"
+    : "Acesso negado"
+);
 ```
 
 ### Console
