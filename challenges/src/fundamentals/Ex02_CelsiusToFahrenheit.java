@@ -29,22 +29,21 @@
 package fundamentals;
 
 public class Ex02_CelsiusToFahrenheit {
-    // Constantes para deixar a fórmula explícita e evitar "números mágicos"
-    private static final double RATIO = 9.0 / 5.0;
-    private static final double OFFSET = 32.0;
 
-    /**
-     * Converte Celsius para Fahrenheit.
-     *
-     * @param celsius temperatura em graus Celsius
-     * @return temperatura equivalente em graus Fahrenheit
-     */
-    public static double celsiusToFahrenheit(double celsius) {
-        double fahrenheit = celsius * RATIO + OFFSET;
-        return fahrenheit;
-    }
+  private static final double RATIO = 9.0 / 5.0;
+  private static final double OFFSET = 32.0;
 
-    public static void main(String[] args) {
-        System.out.println(celsiusToFahrenheit(0.0));
-    }
+  /**
+   *
+   * @param celsius temperatura em graus Celsius
+   * @return temperatura equivalente em graus Fahrenheit
+   */
+  public static double celsiusToFahrenheit(double celsius) {
+    double fahrenheit = celsius * RATIO + OFFSET;
+    return fahrenheit;
+  }
+
+  public static void main(String[] args) {
+    System.out.println(celsiusToFahrenheit(0.0));
+  }
 }
