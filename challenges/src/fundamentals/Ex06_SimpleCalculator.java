@@ -1,4 +1,4 @@
-/*
+/**
  * Desafio: Calculadora Simples
  *
  * Instruções:
@@ -23,33 +23,47 @@
  */
 
 package fundamentals;
+
 import java.util.Scanner;
 
 public class Ex06_SimpleCalculator {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Digite o primeiro número: ");
-        double numero1 = scanner.nextDouble();
+  private static String getMsg(
+    String operacao,
+    double numero1,
+    double numero2
+  ) {
+    double resultado = operacao.equals("+") ? numero1 + numero2 : 0;
+    resultado = operacao.equals("-") ? numero1 - numero2 : resultado;
+    resultado = operacao.equals("*") ? numero1 * numero2 : resultado;
+    resultado = operacao.equals("/") ? numero1 / numero2 : resultado;
+    resultado = operacao.equals("%") ? numero1 % numero2 : resultado;
 
-        System.out.print("Digite o segundo número: ");
-        double numero2 = scanner.nextDouble();
+    String msg = (operacao.equals("+") ||
+        operacao.equals("-") ||
+        operacao.equals("*") ||
+        operacao.equals("/") ||
+        operacao.equals("%"))
+      ? ("Resultado: " + resultado)
+      : "Operação inválida!";
+    return msg;
+  }
 
-        System.out.print("Digite a operação (+, -, *, /, %): ");
-        String operacao = scanner.next(); 
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
 
-        double resultado = operacao.equals("+") ? numero1 + numero2 : 0;
-        resultado = operacao.equals("-") ? numero1 - numero2 : resultado;
-        resultado = operacao.equals("*") ? numero1 * numero2 : resultado;
-        resultado = operacao.equals("/") ? numero1 / numero2 : resultado;
-        resultado = operacao.equals("%") ? numero1 % numero2 : resultado;
+    System.out.print("Digite o primeiro número: ");
+    double numero1 = scanner.nextDouble();
 
+    System.out.print("Digite o segundo número: ");
+    double numero2 = scanner.nextDouble();
 
-        String msg = (operacao.equals("+") || operacao.equals("-") || operacao.equals("*") || operacao.equals("/") || operacao.equals("%"))
-            ? ("Resultado: " + resultado)
-            : "Operação inválida!";
+    System.out.print("Digite a operação (+, -, *, /, %): ");
+    String operacao = scanner.next();
 
-        System.out.println(msg);
-        scanner.close();
-    }
+    String msg = getMsg(operacao, numero1, numero2);
+
+    System.out.println(msg);
+    scanner.close();
+  }
 }
