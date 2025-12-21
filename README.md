@@ -327,7 +327,7 @@ String s = "Java";
 char primeiro = s.charAt(0); // 'J'
 ```
 
-- Concatenação:
+#### Concatenação:
 
 ```java
 String a = "Olá";
@@ -336,7 +336,7 @@ String c = a + b;            // "Olá Mundo"
 String d = a.concat(b);      // "Olá Mundo"
 ```
 
-- Imutabilidade:
+#### Imutabilidade:
 
 Instâncias de `String` são imutáveis — operações retornam novas `String` sem alterar a original.
 
@@ -345,7 +345,7 @@ String x = "hello";
 String y = x.toUpperCase(); // y = "HELLO", x continua "hello"
 ```
 
-- Métodos úteis (exemplos):
+#### Métodos úteis (exemplos):
 
 ```java
 s.startsWith("Ja");          // true
@@ -359,88 +359,106 @@ s.substring(1, 3);            // "av"
 s.trim();                     // remove espaços nas extremidades
 ```
 
-- Formatação:
+#### Igualdade entre Strings
+
+Ao comparar Strings em Java, é fundamental entender a diferença entre o operador `==` e o método `.equals()`. Usar o operador `==` compara se as referências dos objetos são iguais (ou seja, se apontam para o mesmo local na memória), e não necessariamente se o conteúdo das Strings é igual. Isso pode causar resultados inesperados:
 
 ```java
-String nome = "Pedro";
-int idade = 25;
-String info = String.format("Nome: %s, Idade: %d", nome, idade);
-// "Nome: Pedro, Idade: 25"
+String a = "Java";
+String b = "Java";
+String c = new String("Java");
+
+System.out.println(a == b); // true (mesmo pool de strings)
+System.out.println(a == c); // false (objetos diferentes)
+System.out.println(a.equals(c)); // true (conteúdo igual)
+```
+
+Portanto, **sempre utilize o método `.equals()` para comparar o conteúdo de Strings**:
+
+```java
+String senhaDigitada = "1234 ";
+String senhaCorreta = "1234";
+
+// Comparação incorreta:
+System.out.println(senhaDigitada == senhaCorreta ? "Acesso liberado" : "Acesso negado");
+
+// Comparação correta:
+System.out.println(senhaDigitada.equals(senhaCorreta) ? "Acesso liberado" : "Acesso negado");
 ```
 
 ### Console
 
-- Impressão no console:
+#### Impressão no console:
 
-  - `System.out.print(...)` — imprime sem pular linha.
-  - `System.out.println(...)` — imprime e adiciona uma nova linha ao final.
-  - `System.out.printf(...)` — impressão formatada com especificadores (ex.: `%s`, `%d`, `%f`). Use `%n` para nova linha.
+- `System.out.print(...)` — imprime sem pular linha.
+- `System.out.println(...)` — imprime e adiciona uma nova linha ao final.
+- `System.out.printf(...)` — impressão formatada com especificadores (ex.: `%s`, `%d`, `%f`). Use `%n` para nova linha.
 
-  Exemplos:
+Exemplos:
 
-  ```java
-  System.out.print("Sem nova linha");
-  System.out.println("Com nova linha");
-  System.out.printf("Nome: %s, Idade: %d%n", nome, idade);
-  ```
+```java
+System.out.print("Sem nova linha");
+System.out.println("Com nova linha");
+System.out.printf("Nome: %s, Idade: %d%n", nome, idade);
+```
 
-- Formatação de strings:
+#### Formatação de strings:
 
-  - `String.format(...)` retorna uma `String` formatada.
+- `String.format(...)` retorna uma `String` formatada.
 
-  ```java
-  String info = String.format("Nome: %s, Idade: %d", nome, idade);
-  ```
+```java
+String info = String.format("Nome: %s, Idade: %d", nome, idade);
+```
 
-- Captura de entrada do usuário (teclado):
+#### Captura de entrada do usuário (teclado):
 
-  - A classe `Scanner` permite ler diferentes tipos de dados a partir de `System.in`.
-  - Importar `java.util.Scanner`, criar um objeto `Scanner`, ler valores e fechá-lo quando não for mais necessário.
+- A classe `Scanner` permite ler diferentes tipos de dados a partir de `System.in`.
+- Importar `java.util.Scanner`, criar um objeto `Scanner`, ler valores e fechá-lo quando não for mais necessário.
 
-  Exemplo problemático:
+Exemplo problemático:
 
-  ```
-  Scanner teclado = new Scanner(System.in);
+```
+Scanner teclado = new Scanner(System.in);
 
-      System.out.println("Qual a sua idade?");
-      int idade = teclado.nextInt();
-      System.out.println("Qual o seu nome?");
-      String nome = teclado.nextLine();
-      System.out.println("Qual o seu sobrenome?");
-      String sobrenome = teclado.nextLine();
+    System.out.println("Qual a sua idade?");
+    int idade = teclado.nextInt();
+    System.out.println("Qual o seu nome?");
+    String nome = teclado.nextLine();
+    System.out.println("Qual o seu sobrenome?");
+    String sobrenome = teclado.nextLine();
 
-      teclado.close();
-  ```
+    teclado.close();
+```
 
-  Exemplo de saída observada quando o problema ocorre:
+Exemplo de saída observada quando o problema ocorre:
 
-  ```
-  Qual a sua idade? 25
-  Qual o seu nome? Qual o seu sobrenome? Silva
-  ```
+```
+Qual a sua idade? 25
+Qual o seu nome? Qual o seu sobrenome? Silva
+```
 
-  Por que isso acontece:
+Por que isso acontece:
 
-  - `nextInt()` e `nextDouble()` leem apenas o token numérico (ex.: `25`) e deixam o caractere de nova linha (`\n`) no buffer quando o usuário pressiona Enter.
-  - Se você chamar `nextLine()` logo depois, ele vai consumir esse `\n` remanescente e retornar uma string vazia, fazendo com que a próxima pergunta seja pulada.
+- `nextInt()` e `nextDouble()` leem apenas o token numérico (ex.: `25`) e deixam o caractere de nova linha (`\n`) no buffer quando o usuário pressiona Enter.
+- Se você chamar `nextLine()` logo depois, ele vai consumir esse `\n` remanescente e retornar uma string vazia, fazendo com que a próxima pergunta seja pulada.
 
-  Solução (consumir o newline antes de usar `nextLine()`):
+Solução (consumir o newline antes de usar `nextLine()`):
 
-  ```
-  Scanner teclado = new Scanner(System.in);
+```java
+Scanner teclado = new Scanner(System.in);
 
-      System.out.println("Qual a sua idade?");
-      int idade = teclado.nextInt();
-      teclado.nextLine(); //lê o "\\n" que o teclado.nextInt() deixa para trás.
-      System.out.println("Qual o seu nome?");
-      String nome = teclado.nextLine();
-      System.out.println("Qual o seu sobrenome?");
-      String sobrenome = teclado.nextLine();
+    System.out.println("Qual a sua idade?");
+    int idade = teclado.nextInt();
+    teclado.nextLine(); //lê o "\\n" que o teclado.nextInt() deixa para trás.
+    System.out.println("Qual o seu nome?");
+    String nome = teclado.nextLine();
+    System.out.println("Qual o seu sobrenome?");
+    String sobrenome = teclado.nextLine();
 
-      teclado.close();
-  ```
+teclado.close();
+```
 
-  - Alternativa: ler tudo com `nextLine()` e converter para número com `Integer.parseInt()` / `Double.parseDouble()` quando necessário.
+- Alternativa: ler tudo com `nextLine()` e converter para número com `Integer.parseInt()` / `Double.parseDouble()` quando necessário.
 
 ---
 
@@ -487,8 +505,6 @@ s.length();      // Método disponível
 s.toUpperCase(); // Método disponível
 s.charAt(0);     // Método disponível
 ```
-
-Compreender essa diferença é fundamental para o aprendizado da **Programação Orientada a Objetos (POO)**.
 
 ---
 
@@ -791,7 +807,7 @@ Os operadores lógicos são usados para combinar expressões booleanas:
 - **OR (`||`)**: Verdadeiro se pelo menos um dos operandos for verdadeiro.
 - **XOR (`^`)**: Verdadeiro se apenas um dos operandos for verdadeiro (exclusivo).
 
-<div style="display: flex; gap: 32px; flex-wrap: wrap;">
+<div style="display: flex; justify-content: space-between;">
   <table>
     <thead>
       <tr><th>A</th><th>B</th><th>A && B</th></tr>
@@ -826,6 +842,64 @@ Os operadores lógicos são usados para combinar expressões booleanas:
     </tbody>
   </table>
 </div>
+
+#### Operadores Relacionais
+
+Os operadores relacionais são usados para comparar dois valores. O resultado de uma comparação relacional é sempre um valor booleano (`true` ou `false`).
+
+| Operador | Descrição        | Exemplo (Java) | Resultado |
+| -------- | ---------------- | -------------- | --------- |
+| `==`     | Igual a          | `5 == 5`       | `true`    |
+| `!=`     | Diferente de     | `3 != 4`       | `true`    |
+| `>`      | Maior que        | `7 > 2`        | `true`    |
+| `<`      | Menor que        | `1 < 0`        | `false`   |
+| `>=`     | Maior ou igual a | `6 >= 6`       | `true`    |
+| `<=`     | Menor ou igual a | `8 <= 10`      | `true`    |
+
+Exemplo prático:
+
+```java
+int a = 10;
+int b = 20;
+boolean resultado = a < b; // true
+```
+
+#### Operadores de Atribuição
+
+Os operadores de atribuição são usados para atribuir valores a variáveis. O operador mais comum é o `=`, mas existem operadores combinados para facilitar operações matemáticas e lógicas.
+
+| Operador | Exemplo   | Equivalente a | Descrição                  |
+| -------- | --------- | ------------- | -------------------------- |
+| `=`      | `a = 5;`  | —             | Atribuição simples         |
+| `+=`     | `a += 3;` | `a = a + 3;`  | Soma e atribuição          |
+| `-=`     | `a -= 2;` | `a = a - 2;`  | Subtração e atribuição     |
+| `*=`     | `a *= 4;` | `a = a * 4;`  | Multiplicação e atribuição |
+| `/=`     | `a /= 2;` | `a = a / 2;`  | Divisão e atribuição       |
+| `%=`     | `a %= 3;` | `a = a % 3;`  | Módulo e atribuição        |
+
+Exemplo prático:
+
+```java
+int x = 10;
+x += 5; // x agora é 15
+x *= 2; // x agora é 30
+```
+
+#### Operador Ternário
+
+O operador ternário é uma forma concisa de expressar uma condição que retorna um valor entre duas opções. Sua sintaxe é:
+
+```java
+variavel = (condicao) ? valorSeVerdadeiro : valorSeFalso;
+```
+
+Exemplo prático:
+
+```java
+int idade = 18;
+String status = (idade >= 18) ? "Maior de idade" : "Menor de idade";
+// status será "Maior de idade"
+```
 
 ## 📂 Estrutura do Projeto
 
