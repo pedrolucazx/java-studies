@@ -37,60 +37,62 @@
  *
  */
 package fundamentals;
+
 import java.util.Scanner;
 
 public class Ex03_SalaryAverage {
-    private static final int SALARY_COUNT = 3;
-    private static final char DECIMAL_PATTERN = ',';
 
-    /**
-     * Converte uma String de salário para double.
-     * Deve tratar tanto vírgula quanto ponto como separador decimal.
-     *
-     * @param salaryText salário em formato String (ex: "2500,00" ou "2500.00")
-     * @return valor do salário como double
-     */
-    public static double convertSalary(String salaryText) {
-        // TODO: Implementar conversão
-        return Double.parseDouble(salaryText.replace(DECIMAL_PATTERN, '.'));
-    }
+  private static final int SALARY_COUNT = 3;
+  private static final char DECIMAL_PATTERN = ',';
 
-    /**
-     * Calcula a média aritmética de três valores.
-     *
-     * @param value1 primeiro valor
-     * @param value2 segundo valor
-     * @param value3 terceiro valor
-     * @return média aritmética dos três valores
-     */
-    public static double calculateAverage(double value1, double value2, double value3) {
-        // TODO: Implementar cálculo da média
-        return (value1 + value2 + value3) / SALARY_COUNT;
-    }
+  /**
+   *
+   * @param salaryText salário em formato String (ex: "2500,00" ou "2500.00")
+   * @return valor do salário como double
+   */
+  public static double convertSalary(String salaryText) {
+    // TODO: Implementar conversão
+    return Double.parseDouble(salaryText.replace(DECIMAL_PATTERN, '.'));
+  }
 
-    public static void main(String[] args) {
-        // TODO: Criar instância do Scanner para ler do teclado (System.in)
-        Scanner scanner = new Scanner(System.in);
+  /**
+   * @param value1 primeiro valor
+   * @param value2 segundo valor
+   * @param value3 terceiro valor
+   * @return média aritmética dos três valores
+   */
+  public static double calculateAverage(
+    double value1,
+    double value2,
+    double value3
+  ) {
+    // TODO: Implementar cálculo da média
+    return (value1 + value2 + value3) / SALARY_COUNT;
+  }
 
-        // TODO: Solicitar e ler o primeiro salário (como String)
-        System.out.print("Informe o primeiro salário: ");
-        double firstSalary = convertSalary(scanner.nextLine());
+  public static void main(String[] args) {
+    // TODO: Criar instância do Scanner para ler do teclado (System.in)
+    Scanner scanner = new Scanner(System.in);
 
-        // TODO: Solicitar e ler o segundo salário (como String)
-        System.out.print("Informe o segundo salário: ");
-        double secondSalary = convertSalary(scanner.nextLine());
+    // TODO: Solicitar e ler o primeiro salário (como String)
+    System.out.print("Informe o primeiro salário: ");
+    double firstSalary = convertSalary(scanner.nextLine());
 
-        // TODO: Solicitar e ler o terceiro salário (como String)
-        System.out.print("Informe o terceiro salário: ");
-        double thirdSalary = convertSalary(scanner.nextLine());
+    // TODO: Solicitar e ler o segundo salário (como String)
+    System.out.print("Informe o segundo salário: ");
+    double secondSalary = convertSalary(scanner.nextLine());
 
-        // TODO: Converter os três salários de String para double
-        double average = calculateAverage(firstSalary, secondSalary, thirdSalary);
+    // TODO: Solicitar e ler o terceiro salário (como String)
+    System.out.print("Informe o terceiro salário: ");
+    double thirdSalary = convertSalary(scanner.nextLine());
 
-        // TODO: Exibir o resultado formatado com 2 casas decimais
-        System.out.printf("Média salarial: R$%.2f%n", average);
+    // TODO: Converter os três salários de String para double
+    double average = calculateAverage(firstSalary, secondSalary, thirdSalary);
 
-        // TODO: Fechar o Scanner
-        scanner.close();
-    }
+    // TODO: Exibir o resultado formatado com 2 casas decimais
+    System.out.printf("Média salarial: R$%.2f%n", average);
+
+    // TODO: Fechar o Scanner
+    scanner.close();
+  }
 }
