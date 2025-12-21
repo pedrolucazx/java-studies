@@ -27,23 +27,20 @@ package fundamentals;
 
 public class Ex01_AreaCircle {
 
-    // constante PI — exemplo de uso de constantes em Java
-    static final double PI = Math.PI;
+  static final double PI = Math.PI;
 
-    /**
-     * Calcula a área da circunferência a partir do raio.
-     *
-     * @param radius raio da circunferência (double)
-     * @return área calculada (double)
-     */
-    public static double computeArea(double radius) {
-        // TODO: implemente usando a fórmula A = PI * r * r
-        return PI * radius * radius;
-    }
+  /**
+   *
+   * @param radius raio da circunferência (double)
+   * @return área calculada (double)
+   */
+  public static double computeArea(double radius) {
+    // TODO: implemente usando a fórmula A = PI * r * r
+    return PI * radius * radius;
+  }
 
-
-    public static void main(String[] args) {
-        double area = computeArea(2.0);
-        System.out.println(area);
-    }
+  public static void main(String[] args) {
+    double area = computeArea(2.0);
+    System.out.println(area);
+  }
 }
