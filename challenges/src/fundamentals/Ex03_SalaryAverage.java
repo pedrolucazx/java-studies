@@ -1,6 +1,3 @@
-// java
-import java.util.Scanner;
-
 /**
  * Ex03_SalaryAverage
  *
@@ -39,6 +36,9 @@ import java.util.Scanner;
  *  Média salarial: 2750.17
  *
  */
+package fundamentals;
+import java.util.Scanner;
+
 public class Ex03_SalaryAverage {
     private static final int SALARY_COUNT = 3;
     private static final char DECIMAL_PATTERN = ',';

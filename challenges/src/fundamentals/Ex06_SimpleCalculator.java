@@ -22,7 +22,7 @@
  *
  */
 
-
+package fundamentals;
 import java.util.Scanner;
 
 public class Ex06_SimpleCalculator {

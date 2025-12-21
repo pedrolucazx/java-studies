@@ -17,6 +17,7 @@
 // Escreva o resultado final da expressão.
 //
 // Não resolva aqui, apenas siga as instruções e escreva o resultado final no console.
+package fundamentals;
 
 public class Ex04_MathChallenge {
     public static void main(String[] args) {

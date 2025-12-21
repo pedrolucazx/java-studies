@@ -23,6 +23,8 @@
  *  computeArea(2.0) -> 12.566370614359172  // (PI * 2.0 * 2.0)
  *
  */
+package fundamentals;
+
 public class Ex01_AreaCircle {
 
     // constante PI — exemplo de uso de constantes em Java

@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * Desafio Lógicos - Operadores Lógicos em Java
  *
@@ -22,31 +20,28 @@ import java.util.Scanner;
  * - Exiba os resultados finais no console, informando qual TV foi comprada e se foi tomado sorvete.
  *
  */
+package fundamentals;
 
 public class Ex05_LogicOperation {
     public static void main(String[] args) {
         boolean firstJob = false;
-        boolean secondJob = false;
+        boolean secondJob = true;
 
         boolean bothJobs = firstJob && secondJob;   // AND
         boolean exactlyOne = firstJob ^ secondJob; // XOR
         boolean anyJob = firstJob || secondJob;    // OR
         boolean noJob = !anyJob;                   // NOT
 
-        int tvSize = bothJobs ? 50 : exactlyOne ? 32 : 0;
+        int tvSize = bothJobs ? 50 : (exactlyOne ? 32 : 0);
         boolean iceCream = anyJob;
 
-        String jobsPhrase;
-        if (noJob) {
-            jobsPhrase = "Nenhum trabalho deu certo";
-        } else if (bothJobs) {
-            jobsPhrase = "Ambos os trabalhos deram certo";
-        } else if (firstJob) {
-            jobsPhrase = "O trabalho 1 deu certo";
-        } else {
-            jobsPhrase = "O trabalho 2 deu certo";
-        }
+        String bothJobsMsg = bothJobs ? "Ambos os trabalhos deram certo" : "";
+        String noJobMsg = noJob ? "Nenhum trabalho deu certo" : "";
+        String onlyFirstJobMsg = (!bothJobs && !noJob && firstJob) ? "O trabalho 1 deu certo" : "";
+        String onlySecondJobMsg = (!bothJobs && !noJob && secondJob) ? "O trabalho 2 deu certo" : "";
 
+        String jobsPhrase = noJobMsg + bothJobsMsg + onlyFirstJobMsg + onlySecondJobMsg;
+        
         String icePhrase = iceCream ? "a família tomou sorvete" : "a família não tomou sorvete";
         String tvPhrase = noJob ? "e não comprou TV" : "e comprou a TV de " + tvSize + " polegadas";
 

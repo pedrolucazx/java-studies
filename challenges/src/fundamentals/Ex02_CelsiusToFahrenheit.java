@@ -26,6 +26,8 @@
  *  celsiusToFahrenheit(0.0) -> 32.0
  *
  */
+package fundamentals;
+
 public class Ex02_CelsiusToFahrenheit {
     // Constantes para deixar a fórmula explícita e evitar "números mágicos"
     private static final double RATIO = 9.0 / 5.0;
