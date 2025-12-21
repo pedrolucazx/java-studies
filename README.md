@@ -1,22 +1,10 @@
 # Java Studies ☕
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Em%20Andamento-yellow?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-000000?style=for-the-badge&logo=java&logoColor=ED8B00)
+![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge&logo=clockify&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=github&logoColor=white)
 
 > Repositório pessoal documentando minha jornada de aprendizado em Java
-
-## 📊 Progresso Atual
-
-```
-Fundamentos Java    ████████████████  100% (Parte 2 concluída)
-Estruturas Controle ████░░░░░░░░░░░░   25% (Parte 2 em andamento)
-POO                 ░░░░░░░░░░░░░░░░    0% (Não iniciado)
-Collections         ░░░░░░░░░░░░░░░░    0% (Não iniciado)
-Spring Framework    ░░░░░░░░░░░░░░░░    0% (Não iniciado)
-```
-
-**Última atualização:** Dezembro 2024
 
 ## 🎯 Sobre
 
@@ -52,13 +40,13 @@ java-studies/
 
 ## 📚 Documentação de Estudos
 
-| Módulo | Status | Arquivo |
-|--------|--------|---------|
-| Fundamentos Java | ✅ Concluído | [Ver docs/fundamentos.md](docs/fundamentos.md) |
+| Módulo                 | Status          | Arquivo                                        |
+| ---------------------- | --------------- | ---------------------------------------------- |
+| Fundamentos Java       | ✅ Concluído    | [Ver docs/fundamentos.md](docs/fundamentos.md) |
 | Estruturas de Controle | 🔄 Em andamento | [Ver docs/fundamentos.md](docs/fundamentos.md) |
-| Orientação a Objetos | ⬜ Pendente | [Ver docs/poo.md](docs/poo.md) |
-| Collections | ⬜ Pendente | [Ver docs/collections.md](docs/collections.md) |
-| Spring Boot | ⬜ Pendente | [Ver docs/spring.md](docs/spring.md) |
+| Orientação a Objetos   | ⬜ Pendente     | [Ver docs/poo.md](docs/poo.md)                 |
+| Collections            | ⬜ Pendente     | [Ver docs/collections.md](docs/collections.md) |
+| Spring Boot            | ⬜ Pendente     | [Ver docs/spring.md](docs/spring.md)           |
 
 ## 🎯 Exercícios Resolvidos
 
@@ -70,7 +58,7 @@ java-studies/
 
 Plano de estudos dividido em 9 partes progressivas:
 
-1. ✅ **Fundação** - Lógica e Algoritmos
+1. ⬜ **Fundação** - Lógica e Algoritmos
 2. 🔄 **Fundamentos Java** - Sintaxe e Estruturas (50% concluído)
 3. ⬜ **POO** - 4 pilares da orientação a objetos
 4. ⬜ **Collections** - Estruturas de dados
@@ -85,10 +73,12 @@ Plano de estudos dividido em 9 partes progressivas:
 ## 🛠️ Ferramentas
 
 **IDEs:**
+
 - IntelliJ IDEA Community (principal)
 - VS Code + Extension Pack for Java
 
 **Recursos de Estudo:**
+
 - Curso Cod3r/Udemy - Java Completo
 - Bootcamp DIO + Deal - Spring & Angular
 - Livros: Forbellone + Bhargava
