@@ -22,6 +22,7 @@
 - [Wrapper Classes](#wrapper-classes)
 - [Conversão de Tipos](#conversão-de-tipos)
 - [Operadores](#operadores)
+- [Estruturas de Controle](#estruturas-de-controle)
 
 ---
 
@@ -92,7 +93,7 @@ O grande diferencial do Java é sua **portabilidade**: o mesmo código roda em q
 ```java
 // Arquivo: HelloWorld.java
 public class HelloWorld {
-    public static void main(String[] args) {
+    static void main(String[] args) {
         System.out.println("Olá, mundo!");
     }
 }
@@ -299,7 +300,7 @@ Ao comparar Strings em Java, é fundamental entender a diferença entre o operad
 ```java
 String a = "Java";
 String b = "Java";
-String c = new String("Java");
+String c = "Java";
 
 System.out.println(a == b); // true (mesmo pool de strings)
 System.out.println(a == c); // false (objetos diferentes)
@@ -733,7 +734,7 @@ Operam sobre dois operandos. Exemplos: `+`, `-`, `*`, `/`, `%`, `&&`, `||`, `^`.
 
 ```java
 int soma = 2 + 3;      // operador binário de adição
-boolean resultado = true && false; // operador binário lógico AND
+boolean resultado = false; // operador binário lógico AND
 ```
 
 **Operador Ternário:**
@@ -846,6 +847,77 @@ String status = (idade >= 18) ? "Maior de idade" : "Menor de idade";
 // status será "Maior de idade"
 ```
 
+## Estruturas de Controle
+
+As estruturas de controle em Java são fundamentais para definir o fluxo de execução de um programa. Elas permitem que o código tome decisões, repita tarefas e reaja a diferentes situações, tornando o software mais inteligente e flexível. Com elas, é possível executar diferentes blocos de código dependendo de condições, repetir comandos várias vezes e controlar quando sair de laços ou métodos.
+
+De modo geral, as estruturas de controle se dividem em dois grandes grupos: decisão e repetição. Os comandos de controle de fluxo (`break`, `continue`, `return`) são usados dentro dessas estruturas para alterar o comportamento padrão dos laços e métodos.
+
+### Estruturas de decisão
+
+**if, else if, else:** Permitem executar diferentes blocos de código de acordo com condições lógicas. O `if` avalia uma condição; se for verdadeira, executa o bloco associado. O `else if` permite testar condições adicionais, e o `else` cobre todos os outros casos.
+
+```java
+if (nota >= 7) {
+  System.out.println("Aprovado");
+} else if (nota >= 5) {
+  System.out.println("Recuperação");
+} else {
+  System.out.println("Reprovado");
+}
+```
+
+**switch:** Seleciona entre múltiplas opções com base no valor de uma variável (geralmente `int`, `char`, `String` a partir do Java 7). É útil quando há muitos casos possíveis para uma mesma variável.
+
+```java
+int dia = 3;
+switch (dia) {
+    case 1: System.out.println("Domingo"); break;
+    case 2: System.out.println("Segunda"); break;
+    case 3: System.out.println("Terça"); break;
+    // ...
+    default: System.out.println("Dia inválido");
+}
+// O comando break impede que os próximos casos sejam executados em sequência (efeito cascata).
+```
+
+### Estruturas de repetição
+
+**while:** Repete um bloco de código enquanto a condição for verdadeira. É ideal para cenários em que não sabemos previamente quantas vezes o laço será executado, como ao ler dados do usuário até que ele decida parar.
+
+```java
+import java.util.Scanner;
+
+Scanner sc = new Scanner(System.in);
+String entrada = "";
+while (!entrada.equals("sair")) {
+  System.out.print("Digite um comando (ou 'sair' para encerrar): ");
+  entrada = sc.nextLine();
+  System.out.println("Você digitou: " + entrada);
+}
+sc.close();
+```
+
+**do-while:** Semelhante ao while, mas garante que o bloco será executado pelo menos uma vez, pois a condição é verificada após a execução.
+
+```java
+int i = 0;
+do {
+  if (i == 3) break; // Sai do laço quando i == 3
+  System.out.println(i);
+  i++;
+} while (i < 5);
+```
+
+**for:** Usado quando se sabe exatamente o número de repetições. Possui três partes: inicialização, condição e incremento.
+
+```java
+for (int i = 0; i < 5; i++) {
+  if (i == 2) continue; // Pula o valor 2
+  System.out.println(i);
+}
+```
+
 ---
 
 ## 🎯 Exercícios Práticos
@@ -859,7 +931,7 @@ Exercícios que aplicam estes conceitos:
 
 ## 📚 Referências
 
-- Curso Cod3r - Seções 03-0
+- [Curso Cod3r - Seções 03 - 04](https://www.udemy.com/course/fundamentos-de-programacao-com-java/)
 
 ---
 
