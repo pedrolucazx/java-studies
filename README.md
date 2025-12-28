@@ -66,7 +66,7 @@ Além do curso, estou fazendo resumos de livros importantes:
 
 Exercícios práticos resolvidos em **Java** do curso Udemy:
 
-- [Fundamentos - Curso Cod3r (12 exercícios)](challenges/src/fundamentals/) ✅
+- [Fundamentos - Curso Cod3r (22 exercícios)](challenges/src/fundamentals/README.md) ✅
 
 ### Exercícios de Lógica (Livros)
 
