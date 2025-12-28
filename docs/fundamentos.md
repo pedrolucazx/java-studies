@@ -922,10 +922,7 @@ for (int i = 0; i < 5; i++) {
 
 ## 🎯 Exercícios Práticos
 
-Exercícios que aplicam estes conceitos:
-
-- [Ex01 - Área do Círculo](../challenges/fundamentos/Ex01_AreaCircle.java)
-- [Ex02 - Conversão Temperatura](../challenges/fundamentos/Ex02_CelsiusToFahrenheit.java)
+[Exercícios que aplicam estes conceitos](../challenges/src/fundamentals/README.md)
 
 ---
 

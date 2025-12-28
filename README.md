@@ -44,10 +44,10 @@ java-studies/
 
 ## 📚 Documentação de Estudos
 
-| Módulo                 | Status      | Arquivo                                        |
-|------------------------|-------------|------------------------------------------------|
-| Fundamentos Java       | ✅ Concluído | [Ver docs/fundamentos.md](docs/fundamentos.md) |
-| Estruturas de Controle | ✅ Concluído | [Ver docs/fundamentos.md](docs/fundamentos.md) |
+| Módulo                 | Status       | Arquivo                                                               |
+| ---------------------- | ------------ | --------------------------------------------------------------------- |
+| Fundamentos Java       | ✅ Concluído | [Ver docs/fundamentos.md](docs/fundamentos.md)                        |
+| Estruturas de Controle | ✅ Concluído | [Ver docs/fundamentos.md](docs/fundamentos.md#estruturas-de-controle) |
 
 ## 📚 Resumos de Livros
 
