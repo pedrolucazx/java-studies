@@ -4,17 +4,17 @@
 
 ## 📊 Visão Geral
 
-| Parte | Tema                                      | Status          | Progresso |
-| ----- | ----------------------------------------- | --------------- | --------- |
-| 1️⃣    | Fundação - Lógica e Algoritmos            | ⬜ Completo     | 0/4       |
-| 2️⃣    | Fundamentos Java                          | 🔄 Em andamento | 1/2       |
-| 3️⃣    | Orientação a Objetos                      | ⬜ Não iniciado | 0/2       |
-| 4️⃣    | A Biblioteca - Estruturas de Dados        | ⬜ Não iniciado | 0/5       |
-| 5️⃣    | A Consolidação - Erros e Projeto Prático  | ⬜ Não iniciado | 0/2       |
-| 6️⃣    | Especialização Backend - Spring Framework | ⬜ Não iniciado | 0/5       |
-| 7️⃣    | Especialização Frontend - Angular         | ⬜ Não iniciado | 0/3       |
-| 8️⃣    | O Polimento - Engenharia de Software      | ⬜ Não iniciado | 0/3       |
-| 9️⃣    | Próximos Passos - Tópicos Avançados       | ⬜ Não iniciado | 0/4       |
+| Parte | Tema                                      | Status         | Progresso |
+|------|-------------------------------------------|----------------|-----------|
+| 1️⃣  | Fundação - Lógica e Algoritmos            | ⬜ Não iniciado | 0/4       |
+| 2️⃣  | Fundamentos Java                          | ✅ Completo     | 2/2       |
+| 3️⃣  | Orientação a Objetos                      | ⬜ Não iniciado | 0/2       |
+| 4️⃣  | A Biblioteca - Estruturas de Dados        | ⬜ Não iniciado | 0/5       |
+| 5️⃣  | A Consolidação - Erros e Projeto Prático  | ⬜ Não iniciado | 0/2       |
+| 6️⃣  | Especialização Backend - Spring Framework | ⬜ Não iniciado | 0/5       |
+| 7️⃣  | Especialização Frontend - Angular         | ⬜ Não iniciado | 0/3       |
+| 8️⃣  | O Polimento - Engenharia de Software      | ⬜ Não iniciado | 0/3       |
+| 9️⃣  | Próximos Passos - Tópicos Avançados       | ⬜ Não iniciado | 0/4       |
 
 ## Parte 1: Fundação - Lógica, Algoritmos e Computação
 
@@ -31,7 +31,8 @@
 
 - [x] 2.1 Sintaxe Fundamental (Tipos, Variáveis, Operadores)
   - Ver documentação completa: [docs/fundamentos.md](docs/fundamentos.md)
-- [ ] 2.2 Estruturas de Controle (if, for, while, switch)
+- [x] 2.2 Estruturas de Controle (if, for, while, switch)
+  - Ver documentação completa: [docs/fundamentos.md](docs/fundamentos.md#estruturas-de-controle)
 
 ## Parte 3: O Paradigma - Orientação a Objetos
 

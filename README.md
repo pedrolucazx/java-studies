@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge&logo=clockify&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=github&logoColor=white)
 
-> Repositório pessoal documentando minha jornada de aprendizado em Java
+> Repositório pessoal documentando a minha jornada de aprendizado em Java
 
 ## 🎯 Sobre
 
@@ -44,10 +44,10 @@ java-studies/
 
 ## 📚 Documentação de Estudos
 
-| Módulo                 | Status          | Arquivo                                        |
-| ---------------------- | --------------- | ---------------------------------------------- |
-| Fundamentos Java       | ✅ Concluído    | [Ver docs/fundamentos.md](docs/fundamentos.md) |
-| Estruturas de Controle | 🔄 Em andamento | [Ver docs/fundamentos.md](docs/fundamentos.md) |
+| Módulo                 | Status      | Arquivo                                        |
+|------------------------|-------------|------------------------------------------------|
+| Fundamentos Java       | ✅ Concluído | [Ver docs/fundamentos.md](docs/fundamentos.md) |
+| Estruturas de Controle | ✅ Concluído | [Ver docs/fundamentos.md](docs/fundamentos.md) |
 
 ## 📚 Resumos de Livros
 
@@ -82,7 +82,7 @@ Exercícios resolvidos em **pseudocódigo** e **diagramas Mermaid**:
 Plano de estudos dividido em 9 partes progressivas:
 
 1. ⬜ **Fundação** - Lógica e Algoritmos
-2. 🔄 **Fundamentos Java** - Sintaxe e Estruturas (50% concluído)
+2. ✅ **Fundamentos Java** - Sintaxe e Estruturas
 3. ⬜ **POO** - 4 pilares da orientação a objetos
 4. ⬜ **Collections** - Estruturas de dados
 5. ⬜ **Consolidação** - Projeto Campo Minado
