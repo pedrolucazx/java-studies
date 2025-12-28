@@ -640,55 +640,6 @@ Este projeto sintetiza TODO o "Core Java" aprendido:
 
 ---
 
-## 📊 Cronograma Sugerido
-
-| Fase                            | Duração       | Materiais                                   |
-| ------------------------------- | ------------- | ------------------------------------------- |
-| **Fase 1:** Fundamentos         | 3-4 semanas   | Furlan + Bhargava (Cap 1-4)                 |
-| **Fase 2:** Java Core           | 6-8 semanas   | Cod3r (Seções 3-7)                          |
-| **Fase 3:** OOP                 | 2-3 semanas   | Cod3r (Seções 5, 7)                         |
-| **Fase 4:** Estruturas de Dados | 4-5 semanas   | Cod3r (Seção 6) + Bhargava (Cap 2, 3, 4, 5) |
-| **Fase 5:** Consolidação        | 2-3 semanas   | Cod3r (Seções 10, 11)                       |
-| **Fase 6:** Backend Spring      | 4-6 semanas   | DIO + Bhargava (Cap 6-9)                    |
-| **Fase 7:** Frontend Angular    | 3-4 semanas   | DIO                                         |
-| **Fase 8:** Boas Práticas       | 2-3 semanas   | DIO + Revisão                               |
-| **TOTAL**                       | **5-7 meses** | Estudo dedicado                             |
-
----
-
-## 💡 Metodologia de Estudo Recomendada
-
-### Ciclo de Aprendizado
-
-```
-1. LER teoria (Livros)
-   ↓
-2. PRATICAR no curso (Cod3r/DIO)
-   ↓
-3. CONSTRUIR projeto próprio
-   ↓
-4. REVISAR e consolidar
-```
-
-### Exemplo Prático: Estudando HashMap
-
-1. **Ler:** Bhargava Cap. 5 (Tabelas Hash) → entender _como_ funciona
-2. **Praticar:** Cod3r Seção 06 → ver sintaxe e usar HashMap em exercícios
-3. **Construir:** Criar um sistema de cache usando HashMap
-4. **Revisar:** Explicar para si mesmo por que HashMap é O(1)
-
-### Projetos Práticos Sugeridos por Fase
-
-- **Fase 1-2:** Calculadora simples + Sistema de cadastro com arrays
-- **Fase 2:** Campo Minado (projeto guiado)
-- **Fase 4:** Sistema de biblioteca (usando Collections variadas)
-- **Fase 5:** Refatorar projetos anteriores aplicando Clean Code
-- **Fase 6:** API REST completa (ex: gerenciador de tarefas, blog)
-- **Fase 7:** Frontend consumindo sua própria API
-- **Fase 8:** Adicionar testes unitários em todos os projetos
-
----
-
 ## 🎯 Checklist de Domínio
 
 ### ✅ Ao Concluir Este Guia, Você Será Capaz De:
@@ -734,43 +685,7 @@ Este projeto sintetiza TODO o "Core Java" aprendido:
 
 ---
 
-## 🎓 Dicas Finais de Sucesso
-
-### 1. Consistência > Intensidade
-
-Melhor estudar 1h por dia todos os dias do que 8h apenas no fim de semana.
-
-### 2. Prática Deliberada
-
-Não apenas "assistir" o curso - pausar, digitar o código, modificar, quebrar, consertar.
-
-### 3. Ensine o que Aprendeu
-
-Explicar conceitos (mesmo para você mesmo) solidifica o conhecimento.
-
-### 4. Não Pule a Teoria
-
-A tentação de pular os livros e ir direto para o código é grande, mas a teoria te fará um desenvolvedor muito superior.
-
-### 5. Construa um Portfolio
-
-Cada projeto que você faz deve ir para o GitHub. Empregadores querem ver código real.
-
-### 6. Não Tenha Medo de Erros
-
-Bugs e erros são professores. Cada erro resolvido é uma lição permanente.
-
-### 7. Participe de Comunidades
-
-Fazer perguntas e ajudar outros acelera tremendamente o aprendizado.
-
----
-
 ## 📌 Nota Final
-
-> **"Aprender a programar não é apenas decorar sintaxe, mas desenvolver uma nova forma de pensar e resolver problemas."**
-
-Este guia é um **mapa**, não uma prisão. Adapte o ritmo às suas necessidades, aprofunde-se onde tiver mais interesse, e principalmente: **pratique constantemente**.
 
 ### Por Que Esta Ordem?
 
@@ -782,14 +697,6 @@ A progressão **Lógica → Java → OOP → Estruturas de Dados → Spring → 
 4. **Estruturas de Dados:** Eficiência e escolhas corretas
 5. **Frameworks:** Produtividade em escala empresarial
 6. **Qualidade:** Profissionalismo e código de longo prazo
-
-Cada fase prepara a próxima. Pular etapas resulta em fundação fraca.
-
----
-
-**A jornada do algoritmo ao Full-Stack é desafiadora, mas cada conceito dominado é uma ferramenta permanente no seu arsenal como desenvolvedor.**
-
-**Bons estudos! 🚀**
 
 ---
 
