@@ -29,28 +29,41 @@ Este capítulo apresenta os fundamentos do desenvolvimento de software, explican
 
 ### 💡 Pontos Importantes
 
-- Um programa de computador é produto da atividade intelectual de um programador.
-- Depende de treinamento prévio em **abstração** e **modelagem de problemas**.
-- Exige uso da lógica na verificação das soluções.
-- **Dado:** Valor qualquer armazenado em um computador (bruto, sem contexto).
-- **Informação:** Interpretação do dado com significado.
-- **Dados de Entrada:** Fornecidos pelo usuário ao sistema.
-- **Dados de Saída:** Fornecidos pelo sistema ao usuário após processamento.
+#### 🖥️ Sobre Programação
 
-  **Etapas do Desenvolvimento de Software**
+- Um programa de computador é produto da atividade intelectual de um programador
+- Depende de treinamento prévio em **abstração** e **modelagem de problemas**
+- Exige uso da lógica na verificação das soluções
 
-1.  **Análise**
-    - Criação de especificações detalhando como o software vai funcionar
-    - Define requisitos e funcionalidades
-2.  **Projeto**
-    - Transforma especificações da análise em termos mais próximos da implementação
-    - Arquitetura e design do sistema
-3.  **Implementação**
-    - Utiliza linguagem de programação para construir o software
-    - Traduz especificações do projeto em código
-4.  **Teste**
-    - Verifica conformidade com requisitos iniciais
-    - Software deve satisfazer todas as especificações
+#### 📊 Dados vs Informação
+
+| Conceito             | Definição                                                        |
+| -------------------- | ---------------------------------------------------------------- |
+| **Dado**             | Valor qualquer armazenado em um computador (bruto, sem contexto) |
+| **Informação**       | Interpretação do dado com significado                            |
+| **Dados de Entrada** | Fornecidos pelo usuário ao sistema                               |
+| **Dados de Saída**   | Fornecidos pelo sistema ao usuário após processamento            |
+
+#### 🔄 Etapas do Desenvolvimento de Software
+
+1. **Análise**
+
+   - Criação de especificações detalhando como o software vai funcionar
+   - Define requisitos e funcionalidades
+
+2. **Projeto**
+
+   - Transforma especificações da análise em termos mais próximos da implementação
+   - Arquitetura e design do sistema
+
+3. **Implementação**
+
+   - Utiliza linguagem de programação para construir o software
+   - Traduz especificações do projeto em código
+
+4. **Teste**
+   - Verifica conformidade com requisitos iniciais
+   - Software deve satisfazer todas as especificações
 
 ### 🎯 Conceitos-Chave
 
