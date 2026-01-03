@@ -1,4 +1,4 @@
-# Algoritmos E Lógica Da Programação - Furlan.
+****# Algoritmos E Lógica Da Programação - Furlan.
 
 &gt; Resumo e anotações do livro "Algoritmos e Lógica da Programação"
 
@@ -25,24 +25,44 @@
 
 ### 📝 Resumo
 
-_[A ser preenchido durante a leitura]_
+Este capítulo apresenta os fundamentos do desenvolvimento de software, explicando a diferença entre dados e informação, as etapas do processo de engenharia de software, e introduz o conceito de algoritmos como base para a programação estruturada.
 
 ### 💡 Pontos Importantes
 
-- ⭐ [Ponto 1]
-- ⭐ [Ponto 2]
+- Um programa de computador é produto da atividade intelectual de um programador.
+- Depende de treinamento prévio em **abstração** e **modelagem de problemas**.
+- Exige uso da lógica na verificação das soluções.
+- **Dado:** Valor qualquer armazenado em um computador (bruto, sem contexto).
+- **Informação:** Interpretação do dado com significado.
+- **Dados de Entrada:** Fornecidos pelo usuário ao sistema.
+- **Dados de Saída:** Fornecidos pelo sistema ao usuário após processamento.
+
+  **Etapas do Desenvolvimento de Software**
+
+1.  **Análise**
+    - Criação de especificações detalhando como o software vai funcionar
+    - Define requisitos e funcionalidades
+2.  **Projeto**
+    - Transforma especificações da análise em termos mais próximos da implementação
+    - Arquitetura e design do sistema
+3.  **Implementação**
+    - Utiliza linguagem de programação para construir o software
+    - Traduz especificações do projeto em código
+4.  **Teste**
+    - Verifica conformidade com requisitos iniciais
+    - Software deve satisfazer todas as especificações
 
 ### 🎯 Conceitos-Chave
 
-_[A ser preenchido]_
+- **Abstração:** Capacidade de simplificar problemas complexos focando no essencial.
+- **Modelagem:** Representação estruturada de um problema real.
+- **Algoritmo:** Sequência lógica e finita de passos para resolver um problema.
+- **Estruturas de Programação:** Blocos fundamentais que compõem qualquer algoritmo.
+- **Processo de Engenharia de Software:** Metodologia sistemática para desenvolvimento.
 
 ### 📚 Exercícios Relacionados
 
 - [Exercícios do Capítulo 1](../../challenges/src/algorithms/furlan/README.md)
-
-### 🤔 Minhas Anotações
-
-_[Observações pessoais, dúvidas, insights...]_
 
 ---
 
@@ -78,14 +98,14 @@ _[Em breve]_
 
 ## 📊 Progresso de Leitura
 
-- [ ] Capítulo 1: Introdução
+- [x] Capítulo 1: Introdução
 - [ ] Capítulo 2: Conceitos de Computação e Computadores
 - [ ] Capítulo 3: Algoritmos e Suas Representações
 - [ ] Capítulo 4: Estruturas de Programação
 - [ ] Capítulo 5: Variáveis Indexadas
 - [ ] Capítulo 6: Técnicas para a Solução de Problemas
 
-**Progresso:** 0/6 capítulos (0%)
+**Progresso:** 1/6 capítulos (16.7%) 🎯
 
 ---
 
