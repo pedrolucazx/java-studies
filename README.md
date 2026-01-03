@@ -53,10 +53,10 @@ java-studies/
 
 Além do curso, estou fazendo resumos de livros importantes:
 
-| Livro                 | Autor         | Foco                | Status          | Links                                                                                             |
-| --------------------- | ------------- | ------------------- | --------------- | ------------------------------------------------------------------------------------------------- |
-| Lógica de Programação | Furlan et al. | Algoritmos e lógica | ⬜ Não iniciado | [Resumo](docs/resumos/furlan-logica.md) · [Exercícios](challenges/src/algorithms/furlan/)         |
-| Entendendo Algoritmos | Bhargava      | Estruturas de dados | ⬜ Não iniciado | [Resumo](docs/resumos/bhargava-algoritmos.md) · [Exercícios](challenges/src/algorithms/bhargava/) |
+| Livro                              | Autor                    | Foco                | Status          | Links                                                                                             |
+| ---------------------------------- | ------------------------ | ------------------- | --------------- | ------------------------------------------------------------------------------------------------- |
+| Algoritmos e Lógica da Programação | Marco A. Furlan de Souza | Algoritmos e lógica | 🔄 Iniciado     | [Resumo](docs/resumos/furlan-logica.md) · [Exercícios](challenges/src/algorithms/furlan/)         |
+| Entendendo Algoritmos              | Bhargava                 | Estruturas de dados | ⬜ Não iniciado | [Resumo](docs/resumos/bhargava-algoritmos.md) · [Exercícios](challenges/src/algorithms/bhargava/) |
 
 [📚 Ver todos os resumos →](docs/resumos/)
 
@@ -72,7 +72,7 @@ Exercícios práticos resolvidos em **Java** do curso Udemy:
 
 Exercícios resolvidos em **pseudocódigo** e **diagramas Mermaid**:
 
-- [Lógica - Livro Furlan (0/50 exercícios)](challenges/src/algorithms/furlan/) ⬜
+- [Algoritmos e Lógica da Programação - Marco A. Furlan de Souza (1/24 exercícios)](challenges/src/algorithms/furlan/) ⬜
 - [Algoritmos - Livro Bhargava (0 exercícios)](challenges/src/algorithms/bhargava/) ⬜
 
 ---
@@ -81,7 +81,7 @@ Exercícios resolvidos em **pseudocódigo** e **diagramas Mermaid**:
 
 Plano de estudos dividido em 9 partes progressivas:
 
-1. ⬜ **Fundação** - Lógica e Algoritmos
+1. 🔄 **Fundação** - Lógica e Algoritmos
 2. ✅ **Fundamentos Java** - Sintaxe e Estruturas
 3. ⬜ **POO** - 4 pilares da orientação a objetos
 4. ⬜ **Collections** - Estruturas de dados
@@ -102,9 +102,9 @@ Plano de estudos dividido em 9 partes progressivas:
 
 **Recursos de Estudo:**
 
-- Curso Cod3r/Udemy - Java Completo
-- Bootcamp DIO + Deal - Spring & Angular
-- Livros: Forbellone + Bhargava
+- [Curso Cod3r/Udemy - Java Completo](https://www.udemy.com/course/fundamentos-de-programacao-com-java)
+- [Bootcamp DIO + Deal - Spring & Angular](https://www.dio.me/bootcamp/coding-the-future-spring-boot-angular-17)
+- Livros: [Algoritmos E Lógica Da Programação](https://a.co/d/968AAwy) + [Entendendo Algoritmos](https://a.co/d/7lqrmIG)
 
 [📖 Ver guia completo →](GUIA_DE_ESTUDOS.md)
 

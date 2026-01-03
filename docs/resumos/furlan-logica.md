@@ -1,11 +1,11 @@
-****# Algoritmos E Lógica Da Programação - Furlan.
+# Algoritmos E Lógica Da Programação.
 
-&gt; Resumo e anotações do livro "Algoritmos e Lógica da Programação"
+> Resumo e anotações do livro "Algoritmos e Lógica da Programação"
 
-**Autores:** Marco A. Furlan de Souza (Autor), Marcelo Marques Gomes (Autor), Marcio Vieira Soares (Autor), Ricardo Concilio (Autor)
+**Autores:** Marco A. Furlan de Souza (Autor).
 
-**Editora:** Pearson  
-**Status:** ⬜ Não iniciado  
+**Status:** 🔄 Iniciado.
+
 **Parte do:** [Roadmap - Parte 1](../../ROADMAP.md#parte-1-fundação---lógica-algoritmos-e-computação-)
 
 ---

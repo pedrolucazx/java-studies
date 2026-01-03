@@ -4,13 +4,13 @@
 
 ### Livros
 
-1. **Algoritmos e Lógica da Programação** - Furlan et al.
-2. **Entendendo Algoritmos** - Aditya Y. Bhargava
+1. [**Algoritmos e Lógica da Programação** - Marco A. Furlan de Souza.](https://a.co/d/968AAwy)
+2. [**Entendendo Algoritmos** - Aditya Y. Bhargava](https://a.co/d/7lqrmIG)
 
 ### Cursos
 
-1. **Java COMPLETO: Do Básico ao Avançado** - Cod3r
-2. **Bootcamp Full-Stack Java + Spring + Angular** - DIO
+1. [**Java COMPLETO: Do Básico ao Avançado**](https://www.udemy.com/course/fundamentos-de-programacao-com-java)
+2. [**Bootcamp Full-Stack Java + Spring + Angular**](https://www.dio.me/bootcamp/coding-the-future-spring-boot-angular-17)
 
 ---
 
@@ -44,8 +44,6 @@ Este guia organiza minha jornada de aprendizado do básico ao avançado, integra
 - Etapas: Ideias → Projeto Lógico → Implementação
 - Modelagem de problemas
 - Papel da lógica na verificação de programas
-
-**Por que estudar:** Entender que programação começa com projeto lógico, não com código. Diferença entre programador amador e engenheiro de software.
 
 ---
 

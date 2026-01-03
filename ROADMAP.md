@@ -4,23 +4,23 @@
 
 ## 📊 Visão Geral
 
-| Parte | Tema                                      | Status         | Progresso |
-|------|-------------------------------------------|----------------|-----------|
-| 1️⃣  | Fundação - Lógica e Algoritmos            | ⬜ Não iniciado | 0/4       |
-| 2️⃣  | Fundamentos Java                          | ✅ Completo     | 2/2       |
-| 3️⃣  | Orientação a Objetos                      | ⬜ Não iniciado | 0/2       |
-| 4️⃣  | A Biblioteca - Estruturas de Dados        | ⬜ Não iniciado | 0/5       |
-| 5️⃣  | A Consolidação - Erros e Projeto Prático  | ⬜ Não iniciado | 0/2       |
-| 6️⃣  | Especialização Backend - Spring Framework | ⬜ Não iniciado | 0/5       |
-| 7️⃣  | Especialização Frontend - Angular         | ⬜ Não iniciado | 0/3       |
-| 8️⃣  | O Polimento - Engenharia de Software      | ⬜ Não iniciado | 0/3       |
-| 9️⃣  | Próximos Passos - Tópicos Avançados       | ⬜ Não iniciado | 0/4       |
+| Parte | Tema                                      | Status          | Progresso |
+| ----- | ----------------------------------------- | --------------- | --------- |
+| 1️⃣    | Fundação - Lógica e Algoritmos            | 🔄 Iniciado     | 1/4       |
+| 2️⃣    | Fundamentos Java                          | ✅ Completo     | 2/2       |
+| 3️⃣    | Orientação a Objetos                      | ⬜ Não iniciado | 0/2       |
+| 4️⃣    | A Biblioteca - Estruturas de Dados        | ⬜ Não iniciado | 0/5       |
+| 5️⃣    | A Consolidação - Erros e Projeto Prático  | ⬜ Não iniciado | 0/2       |
+| 6️⃣    | Especialização Backend - Spring Framework | ⬜ Não iniciado | 0/5       |
+| 7️⃣    | Especialização Frontend - Angular         | ⬜ Não iniciado | 0/3       |
+| 8️⃣    | O Polimento - Engenharia de Software      | ⬜ Não iniciado | 0/3       |
+| 9️⃣    | Próximos Passos - Tópicos Avançados       | ⬜ Não iniciado | 0/4       |
 
 ## Parte 1: Fundação - Lógica, Algoritmos e Computação
 
 **Livros:** Furlan + Bhargava
 
-- [ ] 1.1 O que é um Algoritmo? (Mentalidade do Engenheiro)
+- [x] 1.1 O que é um Algoritmo? (Mentalidade do Engenheiro)
 - [ ] 1.2 Pesquisa Binária e Notação Big O
 - [ ] 1.3 Ferramentas de Modelagem (Fluxogramas, Portugol)
 - [ ] 1.4 Arquitetura do Computador (Von Neumann)
