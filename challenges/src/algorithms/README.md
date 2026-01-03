@@ -15,13 +15,13 @@ Estes exercícios focam em **lógica e algoritmos**, independentes de linguagem 
 **Pasta:** [furlan/](furlan/)  
 **Resumo:** [Ver docs/resumos/furlan-logica.md](../../../docs/resumos/furlan-logica.md)
 
-| Capítulo                                     | Exercícios   | Status |
-| -------------------------------------------- | ------------ | ------ |
-| Cap 1 - Introdução                           | 0 exercícios | ⬜ 0/0 |
-| Cap 3 - Algoritmos e Suas Representações     | 0 exercícios | ⬜ 0/0 |
-| Cap 4 - Estruturas de Programação            | 0 exercícios | ⬜ 0/0 |
-| Cap 5 - Variáveis Indexadas                  | 0 exercícios | ⬜ 0/0 |
-| Cap 6 - Técnicas para a Solução de Problemas | 0 exercícios | ⬜ 0/0 |
+| Capítulo                                     | Exercícios    | Status |
+| -------------------------------------------- | ------------- | ------ |
+| Cap 1 - Introdução                           | 04 exercícios | ⬜ 0/0 |
+| Cap 3 - Algoritmos e Suas Representações     | 12 exercícios | ⬜ 0/0 |
+| Cap 4 - Estruturas de Programação            | 08 exercícios | ⬜ 0/0 |
+| Cap 5 - Variáveis Indexadas                  | 30 exercícios | ⬜ 0/0 |
+| Cap 6 - Técnicas para a Solução de Problemas | 13 exercícios | ⬜ 0/0 |
 
 **Progresso total:** 0 exercícios (0%)
 
