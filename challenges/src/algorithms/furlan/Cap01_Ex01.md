@@ -164,4 +164,4 @@ $$\text{Pesagens Mínimas} = \lceil \log_3(n) \rceil$$
 ## 🔗 Links Relacionados
 
 - [Resumo do Capítulo 1](../../../../docs/resumos/furlan-logica.md#capítulo-1)
-- [Próximo exercício: Cap01_Ex02.md](Cap01_Ex02.md)
+- [Próximo exercício: Cap01_Ex05.md](Cap01_Ex05.md)
