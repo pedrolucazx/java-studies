@@ -81,7 +81,122 @@ Este capítulo apresenta os fundamentos do desenvolvimento de software, explican
 
 ## Capítulo 2: Conceitos de Computação e Computadores
 
-_[Em breve]_
+### 📝 Resumo
+
+Este capítulo explora a evolução histórica dos computadores através de suas gerações, desde dispositivos mecânicos até os modernos chips VLSI. Apresenta a etimologia da computação, os fundamentos da eletrônica digital, e explica como os computadores representam e processam diferentes tipos de dados através de sua arquitetura.
+
+### 💡 Pontos Importantes
+
+#### 📖 Etimologia e Fundamentos
+
+- **Digitus (Latim)** → Dedo → Dígito (Português)
+  - Reflete a origem da contagem usando os dedos
+- **Computação** = Ato ou efeito de computar
+  - Essencialmente significa "fazer contagem"
+
+#### 🕰️ Evolução das Gerações de Computadores
+
+##### **Geração Zero (~Até 1940) - Computadores Puramente Mecânicos**
+
+- Dispositivos baseados em engrenagens, alavancas e componentes mecânicos
+- **Destaques:**
+  - Ábaco (antiguidade)
+  - Pascaline (1642) - Blaise Pascal
+  - Máquina Analítica de Babbage (1837)
+- **Características:** Lentos, limitados, sem eletrônica
+
+##### **Primeira Geração (1940-1956) - Válvulas e Relés**
+
+- Primeiros computadores **eletrônicos**
+- **Destaques:**
+  - ENIAC (1946) - Electronic Numerical Integrator and Computer
+  - UNIVAC (1951) - Primeiro computador comercial
+- **Características:**
+  - Enormes dimensões (salas inteiras)
+  - Alto consumo de energia
+  - Aquecimento excessivo
+  - Frequentes falhas nas válvulas
+  - Programação em linguagem de máquina
+
+##### **Segunda Geração (1956-1963) - Transistores**
+
+- Substituição das válvulas por **transistores**
+- **Destaques:**
+  - IBM 7090 (1959)
+  - Surgimento de linguagens de alto nível (FORTRAN, COBOL)
+- **Características:**
+  - Menor tamanho e consumo energético
+  - Maior confiabilidade
+  - Mais rápidos e eficientes
+  - Menor geração de calor
+
+##### **Terceira Geração (1964-1971) - Circuitos Integrados**
+
+- Introdução dos **CIs (Circuitos Integrados)**
+- **Destaques:**
+  - IBM System/360 (1964)
+  - Múltiplos transistores em um único chip
+- **Características:**
+  - Miniaturização significativa
+  - Maior velocidade de processamento
+  - Redução de custos de produção
+  - Início da popularização dos computadores
+
+##### **Quarta Geração (1971-Presente) - Chips VLSI**
+
+- **VLSI:** Very Large Scale Integration
+- **Destaques:**
+  - Intel 4004 (1971) - Primeiro microprocessador
+  - Apple II (1977), IBM PC (1981)
+  - Era dos computadores pessoais
+  - Smartphones e dispositivos móveis
+- **Características:**
+  - Milhões/bilhões de transistores por chip
+  - Computação pessoal e portátil
+  - Processamento massivamente paralelo
+  - Integração de múltiplas funções
+
+---
+
+#### 💻 Eletrônica Digital e Representação de Dados
+
+| Conceito                  | Descrição                                                     |
+| ------------------------- | ------------------------------------------------------------- |
+| **Bit**                   | Unidade básica: 0 ou 1 (sistema binário)                      |
+| **Múltiplos**             | Byte (8 bits), KB, MB, GB, TB, PB                             |
+| **Caracteres**            | Representação de letras e símbolos (ASCII, Unicode)           |
+| **Cadeias de Caracteres** | Sequências de caracteres (strings/texto)                      |
+| **Som**                   | Digitalização de ondas sonoras em valores binários            |
+| **Imagem**                | Representação de pixels com valores de cor em formato digital |
+
+---
+
+#### 🏗️ Arquitetura e Funcionamento
+
+##### **Arquitetura de um Computador**
+
+- **UCP (Unidade Central de Processamento):** Cérebro do computador
+- **Memória:** Armazenamento de dados e instruções
+- **Dispositivos de E/S:** Entrada e Saída de dados
+- **Barramento:** Sistema de comunicação entre componentes
+
+##### **Funcionamento da UCP na Execução de Programas**
+
+1. **Busca (Fetch):** Busca a próxima instrução na memória
+2. **Decodificação (Decode):** Interpreta o que a instrução significa
+3. **Execução (Execute):** Realiza a operação especificada
+4. **Armazenamento:** Guarda o resultado (se necessário)
+
+---
+
+### 🎯 Conceitos-Chave
+
+- **Sistema Binário:** Base da computação digital (0 e 1).
+- **Transistor:** Componente semicondutor que revolucionou a computação.
+- **Circuito Integrado:** Chip que contém múltiplos componentes eletrônicos.
+- **VLSI:** Integração em larga escala permitindo chips com bilhões de transistores.
+- **UCP/CPU:** Responsável pelo processamento e execução de instruções.
+- **Digitalização:** Conversão de informações analógicas (som, imagem) para formato binário.
 
 ---
 
