@@ -2,7 +2,7 @@
 
 > Resumo e anotações do livro "Algoritmos e Lógica da Programação"
 
-**Autores:** Marco A. Furlan de Souza (Autor).
+**Autores:** Marco A. Furlan de Souza.
 
 **Status:** 🔄 Iniciado.
 
