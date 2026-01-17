@@ -148,7 +148,7 @@ $$
 ## 🔗 Links Relacionados
 
 - [Resumo do Capítulo 1](../../../../docs/resumos/furlan-logica.md#capítulo-1)
-- [Exercício Anterior: Cap01_Ex04.md](Cap01_Ex04.md)
-- [Próximo exercício: Cap01_Ex06.md](Cap01_Ex06.md)
+- [Exercício Anterior: Cap01_Ex01.md](Cap01_Ex01.md)
+- [Próximo exercício: Cap01_Ex07.md](Cap01_Ex07.md)
 
 ---
