@@ -1,25 +1,29 @@
 /**
- * Desafio Dia da Semana
+ * Ex13_DaysOfWeek
  * <p>
- * Implemente uma classe que associa os dias da semana aos seus números correspondentes.
+ * Descrição (Javadoc):
+ * Exercício para praticar estruturas condicionais (if-else) em Java.
+ * O objetivo é implementar um programa que associa os dias da semana aos seus números correspondentes.
  * <p>
- * Instruções:
- * 1. Crie um método que receba o nome de um dia da semana (por exemplo, "domingo") e retorne o número correspondente:
- * - domingo: 1
- * - segunda-feira: 2
- * - terça-feira: 3
- * - quarta-feira: 4
- * - quinta-feira: 5
- * - sexta-feira: 6
- * - sábado: 7
- * 2. O método deve considerar os acentos corretamente nos nomes dos dias.
- * 3. Utilize a classe Scanner para capturar a entrada do usuário.
- * 4. Exiba o número correspondente ao dia digitado.
- * 5. Caso o usuário digite um nome inválido, informe que o dia não foi reconhecido.
+ * Regras e contexto:
+ * - Crie um método que receba o nome de um dia da semana e retorne o número correspondente.
+ * - domingo = 1, segunda = 2, terça = 3, quarta = 4, quinta = 5, sexta = 6, sábado = 7.
+ * - O método deve considerar case-insensitivity (maiúscula/minúscula).
+ * - Utilize a classe Scanner para capturar a entrada do usuário.
+ * - Se o dia for reconhecido, exiba "O número correspondente ao dia [dia] é: [número]".
+ * - Se o dia não for reconhecido, exiba "Dia não reconhecido.".
  * <p>
- * Exemplo de uso:
- * Entrada: "domingo"
- * Saída: 1
+ * Entrada esperada:
+ * - Uma string representando o nome de um dia da semana.
+ * <p>
+ * Saída esperada:
+ * - Um número entre 1 e 7, ou mensagem de erro.
+ * <p>
+ * Exemplo:
+ * Input:
+ *  "domingo"
+ * Output esperado (conceitual):
+ *  "O número correspondente ao dia domingo é: 1"
  */
 package fundamentals;
 

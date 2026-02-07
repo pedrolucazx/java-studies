@@ -1,16 +1,35 @@
-/*
-* Ex14 - Média das Notas da Turma
-
-Desafio: Crie uma classe chamada 'AverageGrade'. O objetivo é calcular a média das notas de uma turma, onde o número de alunos não é fixo.
-Instruções:
-1. O programa deve permitir que o usuário insira notas para os alunos. O número de alunos é indefinido.
-2. Cada nota deve ser um valor válido entre 0 e 10 (inclusive).
-3. Utilize uma variável para armazenar a soma das notas válidas inseridas.
-4. Mantenha uma contagem da quantidade de notas válidas inseridas.
-5. O usuário pode encerrar a entrada de notas digitando '-1'.
-6. Caso o usuário digite uma nota fora do intervalo permitido, ignore e exiba uma mensagem solicitando uma nota válida.
-7. Ao finalizar, calcule e exiba a média das notas válidas inseridas.
-*/
+/**
+ * Ex14_AverageGrade
+ * <p>
+ * Descrição (Javadoc):
+ * Exercício para praticar estruturas de repetição (do-while), validação de entrada e operações aritméticas.
+ * O objetivo é calcular a média das notas de uma turma, onde o número de alunos não é fixo.
+ * <p>
+ * Regras e contexto:
+ * - O programa deve permitir que o usuário insira notas para os alunos (número indefinido).
+ * - Cada nota deve ser um valor válido entre 0.0 e 10.0 (inclusive).
+ * - Utilize uma variável para armazenar a soma das notas válidas inseridas.
+ * - Mantenha uma contagem da quantidade de notas válidas inseridas.
+ * - O usuário pode encerrar a entrada de notas digitando '-1'.
+ * - Caso o usuário digite uma nota fora do intervalo ou uma entrada inválida, ignore e solicite uma nota válida.
+ * - Ao finalizar, calcule e exiba a média das notas com duas casas decimais.
+ * - Se nenhuma nota válida for inserida, exiba uma mensagem de aviso.
+ * <p>
+ * Entrada esperada:
+ * - Uma sequência de números reais (entre 0 e 10) ou -1 para encerrar.
+ * <p>
+ * Saída esperada:
+ * - A média das notas válidas inseridas, formatada com duas casas decimais.
+ * <p>
+ * Exemplo de interação:
+ * Input:
+ *  7.5
+ *  8.0
+ *  9.5
+ *  -1
+ * Output esperado (conceitual):
+ *  "A média das notas da turma é: 8.33"
+ */
 package fundamentals;
 
 import java.util.Scanner;

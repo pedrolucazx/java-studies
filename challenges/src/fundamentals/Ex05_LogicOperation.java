@@ -1,23 +1,33 @@
 /**
- * Desafio Lógicos - Operadores Lógicos em Java
+ * Ex05_LogicOperation
  *
- * Nesta atividade, você irá praticar operadores lógicos utilizando um cenário familiar:
+ * Descrição (Javadoc):
+ * Exercício para praticar operadores lógicos em Java.
+ * O objetivo é modelar uma situação familiar onde dois trabalhos podem ser realizados,
+ * e a família decide qual televisão comprar e se vai tomar sorvete.
  *
  * Cenário:
  * - Dois trabalhos podem ser realizados.
  * - Dependendo dos resultados, a família decide qual televisão comprar e se vai tomar sorvete.
  *
- * Regras:
- * 1. Se ambos os trabalhos forem confirmados, a família compra uma TV de 50 polegadas e toma sorvete.
- * 2. Se apenas um dos trabalhos for confirmado, a família compra uma TV de 32 polegadas e toma sorvete.
- * 3. Se nenhum trabalho for confirmado, a família não compra TV e não toma sorvete.
- *
- * Instruções:
- * - Crie uma classe chamada LogicOperation.
- * - Crie variáveis booleanas para representar o resultado dos trabalhos.
- * - Use operadores lógicos (E, OU, NEGAÇÃO) para modelar as decisões.
- * - Crie variáveis para indicar qual TV será comprada e se a família vai tomar sorvete.
+ * Regras e contexto:
+ * - Se ambos os trabalhos forem confirmados, a família compra uma TV de 50 polegadas e toma sorvete.
+ * - Se apenas um dos trabalhos for confirmado, a família compra uma TV de 32 polegadas e toma sorvete.
+ * - Se nenhum trabalho for confirmado, a família não compra TV e não toma sorvete.
+ * - Use operadores lógicos (E, OU, XOR, NEGAÇÃO) para modelar as decisões.
  * - Exiba os resultados finais no console, informando qual TV foi comprada e se foi tomado sorvete.
+ *
+ * Entrada esperada:
+ * - Valores booleanos representando o resultado dos trabalhos (definidos no código).
+ *
+ * Saída esperada:
+ * - Uma mensagem descrevendo qual TV foi comprada e se a família tomou sorvete.
+ *
+ * Exemplo (dado hardcoded):
+ * Input:
+ *  firstJob = false, secondJob = true
+ * Output esperado (conceitual):
+ *  "O trabalho 2 deu certo, a família tomou sorvete e comprou a TV de 32 polegadas."
  *
  */
 package fundamentals;

@@ -1,24 +1,31 @@
 /**
- * Desafio: Calculadora Simples
+ * Ex06_SimpleCalculator
  *
- * Instruções:
+ * Descrição (Javadoc):
+ * Exercício para praticar operadores aritméticos e entrada de dados via Scanner.
+ * O objetivo é implementar uma calculadora simples que realiza uma operação entre dois números.
  *
- * 1. Leia dois números do usuário (pode ser pelo terminal ou usando JOptionPane).
- * 2. Peça ao usuário para informar qual operação deseja realizar:
- *    - O usuário deve digitar um dos símbolos: + (adição), - (subtração), * (multiplicação), / (divisão)
- * 3. Realize a operação escolhida entre os dois números.
- * 4. Exiba o resultado da operação.
- *
- * Regras:
- * - Utilize apenas os conceitos ensinados neste capítulo.
- * - Não utilize estruturas avançadas ou recursos não abordados até aqui.
+ * Regras e contexto:
+ * - Leia dois números do usuário via terminal (usando Scanner).
+ * - Peça ao usuário para informar qual operação deseja realizar (+, -, *, /, %).
+ * - Realize a operação escolhida entre os dois números.
+ * - Exiba o resultado da operação no console.
  * - O programa deve executar apenas uma operação por vez (não é uma calculadora em loop).
  *
+ * Entrada esperada:
+ * - Dois números reais (double).
+ * - Um símbolo de operação: + (adição), - (subtração), * (multiplicação), / (divisão), % (resto).
+ *
+ * Saída esperada:
+ * - O resultado da operação ou uma mensagem de operação inválida.
+ *
  * Exemplo de fluxo:
- *   Usuário digita: 5
- *   Usuário digita: 3
- *   Usuário digita: +
- *   Saída: 8
+ * Input:
+ *  5
+ *  3
+ *  +
+ * Output esperado (conceitual):
+ *  "Resultado: 8.0"
  *
  */
 
