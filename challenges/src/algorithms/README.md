@@ -1,8 +1,8 @@
 # Exercícios de Lógica de Programação
 
-Exercícios resolvidos em **pseudocódigo** e **diagramas Mermaid**.
+Exercícios resolvidos em **Java** com **fluxogramas em Mermaid**.
 
-Estes exercícios focam em **lógica e algoritmos**, independentes de linguagem de programação.
+Estes exercícios focam em **lógica e algoritmos** aplicados em Java.
 
 ---
 
@@ -15,12 +15,12 @@ Estes exercícios focam em **lógica e algoritmos**, independentes de linguagem 
 **Resumo:** [Ver docs/resumos/furlan-logica.md](../../../docs/resumos/furlan-logica.md)
 
 | Capítulo                                     | Exercícios    | Status |
-| -------------------------------------------- | ------------- | ------ |
-| Cap 1 - Introdução                           | 04 exercícios | 🔄 1/4 |
-| Cap 3 - Algoritmos e Suas Representações     | 12 exercícios | ⬜ 0/0 |
-| Cap 4 - Estruturas de Programação            | 08 exercícios | ⬜ 0/0 |
-| Cap 5 - Variáveis Indexadas                  | 00 exercícios | ⬜ 0/0 |
-| Cap 6 - Técnicas para a Solução de Problemas | 00 exercícios | ⬜ 0/0 |
+|----------------------------------------------|---------------|--------|
+| Cap 1 - Introdução                           | 03 exercícios | 🔄 1/3 |
+| Cap 3 - Algoritmos e Suas Representações     | 12 exercícios | ⬜ 0/0  |
+| Cap 4 - Estruturas de Programação            | 08 exercícios | ⬜ 0/0  |
+| Cap 5 - Variáveis Indexadas                  | 00 exercícios | ⬜ 0/0  |
+| Cap 6 - Técnicas para a Solução de Problemas | 00 exercícios | ⬜ 0/0  |
 
 **Progresso total:** 24 exercícios (0%)
 
@@ -38,34 +38,27 @@ _Exercícios serão adicionados ao estudar o livro._
 
 ## 🎨 Formato dos Exercícios
 
-Cada exercício está em um arquivo `.md` contendo:
+Cada exercício está organizado em sua própria pasta contendo:
 
-1. **📝 Enunciado** - problema original do livro
-2. **💭 Análise** - decomposição (entrada → processamento → saída)
-3. **📊 Fluxograma** - diagrama visual em Mermaid
-4. **📝 Pseudocódigo** - solução estruturada
-5. **💡 Observações** - dicas e insights
+1. **Arquivo `.java`** - Solução implementada com:
+   - 📝 Enunciado no JavaDoc
+   - 💭 Análise (entrada → processamento → saída)
+   - 💡 Observações e exemplos
+   - 💻 Código Java funcional
 
-### Exemplo de Estrutura
+2. **Arquivo `flowchart.md`** - Fluxograma visual em Mermaid
 
-```markdown
-# Capítulo X - Exercício Y: Título
+### Estrutura de Pastas
 
-## 📝 Enunciado
-
-[problema do livro]
-
-## 💭 Análise
-
-Entrada: ...
-Processamento: ...
-Saída: ...
-
-## 📊 Fluxograma
-
-## 📝 Pseudocódigo
-
-## 💡 Observações
+```
+algorithms/furlan/
+  ├── Cap01_Ex01/
+  │   ├── Cap01_Ex01.java
+  │   └── flowchart.md
+  ├── Cap03_Ex11/
+  │   ├── Cap03_Ex11.java
+  │   └── flowchart.md
+  └── ...
 ```
 
 **[⬅️ Voltar](../)**
