@@ -13,7 +13,7 @@ Descreva como descobrir a moeda falsa em um grupo de cinco moedas, fazendo uso d
 
 ---
 
-## � Fluxograma
+## 📊 Fluxograma
 
 ```mermaid
 %%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#7C3AED','primaryTextColor':'#fff','primaryBorderColor':'#5B21B6','lineColor':'#6366F1','secondaryColor':'#10B981','secondaryTextColor':'#fff','tertiaryColor':'#F59E0B','tertiaryTextColor':'#000','noteBkgColor':'#DBEAFE','noteTextColor':'#1E3A8A'}}}%%

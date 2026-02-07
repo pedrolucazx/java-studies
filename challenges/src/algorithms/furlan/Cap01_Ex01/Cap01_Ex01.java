@@ -16,31 +16,29 @@
 package algorithms.furlan.Cap01_Ex01;
 
 public class Cap01_Ex01 {
-	
+
 	public static void main(String[] args) {
 		double coin1 = 10;
 		double coin2 = 10;
 		double coin3 = 10;
 		double coin4 = 10;
 		double coin5 = 9;
-		
+
 		int weighing = 0;
 		int fakeCoin = -1;
-		
+
 		System.out.println("=== Descobrindo a Moeda Falsa ===\n");
-		
+
 		System.out.println("📍 PESAGEM 1");
 		System.out.println(
-						"Lado Esquerdo: Moeda 1 (" + coin1 + "g) + Moeda 2 (" + coin2 + "g)"
-		);
+				"Lado Esquerdo: Moeda 1 (" + coin1 + "g) + Moeda 2 (" + coin2 + "g)");
 		System.out.println(
-						"Lado Direito:  Moeda 3 (" + coin3 + "g) + Moeda 4 (" + coin4 + "g)\n"
-		);
-		
+				"Lado Direito:  Moeda 3 (" + coin3 + "g) + Moeda 4 (" + coin4 + "g)\n");
+
 		double group1 = coin1 + coin2;
 		double group2 = coin3 + coin4;
 		weighing++;
-		
+
 		if (group1 == group2) {
 			fakeCoin = 5;
 			System.out.println("✓ Resultado: Balança EQUILIBRADA");
@@ -51,7 +49,7 @@ public class Cap01_Ex01 {
 			System.out.println("📍 PESAGEM 2");
 			System.out.println("Lado Esquerdo: Moeda 1 (" + coin1 + "g)");
 			System.out.println("Lado Direito:  Moeda 2 (" + coin2 + "g)\n");
-			
+
 			weighing++;
 			if (coin1 < coin2) {
 				fakeCoin = 1;
@@ -67,7 +65,7 @@ public class Cap01_Ex01 {
 			System.out.println("📍 PESAGEM 2");
 			System.out.println("Lado Esquerdo: Moeda 3 (" + coin3 + "g)");
 			System.out.println("Lado Direito:  Moeda 4 (" + coin4 + "g)\n");
-			
+
 			weighing++;
 			if (coin3 < coin4) {
 				fakeCoin = 3;
@@ -78,7 +76,7 @@ public class Cap01_Ex01 {
 			}
 			System.out.println("→ Moeda falsa é a moeda #" + fakeCoin + "\n");
 		}
-		
+
 		System.out.println("════════════════════════════════");
 		System.out.println("🎯 RESULTADO FINAL");
 		System.out.println("════════════════════════════════");
