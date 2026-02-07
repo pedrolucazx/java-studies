@@ -1,4 +1,4 @@
-package algorithms.furlan;
+package algorithms.furlan.Cap03_Ex30;
 
 public class Cap03_Ex30 {
 
