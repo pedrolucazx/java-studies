@@ -1,3 +1,18 @@
+/**
+ * Cap01_Ex07 - Travessia do Rio
+ * <p>
+ * Enunciado:
+ * Você está em uma margem de um rio com três animais: uma galinha, um cachorro e uma raposa.
+ * Somente pode atravessar com um animal por vez e nunca deixar a raposa e o cachorro sozinhos
+ * nem a raposa e a galinha. Descreva uma forma de conseguir atravessar os três animais, obedecendo essas condições.
+ * <p>
+ * Análise:
+ * Entrada: Você, 3 animais (galinha, cachorro, raposa) na margem A
+ * Processamento: Determinar a sequência segura de travessias obedecendo as restrições
+ * Saída: Demonstração visual de cada passo até todos atravessarem para margem B
+ *
+ */
+
 package algorithms.furlan.Cap01_Ex07;
 
 public class Cap01_Ex07 {

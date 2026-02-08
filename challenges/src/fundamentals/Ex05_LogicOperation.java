@@ -49,21 +49,20 @@ public class Ex05_LogicOperation {
     String bothJobsMsg = bothJobs ? "Ambos os trabalhos deram certo" : "";
     String noJobMsg = noJob ? "Nenhum trabalho deu certo" : "";
     String onlyFirstJobMsg = (!bothJobs && !noJob && firstJob)
-      ? "O trabalho 1 deu certo"
-      : "";
+        ? "O trabalho 1 deu certo"
+        : "";
     String onlySecondJobMsg = (!bothJobs && !noJob && secondJob)
-      ? "O trabalho 2 deu certo"
-      : "";
+        ? "O trabalho 2 deu certo"
+        : "";
 
-    String jobsPhrase =
-      noJobMsg + bothJobsMsg + onlyFirstJobMsg + onlySecondJobMsg;
+    String jobsPhrase = noJobMsg + bothJobsMsg + onlyFirstJobMsg + onlySecondJobMsg;
 
     String icePhrase = iceCream
-      ? "a família tomou sorvete"
-      : "a família não tomou sorvete";
+        ? "a família tomou sorvete"
+        : "a família não tomou sorvete";
     String tvPhrase = noJob
-      ? "e não comprou TV"
-      : "e comprou a TV de " + tvSize + " polegadas";
+        ? "e não comprou TV"
+        : "e comprou a TV de " + tvSize + " polegadas";
 
     System.out.println(jobsPhrase + ", " + icePhrase + " " + tvPhrase + ".");
   }

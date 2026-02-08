@@ -1,6 +1,22 @@
+/**
+ * Cap03_Ex11 - Maior de N Valores
+ * <p>
+ * Enunciado:
+ * Elabore um fluxograma que permita a entrada de n (lido pelo teclado) valores reais
+ * e apresente como resultado o maior entre esses valores.
+ * <p>
+ * Análise:
+ * Entrada: Número de valores (n) e n valores reais
+ * Processamento: Comparar cada valor com o maior armazenado
+ * Saída: O maior valor encontrado
+ * <p>
+ * 💡 Ver detalhes no arquivo flowchart.md
+ *
+ */
 /*
  * Cap03_Ex11
- * <p>
+ * <p
+>
  TODO: Enunciado:
  TODO: Elabore um fluxograma que permita a entrada de n (lido pelo teclado) valores reais e 
  TODO: apresente como resultado o maior entre esses valores.

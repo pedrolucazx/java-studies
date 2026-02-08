@@ -49,19 +49,19 @@ public class Ex13_DaysOfWeek {
 			return 0;
 		}
 	}
-	
+
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Digite o nome de um dia da semana: ");
 		String dia = scanner.next();
-		
+
 		int numeroDoDia = obterNumeroDoDia(dia);
 		if (numeroDoDia > 0 && numeroDoDia <= 7) {
 			System.out.println("O número correspondente ao dia " + dia + " é: " + numeroDoDia);
 		} else {
 			System.out.println("Dia não reconhecido.");
 		}
-		
+
 		scanner.close();
 	}
 }

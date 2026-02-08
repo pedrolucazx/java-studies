@@ -36,10 +36,9 @@ import java.util.Scanner;
 public class Ex06_SimpleCalculator {
 
   private static String getMsg(
-    String operacao,
-    double numero1,
-    double numero2
-  ) {
+      String operacao,
+      double numero1,
+      double numero2) {
     double resultado = operacao.equals("+") ? numero1 + numero2 : 0;
     resultado = operacao.equals("-") ? numero1 - numero2 : resultado;
     resultado = operacao.equals("*") ? numero1 * numero2 : resultado;
@@ -51,8 +50,8 @@ public class Ex06_SimpleCalculator {
         operacao.equals("*") ||
         operacao.equals("/") ||
         operacao.equals("%"))
-      ? ("Resultado: " + resultado)
-      : "Operação inválida!";
+            ? ("Resultado: " + resultado)
+            : "Operação inválida!";
     return msg;
   }
 

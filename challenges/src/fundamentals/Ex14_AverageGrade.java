@@ -38,33 +38,33 @@ public class Ex14_AverageGrade {
 	private static final double MIN_GRADE = 0.0;
 	private static final double MAX_GRADE = 10.0;
 	private static final double EXIT_VALUE = -1.0;
-	
+
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int validGradesCount = 0;
 		double totalGrades = 0.0;
 		double grade = 0.0;
-		
+
 		do {
 			System.out.print("Digite a nota do aluno (ou -1 para encerrar): ");
-			
+
 			if (!scanner.hasNextDouble()) {
 				System.out.println("Entrada inválida. Por favor, insira um número.");
 				scanner.next();
 				continue;
 			}
-			
+
 			grade = scanner.nextDouble();
-			
+
 			if (grade != EXIT_VALUE && (grade < MIN_GRADE || grade > MAX_GRADE)) {
 				System.out.println("Nota inválida. Por favor, insira uma nota entre 0 e 10.");
 			} else if (grade != EXIT_VALUE) {
 				totalGrades += grade;
 				validGradesCount++;
 			}
-			
+
 		} while (grade != EXIT_VALUE);
-		
+
 		if (validGradesCount > 0) {
 			System.out.printf("A média das notas da turma é: %.2f%n", totalGrades / validGradesCount);
 		} else {
