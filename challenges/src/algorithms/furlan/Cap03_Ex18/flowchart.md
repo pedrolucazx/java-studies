@@ -1,7 +1,7 @@
 # Capítulo 3 - Exercício 18: Cálculo de Desconto IRRF
 
-> **Livro:** Algoritmos e Lógica da Programação, Marco A. Furlan de Souza  
-> **Capítulo:** 3 - Algoritmos e Fluxogramas
+> **Livro:** Algoritmos E Lógica Da Programação  
+> **Capítulo:** 3 - Algoritmos e a suas Representações
 
 ---
 
@@ -93,5 +93,7 @@ flowchart TD
 
 ## 🔗 Links Relacionados
 
-- [Código Java](Cap03_Ex18.java)
-- [Resumo do Capítulo 3](../../../../docs/resumos/furlan-logica.md#capítulo-3)
+- [⬅️ Anterior: Cap03_Ex17](../Cap03_Ex17/flowchart.md)
+- [📝 Código Java](Cap03_Ex18.java)
+- [➡️ Próximo: Cap03_Ex19](../Cap03_Ex19/flowchart.md)
+- [📚 Resumo do Capítulo 3](../../../../docs/resumos/furlan-logica.md#capítulo-3)

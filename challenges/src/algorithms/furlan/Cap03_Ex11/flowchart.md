@@ -1,7 +1,7 @@
 # Capítulo 3 - Exercício 11: Maior de N Valores
 
-> **Livro:** Algoritmos e Lógica da Programação, Marco A. Furlan de Souza  
-> **Capítulo:** 3 - Algoritmos e Fluxogramas
+> **Livro:** Algoritmos E Lógica Da Programação  
+> **Capítulo:** 3 - Algoritmos e a suas Representações
 
 ---
 
@@ -48,5 +48,7 @@ flowchart TD
 
 ## 🔗 Links Relacionados
 
-- [Código Java](Cap03_Ex11.java)
-- [Resumo do Capítulo 3](../../../../docs/resumos/furlan-logica.md#capítulo-3)
+- [⬅️ Anterior: Cap01_Ex07](../Cap01_Ex07/flowchart.md)
+- [📝 Código Java](Cap03_Ex11.java)
+- [➡️ Próximo: Cap03_Ex17](../Cap03_Ex17/flowchart.md)
+- [📚 Resumo do Capítulo 3](../../../../docs/resumos/furlan-logica.md#capítulo-3)

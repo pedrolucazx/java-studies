@@ -38,15 +38,41 @@ _Exercícios serão adicionados ao estudar o livro._
 
 ## 🎨 Formato dos Exercícios
 
-Cada exercício está organizado em sua própria pasta contendo:
+Cada exercício está organizado na sua própria pasta contendo:
 
-1. **Arquivo `.java`** - Solução implementada com:
-   - 📝 Enunciado no JavaDoc
-   - 💭 Análise (entrada → processamento → saída)
-   - 💡 Observações e exemplos
-   - 💻 Código Java funcional
+### 📄 Arquivo `flowchart.md`
 
-2. **Arquivo `flowchart.md`** - Fluxograma visual em Mermaid
+Documentação do exercício com a seguinte estrutura:
+
+1. **Capítulo X - Exercício YY: Título**
+   - Referência do livro (Livro, Capítulo)
+
+2. **📝 Enunciado**
+   - Descrição clara do problema
+   - Tabelas com dados/fórmulas quando necessário
+   - Objetivo a ser alcançado
+
+3. **📊 Fluxograma**
+   - Diagrama visual em Mermaid
+   - Decisões, processos e I/O bem definidos
+   - Cores padronizadas
+
+4. **🔗 Links Relacionados**
+   - ⬅️ Anterior: Link para exercício anterior
+   - 📝 Código Java: Link para implementação
+   - ➡️ Próximo: Link para próximo exercício
+   - 📚 Resumo: Link para resumo do capítulo
+
+### 💻 Arquivo `.java`
+
+Implementação funcional com:
+
+- 📝 **JavaDoc completo** (enunciado, análise, conceitos)
+- 💭 **Análise** (entrada → processamento → saída)
+- 💡 **Constantes** nomeadas para valores fixos
+- 🔧 **Métodos auxiliares** para operações reutilizáveis
+- 💻 **Código limpo** e bem documentado
+- 🧪 **Tratamento de entrada** (flexível: vírgula e ponto)
 
 ### Estrutura de Pastas
 

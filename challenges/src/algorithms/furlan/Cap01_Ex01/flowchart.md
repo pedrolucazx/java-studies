@@ -1,6 +1,6 @@
 # Capítulo 1 - Exercício 01: Moeda Falsa
 
-> **Livro:** Algoritmos e Lógica da Programação, Marco A. Furlan de Souza  
+> **Livro:** Algoritmos E Lógica Da Programação  
 > **Capítulo:** 1 - Introdução
 
 ---
@@ -91,5 +91,6 @@ $$\text{Pesagens Mínimas} = \lceil \log_3(n) \rceil$$
 
 ## 🔗 Links Relacionados
 
-- [Código Java](Cap01_Ex01.java)
-- [Resumo do Capítulo 1](../../../../docs/resumos/furlan-logica.md#capítulo-1)
+- [📝 Código Java](Cap01_Ex01.java)
+- [➡️ Próximo: Cap01_Ex05](../Cap01_Ex05/flowchart.md)
+- [📚 Resumo do Capítulo 1](../../../../docs/resumos/furlan-logica.md#capítulo-1)

@@ -1,8 +1,7 @@
 # Capítulo 4 - Exercício 10: Decomposição em Fatores Primos
 
-&gt; **Livro:** Algoritmos e Lógica da Programação, Marco A. Furlan de Souza.
-&gt; **Capítulo:** 4 - Estruturas de Programação
-&gt; **Página:**
+> **Livro:** Algoritmos E Lógica Da Programação  
+> **Capítulo:** 4 - Estruturas de Programação
 
 ---
 
@@ -12,50 +11,15 @@ Escreva um fluxograma que permita a entrada de um número inteiro e então exiba
 
 ---
 
-## 💭 Análise do Problema
+## 📊 Fluxograma
 
-**Entrada:**
-
-**Processamento:**
-
-**Saída:**
-
----
-
-## 📊 Fluxograma (Mermaid)
-
-```mermaid
-
-```
-
----
-
-## 📝 Pseudocódigo
-
-```
-
-```
-
----
-
-## 🧪 Teste de Mesa
-
----
-
-## 🎯 Conceitos Aplicados
-
----
-
-## 💡 Observações
+_A ser preenchido_
 
 ---
 
 ## 🔗 Links Relacionados
 
-- [Resumo do Capítulo 4](../../../../docs/resumos/furlan-logica.md#capítulo-4)
-- [Exercício Anterior: Cap04_Ex06.md](Cap04_Ex06.md)
-- [Próximo exercício: Cap04_Ex11.md](Cap04_Ex11.md)
-
----
-
-**Status:** ⏳ Pendente | **Data:** 28/12/2025
+- [⬅️ Anterior: Cap04_Ex06](../Cap04_Ex06/flowchart.md)
+- [📝 Código Java](Cap04_Ex10.java)
+- [➡️ Próximo: Cap04_Ex11](../Cap04_Ex11/flowchart.md)
+- [📚 Resumo do Capítulo 4](../../../../docs/resumos/furlan-logica.md#capítulo-4)

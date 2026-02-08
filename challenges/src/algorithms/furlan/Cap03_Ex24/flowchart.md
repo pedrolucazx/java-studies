@@ -1,8 +1,7 @@
 # Capítulo 3 - Exercício 24: Verificação de Número Primo
 
-&gt; **Livro:** Algoritmos e Lógica da Programação, Marco A. Furlan de Souza.
-&gt; **Capítulo:** 3 - Algoritmos e Fluxogramas
-&gt; **Página:**
+> **Livro:** Algoritmos E Lógica Da Programação  
+> **Capítulo:** 3 - Algoritmos e Suas Representações
 
 ---
 
@@ -12,50 +11,15 @@ Elabore um fluxograma que leia um valor n inteiro e verifique se este é ou não
 
 ---
 
-## 💭 Análise do Problema
+## 📊 Fluxograma
 
-**Entrada:**
-
-**Processamento:**
-
-**Saída:**
-
----
-
-## 📊 Fluxograma (Mermaid)
-
-```mermaid
-
-```
-
----
-
-## 📝 Pseudocódigo
-
-```
-
-```
-
----
-
-## 🧪 Teste de Mesa
-
----
-
-## 🎯 Conceitos Aplicados
-
----
-
-## 💡 Observações
+_A ser preenchido_
 
 ---
 
 ## 🔗 Links Relacionados
 
-- [Resumo do Capítulo 3](../../../../docs/resumos/furlan-logica.md#capítulo-3)
-- [Exercício Anterior: Cap03_Ex23.md](Cap03_Ex23.md)
-- [Próximo exercício: Cap03_Ex25.md](Cap03_Ex25.md)
-
----
-
-**Status:** ⏳ Pendente | **Data:** 28/12/2025
+- [⬅️ Anterior: Cap03_Ex23](../Cap03_Ex23/flowchart.md)
+- [📝 Código Java](Cap03_Ex24.java)
+- [➡️ Próximo: Cap03_Ex25](../Cap03_Ex25/flowchart.md)
+- [📚 Resumo do Capítulo 3](../../../../docs/resumos/furlan-logica.md#capítulo-3)

@@ -1,7 +1,7 @@
 # Capítulo 3 - Exercício 17: Cálculo de Contribuição INSS
 
-> **Livro:** Algoritmos e Lógica da Programação, Marco A. Furlan de Souza  
-> **Capítulo:** 3 - Algoritmos e Fluxogramas
+> **Livro:** Algoritmos E Lógica Da Programação  
+> **Capítulo:** 3 - Algoritmos e a suas Representações
 
 ---
 
@@ -56,9 +56,20 @@ flowchart TD
     style Input fill:#8B5CF6,stroke:#7C3AED,stroke-width:2px,color:#fff
     style Output fill:#8B5CF6,stroke:#7C3AED,stroke-width:2px,color:#fff
 ```
----
-## 🔗 Links Relacionados
-- [Resumo do Capítulo 3](../../../../docs/resumos/furlan-logica.md#capítulo-3)
-- [Exercício Anterior: Cap03_Ex11.md](Cap03_Ex11.md)
-- [Próximo exercício: Cap03_Ex18.md](Cap03_Ex18.md)
 
+---
+
+## 💡 Observações
+
+**Alíquotas progressivas:** Diferente do Imposto de Renda, o INSS aplica a alíquota correspondente sobre o salário total (não é calculado por faixas).
+
+**Teto do INSS:** A contribuição máxima é de R$ 608,44, aplicada quando o salário ultrapassa R$ 5.531,31.
+
+---
+
+## 🔗 Links Relacionados
+
+- [⬅️ Anterior: Cap03_Ex11](../Cap03_Ex11/flowchart.md)
+- [📝 Código Java](Cap03_Ex17.java)
+- [➡️ Próximo: Cap03_Ex18](../Cap03_Ex18/flowchart.md)
+- [📚 Resumo do Capítulo 3](../../../../docs/resumos/furlan-logica.md#capítulo-3)

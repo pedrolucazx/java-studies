@@ -1,6 +1,6 @@
 # Capítulo 1 - Exercício 07: Travessia do Rio
 
-> **Livro:** Algoritmos e Lógica da Programação, Marco A. Furlan de Souza  
+> **Livro:** Algoritmos E Lógica Da Programação  
 > **Capítulo:** 1 - Introdução
 
 ---
@@ -181,8 +181,7 @@ $$
 
 ## 🔗 Links Relacionados
 
-- [Resumo do Capítulo 1](../../../../docs/resumos/furlan-logica.md#capítulo-1)
-- [Exercício Anterior: Cap01_Ex05.md](Cap01_Ex05.md)
-- [Próximo exercício: Cap01_Ex11.md](Cap01_Ex11.md)
-
----
+- [⬅️ Anterior: Cap01_Ex05](../Cap01_Ex05/flowchart.md)
+- [📝 Código Java](Cap01_Ex07.java)
+- [➡️ Próximo: Cap03_Ex11](../Cap03_Ex11/flowchart.md)
+- [📚 Resumo do Capítulo 1](../../../../docs/resumos/furlan-logica.md#capítulo-1)

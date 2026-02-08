@@ -1,8 +1,7 @@
 # Capítulo 4 - Exercício 06: Apuração de Eleição
 
-&gt; **Livro:** Algoritmos e Lógica da Programação, Marco A. Furlan de Souza.
-&gt; **Capítulo:** 4 - Estruturas de Programação
-&gt; **Página:**
+> **Livro:** Algoritmos E Lógica Da Programação  
+> **Capítulo:** 4 - Estruturas de Programação
 
 ---
 
@@ -12,59 +11,15 @@ Deseja-se construir um fluxograma para auxílio a uma eleição. O fluxograma de
 
 ---
 
-## 💭 Análise do Problema
+## 📊 Fluxograma
 
-**Entrada:**
-
-**Processamento:**
-
-**Saída:**
-
----
-
-## 📊 Fluxograma (Mermaid)
-
-```mermaid
-
-```
-
----
-
-## 📝 Pseudocódigo
-
-```
-
-```
-
----
-
-## 🧪 Teste de Mesa
-
----
-
-## 🎯 Conceitos Aplicados
-
----
-
-## 💡 Observações
-
-O enunciado original apresenta uma ambiguidade sobre os códigos de votação. Para a resolução, foram adotadas as seguintes convenções:
-- **Candidato 1:** Voto `1`
-- **Candidato 2:** Voto `2`
-- **Candidato 3:** Voto `3`
-- **Voto Branco:** Voto `0`
-- **Voto Nulo:** Qualquer outro valor inteiro.
-
-O "vencedor" será o candidato com o maior número de votos válidos. Casos de empate não foram tratados de forma específica no escopo deste exercício.
+_A ser preenchido_
 
 ---
 
 ## 🔗 Links Relacionados
 
-- [Resumo do Capítulo 4](../../../../docs/resumos/furlan-logica.md#capítulo-4)
-- [Exercício Anterior: Cap04_Ex05.md](Cap04_Ex05.md)
-- [Próximo exercício: Cap04_Ex10.md](Cap04_Ex10.md)
-
----
-
-**Status:** ⏳ Pendente | **Data:** 28/12/2025
+- [⬅️ Anterior: Cap04_Ex05](../Cap04_Ex05/flowchart.md)
+- [📝 Código Java](Cap04_Ex06.java)
+- [➡️ Próximo: Cap04_Ex10](../Cap04_Ex10/flowchart.md)
+- [📚 Resumo do Capítulo 4](../../../../docs/resumos/furlan-logica.md#capítulo-4)

@@ -1,6 +1,6 @@
 # Capítulo 1 - Exercício 05: Caramujo
 
-> **Livro:** Algoritmos e Lógica da Programação, Marco A. Furlan de Souza  
+> **Livro:** Algoritmos E Lógica Da Programação  
 > **Capítulo:** 1 - Introdução
 
 ---
@@ -41,5 +41,7 @@ flowchart TD
 
 ## 🔗 Links Relacionados
 
-- [Código Java](Cap01_Ex05.java)
-- [Resumo do Capítulo 1](../../../../docs/resumos/furlan-logica.md#capítulo-1)
+- [⬅️ Anterior: Cap01_Ex01](../Cap01_Ex01/flowchart.md)
+- [📝 Código Java](Cap01_Ex05.java)
+- [➡️ Próximo: Cap01_Ex07](../Cap01_Ex07/flowchart.md)
+- [📚 Resumo do Capítulo 1](../../../../docs/resumos/furlan-logica.md#capítulo-1)
