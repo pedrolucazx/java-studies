@@ -87,9 +87,9 @@ public class Cap03_Ex19 {
 		String status = determineApprovalStatus(finalAverage);
 		
 		System.out.println("\n=== RESULTADO FINAL ===");
-		System.out.printf(Locale.US, "Média de Provas:   %.2f%n", testsAverage);
-		System.out.printf(Locale.US, "Média de Trabalhos: %.2f%n", worksAverage);
-		System.out.printf(Locale.US, "Média Final:       %.2f%n", finalAverage);
+		System.out.printf("Média de Provas:   %.2f%n", testsAverage);
+		System.out.printf("Média de Trabalhos: %.2f%n", worksAverage);
+		System.out.printf("Média Final:       %.2f%n", finalAverage);
 		System.out.println("Status: " + status);
 		System.out.println("=======================");
 		
