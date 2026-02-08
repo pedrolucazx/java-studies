@@ -2,7 +2,7 @@
  * Cap01_Ex07 - Travessia do Rio
  * <p>
  * Enunciado:
- * Você está em uma margem de um rio com três animais: uma galinha, um cachorro e uma raposa.
+ * Você está numa margem de um rio com três animais: uma galinha, um cachorro e uma raposa.
  * Somente pode atravessar com um animal por vez e nunca deixar a raposa e o cachorro sozinhos
  * nem a raposa e a galinha. Descreva uma forma de conseguir atravessar os três animais, obedecendo essas condições.
  * <p>
