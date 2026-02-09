@@ -13,7 +13,45 @@ Um número palíndromo é aquele que se lido da esquerda para a direita e da dir
 
 ## 📊 Fluxograma
 
-_A ser preenchido_
+```mermaid
+flowchart TD
+    A([Início])
+    B{{Ler n}}
+    C{n < 0?}
+    D[original = n]
+    E[reversed = 0]
+    F(( ))
+    
+    A --> B
+    B --> C
+    C -->|Sim| G{{Escrever: n não é palíndromo}}
+    C -->|Não| D
+    
+    D --> E
+    E --> F
+    
+    F --> H{n > 0?}
+    
+    H -->|Não| I{original = reversed?}
+    H -->|Sim| J[digit = n mod 10]
+    
+    J --> K[reversed = reversed * 10 + digit]
+    K --> L[n = n / 10]
+    L --> F
+    
+    I -->|Sim| M{{Escrever: n é palíndromo}}
+    I -->|Não| G
+    
+    G --> N(( ))
+    M --> N
+    N --> O([Fim])
+    
+    style A fill:#D4F1D4,stroke:#2D5F2D,stroke-width:3px,color:#000
+    style O fill:#D4F1D4,stroke:#2D5F2D,stroke-width:3px,color:#000
+    style B fill:#D4E4F7,stroke:#2B5278,stroke-width:2px,color:#000
+    style G fill:#D4E4F7,stroke:#2B5278,stroke-width:2px,color:#000
+    style M fill:#D4E4F7,stroke:#2B5278,stroke-width:2px,color:#000
+```
 
 ---
 
