@@ -15,8 +15,20 @@
  */
 package algorithms.furlan.Cap03_Ex40;
 
-public class Cap03_Ex40 {
+import java.util.Scanner;
 
-  public static void main(String[] args) {
-  }
+public class Cap03_Ex40 {
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Digite o valor de N: ");
+		int n = scanner.nextInt();
+		int fatorial = 1;
+		for (int i = 1; i <= n; i++) {
+			fatorial *= i;
+		}
+		
+		System.out.println("O fatorial de " + n + " é: " + fatorial);
+		scanner.close();
+	}
 }

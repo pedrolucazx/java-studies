@@ -13,7 +13,36 @@ Elabore um fluxograma que, dado um valor n inteiro, calculará seu fatorial. (`n
 
 ## 📊 Fluxograma
 
-_A ser preenchido_
+```mermaid
+flowchart TD
+    A([Início])
+    B{{Ler N}}
+    C["i ← 1<br/>FAT ← 1"]
+    D{i ≤ N?}
+E["FAT ← FAT * i<br/>i ← i + 1"]
+F(( ))
+G{{Escrever: FAT}}
+H([Fim])
+
+A --> B
+B --> C
+C --> D
+
+D -->|Sim|E
+E --> D
+
+D -->|Não|G
+G --> F
+F --> H
+
+style A fill: #D4F1D4, stroke: #2D5F2D, stroke-width: 3px, color: #000
+style H fill: #D4F1D4, stroke: #2D5F2D, stroke-width: 3px, color: #000
+style B fill: #D4E4F7, stroke: #2B5278, stroke-width: 2px, color: #000
+style C fill: #D4E4F7, stroke: #2B5278, stroke-width: 2px, color: #000
+style G fill: #D4E4F7, stroke: #2B5278, stroke-width: 2px, color: #000
+style D fill: #FFF4D6, stroke: #D4A574, stroke-width: 2px, color: #000
+style E fill: #FFF4D6, stroke: #D4A574, stroke-width: 2px, color: #000
+```
 
 ---
 
