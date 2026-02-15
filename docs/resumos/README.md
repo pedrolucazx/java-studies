@@ -4,9 +4,9 @@ Resumos e anotações dos livros utilizados no estudo de Java e Lógica de Progr
 
 ## 📖 Livros Resumidos
 
-| Livro                 | Autor           | Status          | Arquivo                              | Exercícios                                                  |
-| --------------------- | --------------- | --------------- | ------------------------------------ | ----------------------------------------------------------- |
-| Lógica de Programação | Marco A. Furlan | ⬜ Não iniciado | [Ver resumo](furlan-logica.md)       | [Ver exercícios](../../challenges/src/algorithms/furlan/)   |
+| Livro                 | Autor           | Status      | Arquivo                              | Exercícios                                                  |
+| --------------------- | --------------- | ----------- | ------------------------------------ | ----------------------------------------------------------- |
+| Lógica de Programação | Marco A. Furlan | 🔄 Iniciado | [Ver resumo](furlan-logica.md)       | [Ver exercícios](../../challenges/src/algorithms/furlan/)   |
 | Entendendo Algoritmos | Bhargava        | ⬜ Não iniciado | [Ver resumo](bhargava-algoritmos.md) | [Ver exercícios](../../challenges/src/algorithms/bhargava/) |
 
 ---

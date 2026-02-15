@@ -61,5 +61,5 @@ style F fill: #FFF4D6,stroke: #D4A574, stroke-width: 2px, color:#000
 
 - [⬅️ Anterior: Cap03_Ex40](../Cap03_Ex40/flowchart.md)
 - [📝 Código Java](Cap03_Ex44.java)
-- [➡️ Próximo: Cap03_Ex47](../Cap03_Ex47/flowchart.md)
+- [➡️ Próximo: Cap04_Ex04](../Cap04_Ex04/flowchart.md)
 - [📚 Resumo do Capítulo 3](../../../../docs/resumos/furlan-logica.md#capítulo-3)

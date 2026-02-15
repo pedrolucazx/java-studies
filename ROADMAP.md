@@ -6,7 +6,7 @@
 
 | Parte | Tema                                      | Status          | Progresso |
 | ----- | ----------------------------------------- | --------------- | --------- |
-| 1️⃣    | Fundação - Lógica e Algoritmos            | 🔄 Iniciado     | 1/4       |
+| 1️⃣    | Fundação - Lógica e Algoritmos            | 🔄 Iniciado     | 2/4       |
 | 2️⃣    | Fundamentos Java                          | ✅ Completo     | 2/2       |
 | 3️⃣    | Orientação a Objetos                      | ⬜ Não iniciado | 0/2       |
 | 4️⃣    | A Biblioteca - Estruturas de Dados        | ⬜ Não iniciado | 0/5       |

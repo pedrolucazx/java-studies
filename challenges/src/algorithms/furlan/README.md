@@ -31,13 +31,13 @@ Cada exercício está organizado em sua própria pasta contendo:
 | [Cap03_Ex30](Cap03_Ex30/) | Soma de Série (40 Termos de Progressão Geométrica) | ✅ Concluído |
 | [Cap03_Ex40](Cap03_Ex40/) | Cálculo de Fatorial                                | ✅ Concluído |
 | [Cap03_Ex44](Cap03_Ex44/) | N-ésimo Termo de Fibonacci                         | ✅ Concluído |
-| [Cap04_Ex04](Cap04_Ex04/) | -                                                  | ⬜ Pendente  |
-| [Cap04_Ex05](Cap04_Ex05/) | -                                                  | ⬜ Pendente  |
-| [Cap04_Ex06](Cap04_Ex06/) | -                                                  | ⬜ Pendente  |
-| [Cap04_Ex10](Cap04_Ex10/) | -                                                  | ⬜ Pendente  |
-| [Cap04_Ex11](Cap04_Ex11/) | -                                                  | ⬜ Pendente  |
-| [Cap04_Ex13](Cap04_Ex13/) | -                                                  | ⬜ Pendente  |
-| [Cap04_Ex19](Cap04_Ex19/) | -                                                  | ⬜ Pendente  |
-| [Cap04_Ex23](Cap04_Ex23/) | -                                                  | ⬜ Pendente  |
+| [Cap04_Ex04](Cap04_Ex04/) | Contagem de Números Negativos                      | ⬜ Pendente  |
+| [Cap04_Ex05](Cap04_Ex05/) | Análise de Salários (Média e Maior)                | ⬜ Pendente  |
+| [Cap04_Ex06](Cap04_Ex06/) | Apuração de Eleição                                | ⬜ Pendente  |
+| [Cap04_Ex10](Cap04_Ex10/) | Decomposição em Fatores Primos                     | ⬜ Pendente  |
+| [Cap04_Ex11](Cap04_Ex11/) | Gerador de Números Perfeitos                        | ⬜ Pendente  |
+| [Cap04_Ex13](Cap04_Ex13/) | Validar Inteiro Positivo em String                 | ⬜ Pendente  |
+| [Cap04_Ex19](Cap04_Ex19/) | Estatísticas de Competição de Natação             | ⬜ Pendente  |
+| [Cap04_Ex23](Cap04_Ex23/) | Exponenciação por Multiplicações Sucessivas        | ⬜ Pendente  |
 
 **[⬅️ Voltar](../)**

@@ -72,7 +72,7 @@ Exercícios práticos resolvidos em **Java** do curso Udemy:
 
 Exercícios resolvidos em **pseudocódigo** e **diagramas Mermaid**:
 
-- [Algoritmos e Lógica da Programação - Marco A. Furlan de Souza (1/24 exercícios)](challenges/src/algorithms/furlan/) ⬜
+- [Algoritmos e Lógica da Programação - Marco A. Furlan de Souza (14/24 exercícios)](challenges/src/algorithms/furlan/) 🔄
 - [Algoritmos - Livro Bhargava (0 exercícios)](challenges/src/algorithms/bhargava/) ⬜
 
 ---

@@ -19,7 +19,7 @@ _A ser preenchido_
 
 ## 🔗 Links Relacionados
 
-- [⬅️ Anterior: Cap03_Ex47](../Cap03_Ex47/flowchart.md)
+- [⬅️ Anterior: Cap03_Ex44](../Cap03_Ex44/flowchart.md)
 - [📝 Código Java](Cap04_Ex04.java)
 - [➡️ Próximo: Cap04_Ex05](../Cap04_Ex05/flowchart.md)
 - [📚 Resumo do Capítulo 4](../../../../docs/resumos/furlan-logica.md#capítulo-4)
