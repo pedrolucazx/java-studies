@@ -15,8 +15,25 @@
  */
 package algorithms.furlan.Cap03_Ex44;
 
-public class Cap03_Ex44 {
+import java.util.Scanner;
 
-  public static void main(String[] args) {
-  }
+public class Cap03_Ex44 {
+	public static int fib(int number) {
+		if (number <= 1) return number;
+		return fib(number - 1) + fib(number - 2);
+	}
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Digite um número inteiro n para calcular o n-és imo termo de Fibonacci:");
+		int number = scanner.nextInt();
+		if (number < 0) {
+			System.out.println("Por favor, digite um número inteiro não negativo.");
+		} else {
+			int result = fib(number);
+			System.out.printf("O %d-és imo termo de Fibonacci é: %d%n", number, result);
+		}
+		
+		scanner.close();
+	}
 }
