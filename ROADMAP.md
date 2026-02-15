@@ -21,9 +21,9 @@
 **Livros:** Furlan + Bhargava
 
 - [x] 1.1 O que é um Algoritmo? (Mentalidade do Engenheiro)
-- [ ] 1.2 Pesquisa Binária e Notação Big O
+- [ ] 1.2 Arquitetura do Computador (Von Neumann)
 - [ ] 1.3 Ferramentas de Modelagem (Fluxogramas, Portugol)
-- [ ] 1.4 Arquitetura do Computador (Von Neumann)
+- [ ] 1.4 Pesquisa Binária e Notação Big O
 
 ## Parte 2: A Ferramenta - Fundamentos Java
 

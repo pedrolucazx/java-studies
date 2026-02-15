@@ -47,24 +47,18 @@ Este guia organiza minha jornada de aprendizado do básico ao avançado, integra
 
 ---
 
-### 1.2 Análise de Performance e Notação Big O
+### 1.2 Arquitetura do Computador (Von Neumann)
 
-> **Fonte Principal:** Bhargava, Cap. 1
+> **Fonte Principal:** Furlan, Cap. 2
 
 **Conteúdo:**
 
-- Pesquisa Binária como primeiro exemplo de algoritmo eficiente
-- **Notação Big O:** linguagem universal para medir performance
-- Taxas de crescimento de algoritmos
-- Conceito de "pior hipótese"
-- Tempos comuns de execução:
-  - O(log n) - logarítmico (ex: Pesquisa Binária)
-  - O(n) - linear
-  - O(n log n)
-  - O(n²) - quadrático
-  - O(n!) - fatorial (ex: Caixeiro-Viajante)
+- **Arquitetura de Von Neumann:** UCP, Memória RAM, I/O
+- **Representação da Informação:** Bits e bytes
+- **Memória:** Como dados são armazenados em endereços
+- **Execução de Programas:** Ciclo de busca e execução da UCP
 
-**Por que estudar:** Aprender a medir objetivamente qual solução é melhor _antes_ de implementar.
+**Por que estudar:** Entender o que é um _endereço de memória_ e _armazenamento contíguo_ é essencial para compreender estruturas de dados (Arrays vs Listas Encadeadas).
 
 ---
 
@@ -101,18 +95,24 @@ Este guia organiza minha jornada de aprendizado do básico ao avançado, integra
 
 ---
 
-### 1.4 Como o Computador Executa o Código
+### 1.4 Análise de Performance e Notação Big O
 
-> **Fonte Principal:** Furlan, Cap. 2
+> **Fonte Principal:** Bhargava, Cap. 1
 
 **Conteúdo:**
 
-- **Arquitetura de Von Neumann:** UCP, Memória RAM, I/O
-- **Representação da Informação:** Bits e bytes
-- **Memória:** Como dados são armazenados em endereços
-- **Execução de Programas:** Ciclo de busca e execução da UCP
+- Pesquisa Binária como primeiro exemplo de algoritmo eficiente
+- **Notação Big O:** linguagem universal para medir performance
+- Taxas de crescimento de algoritmos
+- Conceito de "pior hipótese"
+- Tempos comuns de execução:
+  - O(log n) - logarítmico (ex: Pesquisa Binária)
+  - O(n) - linear
+  - O(n log n)
+  - O(n²) - quadrático
+  - O(n!) - fatorial (ex: Caixeiro-Viajante)
 
-**Por que estudar:** Entender o que é um _endereço de memória_ e _armazenamento contíguo_ é essencial para compreender estruturas de dados (Arrays vs Listas Encadeadas).
+**Por que estudar:** Aprender a medir objetivamente qual solução é melhor _antes_ de implementar.
 
 ---
 
