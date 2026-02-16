@@ -2,7 +2,7 @@
 
 > Resumo e anotações do livro "Algoritmos e Lógica da Programação"
 
-**Autores:** Marco A. Furlan de Souza.
+**Autores:** Marco A. Furlan de Souza, Marcelo Marques Gomes, Marcio Vieira Soares, Ricardo Concilio
 
 **Status:** 🔄 Iniciado.
 
@@ -225,9 +225,7 @@ Um exemplo concreto de algoritmo fora do ambiente computacional é a receita par
 - A mesma medida da lata com leite
 - Raspas de chocolate ou chocolate granulado
 
-Com esses ingredientes, especificam-se os passos da receita conforme o algoritmo abaixo:
-
-**Algoritmo 3.1 - Algoritmo para fazer um sorvete de chocolate**
+**Passos do Algoritmo:**
 
 **Início**
 1. Ponha o chocolate em uma tigela refratária.
@@ -247,7 +245,7 @@ Com esses ingredientes, especificam-se os passos da receita conforme o algoritmo
 
 Outro exemplo é o algoritmo de Euclides para determinar o máximo divisor comum entre dois números inteiros x e y (valores de entrada).
 
-**Algoritmo 3.2 - Algoritmo para calcular o máximo divisor comum entre dois números**
+**Passos do Algoritmo:**
 
 **Início**
 1. Pedir para o usuário fornecer valores inteiros para x e y.
@@ -269,9 +267,9 @@ Todo algoritmo possui uma série de propriedades fundamentais. Segundo Furlan, e
 | ------------------- | ---------------------------------------------------------------------------------------------- |
 | **Valores de Entrada** | Todo algoritmo deve possuir **zero, uma ou mais entradas de dados**. O algoritmo do sorvete representa um algoritmo com **zero entradas**, pois opera com quantidades fixas de ingredientes. O algoritmo de Euclides possui **duas entradas**: os valores inteiros x e y para o cálculo do máximo divisor comum. |
 | **Valores de Saída** | Todo algoritmo possui **uma ou mais saídas**, que simboliza(m) seu(s) resultado(s). O algoritmo do sorvete tem como saída o **próprio sorvete pronto**. O algoritmo de Euclides tem como saída o **valor do máximo divisor comum entre x e y**. |
-| **Finitude** | Todo algoritmo deve ser **finito**, isto é, deve possuir um **início e um conjunto de passos que, ao serem executados, levarão sempre ao seu término**. Ambos os exemplos (sorvete e Euclides) são finitos, pois chegam a um resultado em um número finito de passos. **Atenção:** Um algoritmo mal elaborado pode se tornar infinito. Por exemplo, no Algoritmo 3.2, se a condição for alterada para y ≥ 0, o algoritmo nunca chegará ao fim. |
+| **Finitude** | Todo algoritmo deve ser **finito**, isto é, deve possuir um **início e um conjunto de passos que, ao serem executados, levarão sempre ao seu término**. Ambos os exemplos (sorvete e Euclides) são finitos, pois chegam a um resultado em um número finito de passos. **Atenção:** Um algoritmo mal elaborado pode se tornar infinito. Por exemplo, no algoritmo de Euclides, se a condição for alterada para y ≥ 0, o algoritmo nunca chegará ao fim. |
 | **Passos Elementares** | Um algoritmo computacional deve ser **explicitado por meio de operações elementares**, sem ambiguidades, de forma que possa ser executado por máquinas. O algoritmo de Euclides usa apenas **operações matemáticas simples** (divisão, resto, atribuição) e **comparações**, que qualquer computador realiza naturalmente. O algoritmo do sorvete precisa ser bem-refinado para ter suas operações em passos elementares. |
-| **Correção** | Um algoritmo deve ser **correto**, isto é, deve permitir que com sua execução se chegue às saída(s) com **resultados coerentes com a(s) entrada(s)**. Para validar: teste com diversos valores de entrada já conhecidos. Exemplo: o MDC de 12 e 9 é 3. Execute o Algoritmo 3.2 com x=12 e y=9 para verificar o resultado. Teste com outros pares de valores para garantir a correção. |
+| **Correção** | Um algoritmo deve ser **correto**, isto é, deve permitir que com sua execução se chegue às saída(s) com **resultados coerentes com a(s) entrada(s)**. Para validar: teste com diversos valores de entrada já conhecidos. Exemplo: o MDC de 12 e 9 é 3. Execute o algoritmo de Euclides com x=12 e y=9 para verificar o resultado. Teste com outros pares de valores para garantir a correção. |
 
 ---
 
@@ -328,6 +326,13 @@ flowchart TD
 
 **Fórmula:** F = ρ × g × h × A
 
+**Variáveis:**
+- `ρ` (rho): densidade do líquido (kg/m³)
+- `g`: aceleração da gravidade (m/s²)
+- `h`: altura da coluna de líquido (m)
+- `A`: área da válvula (m²)
+- `F`: força resultante (N - Newtons)
+
 ```mermaid
 %%{init: {'flowchart': {'curve': 'linear'}}}%%
 flowchart TD
@@ -351,6 +356,11 @@ flowchart TD
 #### 3️⃣ Fluxograma de Comando de Decisão
 
 **Problema:** Resolver equação de segundo grau (ax² + bx + c = 0)
+
+**Variáveis:**
+- `a`, `b`, `c`: coeficientes da equação
+- `Δ` (delta): discriminante (b² - 4ac)
+- `x`, `x₁`, `x₂`: raízes da equação
 
 ```mermaid
 %%{init: {'flowchart': {'curve': 'linear'}}}%%
@@ -387,6 +397,11 @@ flowchart TD
 #### 4️⃣ Fluxograma de Comando de Repetição
 
 **Problema:** Calcular o Máximo Divisor Comum usando Algoritmo de Euclides
+
+**Variáveis:**
+- `A`, `B`: números inteiros de entrada
+- `R`: resto da divisão de A por B
+- O algoritmo usa divisões sucessivas até B = 0, quando A contém o MDC
 
 ```mermaid
 %%{init: {'flowchart': {'curve': 'linear'}}}%%
@@ -553,31 +568,13 @@ Representação alternativa de algoritmos utilizando estruturas retangulares ani
 
 ---
 
-### 🔄 Conversão de Tipos
+### 📝 Convenções para Nomes de Variáveis
 
-#### 1️⃣ Números
-
-- **Inteiro para Real:** `5` → `5.0`
-- **Real para Inteiro:** `5.7` → `5` (truncamento ou arredondamento)
-
-#### 2️⃣ Caracteres e Cadeias de Caracteres
-
-- **Número para Caractere:** `65` → `'A'` (tabela ASCII)
-- **Caractere para Número:** `'5'` → `5`
-- **Cadeia para Número:** `"123"` → `123`
-
-#### 3️⃣ Valores Lógicos
-
-- **Número para Booleano:** `0` → `falso`, qualquer outro → `verdadeiro`
-- **Booleano para Número:** `verdadeiro` → `1`, `falso` → `0`
-
-#### 4️⃣ Conversão para Nome de Variável
-
-Regras para criar nomes de variáveis:
+Regras para criar nomes de variáveis em algoritmos:
 - Começar com letra ou underscore (_)
 - Conter apenas letras, números e underscore
 - Não podem ser palavras-chave da linguagem
-- Devem ser descritivos
+- Devem ser descritivos e significativos
 
 **Exemplos válidos:** `idade`, `data_nascimento`, `saldo_conta`, `_valor`
 
@@ -585,124 +582,14 @@ Regras para criar nomes de variáveis:
 
 ---
 
-### 📐 Conversão para Expressões
-
-#### 1️⃣ Operadores de Atribuição
-
-| Operador | Exemplo | Significado |
-| -------- | ------- | ----------- |
-| `←` ou `=` | `A ← 5` | Atribui o valor 5 à variável A |
-
-#### 2️⃣ Operadores Aritméticos
-
-| Operador | Símbolo | Exemplo | Resultado |
-| -------- | ------- | ------- | --------- |
-| Adição | `+` | `5 + 3` | `8` |
-| Subtração | `-` | `5 - 3` | `2` |
-| Multiplicação | `*` | `5 * 3` | `15` |
-| Divisão | `/` | `6 / 2` | `3` |
-| Resto (Módulo) | `mod` | `7 mod 3` | `1` |
-| Potência | `^` ou `**` | `2 ^ 3` | `8` |
-
-#### 3️⃣ Operadores Relacionais
-
-| Operador | Símbolo | Exemplo | Resultado |
-| -------- | ------- | ------- | --------- |
-| Igual | `=` | `5 = 5` | `verdadeiro` |
-| Diferente | `<>` ou `!=` | `5 <> 3` | `verdadeiro` |
-| Maior | `>` | `5 > 3` | `verdadeiro` |
-| Menor | `<` | `5 < 3` | `falso` |
-| Maior ou igual | `≥` ou `>=` | `5 >= 5` | `verdadeiro` |
-| Menor ou igual | `≤` ou `<=` | `3 <= 5` | `verdadeiro` |
-
-#### 4️⃣ Operadores Lógicos
-
-| Operador | Símbolo | Tabela Verdade |
-| -------- | ------- | -------------- |
-| **E (AND)** | `e` ou `&&` | `V e V = V` / `V e F = F` / `F e F = F` |
-| **OU (OR)** | `ou` ou `\|\|` | `V ou V = V` / `V ou F = V` / `F ou F = F` |
-| **NÃO (NOT)** | `nao` ou `!` | `não V = F` / `não F = V` |
-
-#### 5️⃣ Expressões
-
-Uma expressão é uma combinação de operadores e operandos que resulta em um valor.
-
-**Exemplos:**
-- `3 + 5 * 2` = `13` (multiplicação tem precedência)
-- `(3 + 5) * 2` = `16` (parênteses mudam precedência)
-- `idade > 18 e cpf <> ""` = resultado booleano
-- `(A > B) ou (B < C) e (D = 0)` = combinação de operadores relacionais e lógicos
-
-**Precedência de Operadores (do maior para o menor):**
-1. Parênteses `()`
-2. Potência `^`
-3. Multiplicação, Divisão, Módulo `*, /, mod`
-4. Adição, Subtração `+, -`
-5. Operadores Relacionais `=, <>, >, <, >=, <=`
-6. Operador `não`
-7. Operador `e`
-8. Operador `ou`
-
----
-
-### 🛠️ Sub-rotinas Pré-definidas
-
-#### 1️⃣ Funções Matemáticas
-
-| Função | Sintaxe | Descrição |
-| ------ | ------- | --------- |
-| Raiz Quadrada | `RaizQua(x)` | Retorna a raiz quadrada de x |
-| Valor Absoluto | `Abs(x)` | Retorna o valor absoluto de x |
-| Seno | `Sen(x)` | Retorna o seno de x (em radianos) |
-| Cosseno | `Cos(x)` | Retorna o cosseno de x |
-| Tangente | `Tan(x)` | Retorna a tangente de x |
-| Exponencial | `Exp(x)` | Retorna e elevado a x |
-| Logaritmo Natural | `Ln(x)` | Retorna o logaritmo natural de x |
-| Inteiro | `Int(x)` | Retorna a parte inteira de x |
-| Arredonda | `Arred(x)` | Arredonda x para o inteiro mais próximo |
-| Aleatório | `Rnd()` | Retorna um número aleatório entre 0 e 1 |
-
-**Exemplos:**
-```portugol
-raiz ← RaizQua(16)        // raiz = 4
-valor ← Abs(-10)          // valor = 10
-seno_valor ← Sen(3.14159) // seno_valor ≈ 0
-inteira ← Int(5.7)        // inteira = 5
-```
-
-#### 2️⃣ Funções e Procedimentos para Cadeias de Caracteres
-
-| Função | Sintaxe | Descrição |
-| ------ | ------- | --------- |
-| Comprimento | `Comp(texto)` | Retorna o número de caracteres da cadeia |
-| Maiúsculas | `Maiusc(texto)` | Converte texto para maiúsculas |
-| Minúsculas | `Minusc(texto)` | Converte texto para minúsculas |
-| Substring | `SubCad(texto, pos, tam)` | Extrai tam caracteres a partir de pos |
-| Posição | `Pos(subcadeia, texto)` | Retorna a posição de subcadeia em texto |
-| Concatenação | `Concat(text1, text2)` | Une duas cadeias |
-| Inversão | `Inv(texto)` | Inverte a ordem dos caracteres |
-
-**Exemplos:**
-```portugol
-tamanho ← Comp("Hello")           // tamanho = 5
-maiusculo ← Maiusc("pedro")       // maiusculo = "PEDRO"
-minusculo ← Minusc("JOÃO")        // minusculo = "joão"
-parte ← SubCad("programação", 1, 4) // parte = "prog"
-posicao ← Pos("log", "programação") // posicao = 4
-juntado ← Concat("Hello", "World") // juntado = "HelloWorld"
-invertido ← Inv("algoritmo")      // invertido = "omtiroglA"
-```
-
----
-
 ### 🎯 Conceitos-Chave
 
 - **Algoritmo:** Sequência finita e bem definida de passos para resolver um problema.
-- **Fluxograma:** Representação gráfica de um algoritmo usando símbolos padronizados.
+- **Fluxograma:** Representação gráfica de um algoritmo usando símbolos padronizados (ISO 5807).
 - **Portugol:** Linguagem pseudocódigo estruturada que aproxima o algoritmo de linguagens reais.
-- **Propriedades:** Entrada, Saída, Finitude, Passos Elementares, Correção.
-- **Operadores:** Ferramentas para realizar operações em dados (aritméticas, relacionais, lógicas).
-- **Sub-rotinas:** Funções pré-definidas que executam tarefas comuns.
+- **Nassi-Shneiderman:** Representação alternativa usando estruturas retangulares aninhadas.
+- **Propriedades dos Algoritmos:** Entrada, Saída, Finitude, Passos Elementares, Correção.
+- **Variáveis:** Elementos que armazenam dados durante a execução do algoritmo.
 
 ---
 
