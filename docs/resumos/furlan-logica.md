@@ -202,7 +202,507 @@ Este capítulo explora a evolução histórica dos computadores através de suas
 
 ## Capítulo 3: Algoritmos e Suas Representações
 
-_[Em breve]_
+### 📝 Resumo
+
+Este capítulo aborda o conceito de algoritmos, suas propriedades fundamentais, aplicações práticas tanto no contexto computacional quanto não-computacional, e as diferentes formas de representação de algoritmos utilizadas na programação estruturada.
+
+### 💡 Pontos Importantes
+
+#### 🎯 Aplicabilidades dos Algoritmos
+
+> **"Algoritmos não servem apenas para programar computadores! São de uso geral!"**
+
+Algoritmos estão presentes em toda tarefa do cotidiano: comer, respirar, dirigir, estudar, cozinhar, etc. Existem também algoritmos específicos para tarefas em Engenharia e Computação que requerem conhecimento especializado.
+
+##### **Algoritmo Não-Computacional: Fazer Sorvete de Chocolate**
+
+Um exemplo concreto de algoritmo fora do ambiente computacional é a receita para preparar um sorvete de chocolate.
+
+**Ingredientes:**
+
+- 1 tablete de chocolate meio amargo
+- 1 lata de leite condensado
+- A mesma medida da lata com leite
+- Raspas de chocolate ou chocolate granulado
+
+Com esses ingredientes, especificam-se os passos da receita conforme o algoritmo abaixo:
+
+**Algoritmo 3.1 - Algoritmo para fazer um sorvete de chocolate**
+
+**Início**
+1. Ponha o chocolate em uma tigela refratária.
+2. Deixe a tigela no micro-ondas durante um minuto em potência média.
+3. Tire o chocolate do forno com cuidado e mexa-o até esfriar.
+4. Bata-o no liquidificador com o leite condensado e o leite.
+5. Despeje tudo em uma forma de gelo e espere congelar por três horas.
+6. Distribua o sorvete em taças.
+7. Decore com as raspas ou com o chocolate granulado.
+8. Sirva.
+
+**Fim**
+
+---
+
+##### **Algoritmo Computacional: Cálculo do Máximo Divisor Comum (MDC) - Euclides**
+
+Outro exemplo é o algoritmo de Euclides para determinar o máximo divisor comum entre dois números inteiros x e y (valores de entrada).
+
+**Algoritmo 3.2 - Algoritmo para calcular o máximo divisor comum entre dois números**
+
+**Início**
+1. Pedir para o usuário fornecer valores inteiros para x e y.
+2. Enquanto y ≠ 0 Faça
+   - r ← o resto da divisão entre x e y
+   - x ← y
+   - y ← r
+3. Fim Enquanto
+4. Exibir para o usuário o MDC procurado (em x).
+
+**Fim**
+---
+
+#### 🔑 Propriedades dos Algoritmos
+
+Todo algoritmo possui uma série de propriedades fundamentais. Segundo Furlan, essas propriedades devem ser observadas:
+
+| Propriedade | Definição e Exemplo |
+| ------------------- | ---------------------------------------------------------------------------------------------- |
+| **Valores de Entrada** | Todo algoritmo deve possuir **zero, uma ou mais entradas de dados**. O algoritmo do sorvete representa um algoritmo com **zero entradas**, pois opera com quantidades fixas de ingredientes. O algoritmo de Euclides possui **duas entradas**: os valores inteiros x e y para o cálculo do máximo divisor comum. |
+| **Valores de Saída** | Todo algoritmo possui **uma ou mais saídas**, que simboliza(m) seu(s) resultado(s). O algoritmo do sorvete tem como saída o **próprio sorvete pronto**. O algoritmo de Euclides tem como saída o **valor do máximo divisor comum entre x e y**. |
+| **Finitude** | Todo algoritmo deve ser **finito**, isto é, deve possuir um **início e um conjunto de passos que, ao serem executados, levarão sempre ao seu término**. Ambos os exemplos (sorvete e Euclides) são finitos, pois chegam a um resultado em um número finito de passos. **Atenção:** Um algoritmo mal elaborado pode se tornar infinito. Por exemplo, no Algoritmo 3.2, se a condição for alterada para y ≥ 0, o algoritmo nunca chegará ao fim. |
+| **Passos Elementares** | Um algoritmo computacional deve ser **explicitado por meio de operações elementares**, sem ambiguidades, de forma que possa ser executado por máquinas. O algoritmo de Euclides usa apenas **operações matemáticas simples** (divisão, resto, atribuição) e **comparações**, que qualquer computador realiza naturalmente. O algoritmo do sorvete precisa ser bem-refinado para ter suas operações em passos elementares. |
+| **Correção** | Um algoritmo deve ser **correto**, isto é, deve permitir que com sua execução se chegue às saída(s) com **resultados coerentes com a(s) entrada(s)**. Para validar: teste com diversos valores de entrada já conhecidos. Exemplo: o MDC de 12 e 9 é 3. Execute o Algoritmo 3.2 com x=12 e y=9 para verificar o resultado. Teste com outros pares de valores para garantir a correção. |
+
+---
+
+#### 📊 Tipos de Representação de Algoritmos
+
+Existem três principais formas de representar algoritmos:
+
+1. **Diagrama de Blocos (Fluxograma)** ✓ (Usado no livro)
+2. **Português Estruturado (Portugol)** ✓ (Usado no livro)
+3. **Nassi-Shneiderman** (Técnica alternativa)
+
+---
+
+### 📐 Fluxograma (Diagrama de Blocos)
+
+#### 🔍 Características
+
+- Utiliza **símbolos gráficos específicos** para representar operações
+- Expressões podem ser escritas no interior dos símbolos
+- Permite uso de sub-rotinas nas expressões
+- Padronizado pela **Norma ISO 5807 (1985)**
+
+#### 📋 Símbolos de Fluxograma (Norma ISO 5807)
+
+| Ícone / Forma | ASCII | Nome | Resumo da Utilidade |
+| :---: | :---: | :--- | :--- |
+| ⬭ | `( )` | **Terminador** | Indica o **início** ou o **fim** de um programa, ou a conexão com o ambiente externo. |
+| ▭ | `[ ]` | **Processo** | Representa uma **ação, cálculo ou processamento** que altera o estado ou valor dos dados. |
+| ➔ | `→` | **Linha Básica** | Indica a **direção do fluxo** de execução e a sequência dos passos. |
+| ⌨️ | `\ /` | **Entrada Manual** | Representa a **inserção de dados pelo usuário** em tempo real (ex: digitar uma informação no teclado). |
+| 🖥️ | `> ]` | **Exibição** | Mostra **resultados ou informações visuais** para o usuário (ex: exibir uma mensagem no monitor). |
+| ◇ | `< >` | **Decisão** | Representa uma **condição ou teste lógico**. O fluxo toma caminhos diferentes dependendo do resultado (ex: Sim/Não). |
+
+---
+
+#### 1️⃣ Fluxograma Mínimo - Início e Fim
+
+```mermaid
+%%{init: {'flowchart': {'curve': 'linear'}}}%%
+flowchart TD
+    A([Início])
+    I([Fim])
+    A --> I
+    
+    style A fill: #D4F1D4, stroke: #2D5F2D, stroke-width:3px, color: #000
+    style I fill:#D4F1D4, stroke: #2D5F2D, stroke-width: 3px,color: #000
+```
+
+---
+
+#### 2️⃣ Fluxograma de Comandos Sequenciais
+
+**Problema:** Calcular a força exercida pela coluna de líquido na válvula de um reservatório
+
+**Fórmula:** F = ρ × g × h × A
+
+```mermaid
+%%{init: {'flowchart': {'curve': 'linear'}}}%%
+flowchart TD
+    A([Início])
+    B["Ler ρ, g, h, A"]
+    D["F = ρ × g × h × A"]
+    E["Exibir F"]
+    I([Fim])
+    
+    A --> B --> D --> E --> I
+    
+    style A fill: #D4F1D4, stroke: #2D5F2D, stroke-width:3px, color: #000
+    style I fill:#D4F1D4, stroke: #2D5F2D, stroke-width: 3px,color: #000
+    style B fill: #FFF4D6, stroke: #D4A574, stroke-width: 2px, color:#000
+    style D fill: #D4E4F7, stroke:#2B5278, stroke-width: 2px, color: #000
+    style E fill: #FFF4D6, stroke: #D4A574, stroke-width: 2px, color: #000
+```
+
+---
+
+#### 3️⃣ Fluxograma de Comando de Decisão
+
+**Problema:** Resolver equação de segundo grau (ax² + bx + c = 0)
+
+```mermaid
+%%{init: {'flowchart': {'curve': 'linear'}}}%%
+flowchart TD
+    A([Início])
+    B["Ler a, b, c"]
+    D["Δ = b² - 4ac"]
+    H{Δ < 0?}
+    J["Sem raízes reais"]
+    K{Δ = 0?}
+    L["x = -b/2a"]
+    M["x₁ = (-b+√Δ)/2a<br/>x₂ = (-b-√Δ)/2a"]
+    I([Fim])
+    
+    A --> B --> D --> H
+    H -->|Sim| J --> I
+    H -->|Não| K
+    K -->|Sim| L --> I
+    K -->|Não| M --> I
+    
+    style A fill: #D4F1D4, stroke: #2D5F2D, stroke-width:3px, color: #000
+    style I fill:#D4F1D4, stroke: #2D5F2D, stroke-width: 3px,color: #000
+    style B fill: #FFF4D6, stroke: #D4A574, stroke-width: 2px, color:#000
+    style D fill: #D4E4F7, stroke:#2B5278, stroke-width: 2px, color: #000
+    style J fill: #D4E4F7, stroke: #2B5278, stroke-width: 2px, color: #000
+    style H fill: #D4E4F7, stroke:#2B5278, stroke-width: 2px, color: #000
+    style K fill: #D4E4F7, stroke:#2B5278, stroke-width: 2px, color: #000
+    style L fill: #D4E4F7, stroke: #2B5278, stroke-width: 2px, color: #000
+    style M fill: #D4E4F7, stroke: #2B5278, stroke-width: 2px, color: #000
+```
+
+---
+
+#### 4️⃣ Fluxograma de Comando de Repetição
+
+**Problema:** Calcular o Máximo Divisor Comum usando Algoritmo de Euclides
+
+```mermaid
+%%{init: {'flowchart': {'curve': 'linear'}}}%%
+flowchart TD
+    A([Início])
+    B["Ler A, B"]
+    H{B ≠ 0?}
+    D["R = A mod B"]
+    J["A = B"]
+    K["B = R"]
+    F["Exibir A"]
+    I([Fim])
+    
+    A --> B --> H
+    H -->|Sim| D --> J --> K --> H
+    H -->|Não| F --> I
+    
+    style A fill: #D4F1D4, stroke: #2D5F2D, stroke-width:3px, color: #000
+    style I fill:#D4F1D4, stroke: #2D5F2D, stroke-width: 3px,color: #000
+    style B fill: #FFF4D6, stroke: #D4A574, stroke-width: 2px, color:#000
+    style D fill: #D4E4F7, stroke:#2B5278, stroke-width: 2px, color: #000
+    style J fill: #D4E4F7, stroke:#2B5278, stroke-width: 2px, color: #000
+    style K fill: #D4E4F7, stroke:#2B5278, stroke-width: 2px, color: #000
+    style H fill: #D4E4F7, stroke:#2B5278, stroke-width: 2px, color: #000
+    style F fill: #FFF4D6, stroke: #D4A574, stroke-width: 2px, color: #000
+```
+
+---
+
+### 💻 Português Estruturado (Portugol)
+
+Português estruturado é uma forma de representação de algoritmos mais próxima da linguagem humana, utilizando palavras reservadas em português. O **Portugol Studio** (base do Portugol.dev) utiliza sintaxe semelhante a C/Java.
+
+#### 📐 Estrutura Básica
+
+```portugol
+programa {
+    funcao inicio() {
+        // Declaração de variáveis
+        real A, B, F
+        cadeia nome
+        
+        // Leitura de dados
+        leia(A, B)
+        
+        // Processamento
+        F = A * B
+        
+        // Saída de dados
+        escreva(F)
+    }
+}
+```
+
+#### 📌 Exemplo: Calcular Força no Reservatório
+
+```portugol
+programa {
+    funcao inicio() {
+        real densidade, gravidade, altura, area, forca
+        
+        escreva("Digite a densidade: ")
+        leia(densidade)
+        escreva("Digite a gravidade: ")
+        leia(gravidade)
+        escreva("Digite a altura: ")
+        leia(altura)
+        escreva("Digite a área: ")
+        leia(area)
+        
+        forca = densidade * gravidade * altura * area
+        
+        escreva("Força exercida: ", forca, " N\n")
+    }
+}
+```
+
+#### 📌 Exemplo: Equação de Segundo Grau
+
+```portugol
+programa {
+    inclua biblioteca Matematica --> mat
+    
+    funcao inicio() {
+        real a, b, c, delta, x1, x2
+        
+        escreva("Digite o coeficiente a: ")
+        leia(a)
+        escreva("Digite o coeficiente b: ")
+        leia(b)
+        escreva("Digite o coeficiente c: ")
+        leia(c)
+        
+        delta = (b * b) - (4 * a * c)
+        
+        se (delta < 0) {
+            escreva("Sem raízes reais\n")
+        } senao {
+            se (delta == 0) {
+                x1 = -b / (2 * a)
+                escreva("Raiz: ", x1, "\n")
+            } senao {
+                x1 = (-b + mat.raiz(delta)) / (2 * a)
+                x2 = (-b - mat.raiz(delta)) / (2 * a)
+                escreva("Raiz 1: ", x1, "\n")
+                escreva("Raiz 2: ", x2, "\n")
+            }
+        }
+    }
+}
+```
+
+#### 📌 Exemplo: MDC - Algoritmo de Euclides
+
+```portugol
+programa {
+    funcao inicio() {
+        inteiro a, b, resto
+        
+        escreva("Digite o primeiro número: ")
+        leia(a)
+        escreva("Digite o segundo número: ")
+        leia(b)
+        
+        enquanto (b != 0) {
+            resto = a % b
+            a = b
+            b = resto
+        }
+        
+        escreva("MDC: ", a, "\n")
+    }
+}
+```
+
+**Referência:** [Portugol.dev](https://portugol.dev/) | [Portugol Studio](https://univali-lite.github.io/Portugol-Studio/)
+
+---
+
+### 🎨 Nassi-Shneiderman (Diagrama de Struktograma)
+
+Representação alternativa de algoritmos utilizando estruturas retangulares aninhadas. É uma forma simples e visual de representar a lógica de um programa.
+
+#### 📌 Exemplo Simples: Equação de Segundo Grau
+
+```
+┌─────────────────────────────────┐
+│ Ler a, b, c                     │
+├─────────────────────────────────┤
+│ Δ = b² - 4ac                    │
+├────────────────────┬────────────┤
+│  Δ < 0?            │            │
+├──────────┬─────────┤            │
+│   Sim    │   Não   │            │
+├──────────┼─────────┤            │
+│ Sem      │ Δ = 0?  │            │
+│ raízes   ├─────┬───┤            │
+│          │ Sim │Não│            │
+│          │x=-b/2a  │            │
+│          │    │    │            │
+│          │    │x₁,x₂ formulae   │
+└──────────┴────┴────┴────────────┘
+```
+
+---
+
+### 🔄 Conversão de Tipos
+
+#### 1️⃣ Números
+
+- **Inteiro para Real:** `5` → `5.0`
+- **Real para Inteiro:** `5.7` → `5` (truncamento ou arredondamento)
+
+#### 2️⃣ Caracteres e Cadeias de Caracteres
+
+- **Número para Caractere:** `65` → `'A'` (tabela ASCII)
+- **Caractere para Número:** `'5'` → `5`
+- **Cadeia para Número:** `"123"` → `123`
+
+#### 3️⃣ Valores Lógicos
+
+- **Número para Booleano:** `0` → `falso`, qualquer outro → `verdadeiro`
+- **Booleano para Número:** `verdadeiro` → `1`, `falso` → `0`
+
+#### 4️⃣ Conversão para Nome de Variável
+
+Regras para criar nomes de variáveis:
+- Começar com letra ou underscore (_)
+- Conter apenas letras, números e underscore
+- Não podem ser palavras-chave da linguagem
+- Devem ser descritivos
+
+**Exemplos válidos:** `idade`, `data_nascimento`, `saldo_conta`, `_valor`
+
+**Exemplos inválidos:** `123idade`, `data-nascimento`, `valor@`, `se` (palavra-chave)
+
+---
+
+### 📐 Conversão para Expressões
+
+#### 1️⃣ Operadores de Atribuição
+
+| Operador | Exemplo | Significado |
+| -------- | ------- | ----------- |
+| `←` ou `=` | `A ← 5` | Atribui o valor 5 à variável A |
+
+#### 2️⃣ Operadores Aritméticos
+
+| Operador | Símbolo | Exemplo | Resultado |
+| -------- | ------- | ------- | --------- |
+| Adição | `+` | `5 + 3` | `8` |
+| Subtração | `-` | `5 - 3` | `2` |
+| Multiplicação | `*` | `5 * 3` | `15` |
+| Divisão | `/` | `6 / 2` | `3` |
+| Resto (Módulo) | `mod` | `7 mod 3` | `1` |
+| Potência | `^` ou `**` | `2 ^ 3` | `8` |
+
+#### 3️⃣ Operadores Relacionais
+
+| Operador | Símbolo | Exemplo | Resultado |
+| -------- | ------- | ------- | --------- |
+| Igual | `=` | `5 = 5` | `verdadeiro` |
+| Diferente | `<>` ou `!=` | `5 <> 3` | `verdadeiro` |
+| Maior | `>` | `5 > 3` | `verdadeiro` |
+| Menor | `<` | `5 < 3` | `falso` |
+| Maior ou igual | `≥` ou `>=` | `5 >= 5` | `verdadeiro` |
+| Menor ou igual | `≤` ou `<=` | `3 <= 5` | `verdadeiro` |
+
+#### 4️⃣ Operadores Lógicos
+
+| Operador | Símbolo | Tabela Verdade |
+| -------- | ------- | -------------- |
+| **E (AND)** | `e` ou `&&` | `V e V = V` / `V e F = F` / `F e F = F` |
+| **OU (OR)** | `ou` ou `\|\|` | `V ou V = V` / `V ou F = V` / `F ou F = F` |
+| **NÃO (NOT)** | `nao` ou `!` | `não V = F` / `não F = V` |
+
+#### 5️⃣ Expressões
+
+Uma expressão é uma combinação de operadores e operandos que resulta em um valor.
+
+**Exemplos:**
+- `3 + 5 * 2` = `13` (multiplicação tem precedência)
+- `(3 + 5) * 2` = `16` (parênteses mudam precedência)
+- `idade > 18 e cpf <> ""` = resultado booleano
+- `(A > B) ou (B < C) e (D = 0)` = combinação de operadores relacionais e lógicos
+
+**Precedência de Operadores (do maior para o menor):**
+1. Parênteses `()`
+2. Potência `^`
+3. Multiplicação, Divisão, Módulo `*, /, mod`
+4. Adição, Subtração `+, -`
+5. Operadores Relacionais `=, <>, >, <, >=, <=`
+6. Operador `não`
+7. Operador `e`
+8. Operador `ou`
+
+---
+
+### 🛠️ Sub-rotinas Pré-definidas
+
+#### 1️⃣ Funções Matemáticas
+
+| Função | Sintaxe | Descrição |
+| ------ | ------- | --------- |
+| Raiz Quadrada | `RaizQua(x)` | Retorna a raiz quadrada de x |
+| Valor Absoluto | `Abs(x)` | Retorna o valor absoluto de x |
+| Seno | `Sen(x)` | Retorna o seno de x (em radianos) |
+| Cosseno | `Cos(x)` | Retorna o cosseno de x |
+| Tangente | `Tan(x)` | Retorna a tangente de x |
+| Exponencial | `Exp(x)` | Retorna e elevado a x |
+| Logaritmo Natural | `Ln(x)` | Retorna o logaritmo natural de x |
+| Inteiro | `Int(x)` | Retorna a parte inteira de x |
+| Arredonda | `Arred(x)` | Arredonda x para o inteiro mais próximo |
+| Aleatório | `Rnd()` | Retorna um número aleatório entre 0 e 1 |
+
+**Exemplos:**
+```portugol
+raiz ← RaizQua(16)        // raiz = 4
+valor ← Abs(-10)          // valor = 10
+seno_valor ← Sen(3.14159) // seno_valor ≈ 0
+inteira ← Int(5.7)        // inteira = 5
+```
+
+#### 2️⃣ Funções e Procedimentos para Cadeias de Caracteres
+
+| Função | Sintaxe | Descrição |
+| ------ | ------- | --------- |
+| Comprimento | `Comp(texto)` | Retorna o número de caracteres da cadeia |
+| Maiúsculas | `Maiusc(texto)` | Converte texto para maiúsculas |
+| Minúsculas | `Minusc(texto)` | Converte texto para minúsculas |
+| Substring | `SubCad(texto, pos, tam)` | Extrai tam caracteres a partir de pos |
+| Posição | `Pos(subcadeia, texto)` | Retorna a posição de subcadeia em texto |
+| Concatenação | `Concat(text1, text2)` | Une duas cadeias |
+| Inversão | `Inv(texto)` | Inverte a ordem dos caracteres |
+
+**Exemplos:**
+```portugol
+tamanho ← Comp("Hello")           // tamanho = 5
+maiusculo ← Maiusc("pedro")       // maiusculo = "PEDRO"
+minusculo ← Minusc("JOÃO")        // minusculo = "joão"
+parte ← SubCad("programação", 1, 4) // parte = "prog"
+posicao ← Pos("log", "programação") // posicao = 4
+juntado ← Concat("Hello", "World") // juntado = "HelloWorld"
+invertido ← Inv("algoritmo")      // invertido = "omtiroglA"
+```
+
+---
+
+### 🎯 Conceitos-Chave
+
+- **Algoritmo:** Sequência finita e bem definida de passos para resolver um problema.
+- **Fluxograma:** Representação gráfica de um algoritmo usando símbolos padronizados.
+- **Portugol:** Linguagem pseudocódigo estruturada que aproxima o algoritmo de linguagens reais.
+- **Propriedades:** Entrada, Saída, Finitude, Passos Elementares, Correção.
+- **Operadores:** Ferramentas para realizar operações em dados (aritméticas, relacionais, lógicas).
+- **Sub-rotinas:** Funções pré-definidas que executam tarefas comuns.
 
 ---
 
@@ -227,13 +727,13 @@ _[Em breve]_
 ## 📊 Progresso de Leitura
 
 - [x] Capítulo 1: Introdução
-- [ ] Capítulo 2: Conceitos de Computação e Computadores
-- [ ] Capítulo 3: Algoritmos e Suas Representações
+- [x] Capítulo 2: Conceitos de Computação e Computadores
+- [x] Capítulo 3: Algoritmos e Suas Representações
 - [ ] Capítulo 4: Estruturas de Programação
 - [ ] Capítulo 5: Variáveis Indexadas
 - [ ] Capítulo 6: Técnicas para a Solução de Problemas
 
-**Progresso:** 1/6 capítulos (16.7%) 🎯
+**Progresso:** 3/6 capítulos (50%) 🎯
 
 ---
 
